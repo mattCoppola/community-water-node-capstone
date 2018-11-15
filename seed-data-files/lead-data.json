@@ -1,0 +1,2982 @@
+[
+    {
+        "Date Sampled": "6/19/18",
+        "Street": "00 E Elm St",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60611,
+        "1st Draw": 0.99,
+        "3 Minute": 0.99,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "9/25/16",
+        "Street": "00 E. 101st St.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60628,
+        "1st Draw": 2.3,
+        "3 Minute": 1.3,
+        "5 Minute": 1.3
+    },
+    {
+        "Date Sampled": "5/8/17",
+        "Street": "00 E. 121st St.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60628,
+        "1st Draw": 54,
+        "3 Minute": 15,
+        "5 Minute": 9.5
+    },
+    {
+        "Date Sampled": "11/2/16",
+        "Street": "00 E. 72nd St.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60619,
+        "1st Draw": 0.99,
+        "3 Minute": 0.99,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "5/10/16",
+        "Street": "00 E. 89th Pl.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60619,
+        "1st Draw": 0.99,
+        "3 Minute": 0.99,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "3/5/16",
+        "Street": "00 E. 89th Pl.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60619,
+        "1st Draw": 0.99,
+        "3 Minute": 0.99,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "2/22/16",
+        "Street": "00 E. 89th Pl.*",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60619,
+        "1st Draw": 0.99,
+        "3 Minute": 0.99,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "10/4/16",
+        "Street": "00 E. 90th St.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60619,
+        "1st Draw": 0.99,
+        "3 Minute": 0.99,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "1/24/18",
+        "Street": "00 E. Bellevue Pl.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60611,
+        "1st Draw": 0.99,
+        "3 Minute": 0.99,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "8/28/16",
+        "Street": "00 E. Division St.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60610,
+        "1st Draw": 1.6,
+        "3 Minute": 1.5,
+        "5 Minute": 1.2
+    },
+    {
+        "Date Sampled": "8/6/18",
+        "Street": "00 E. Division St.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60610,
+        "1st Draw": 5.4,
+        "3 Minute": 6.7,
+        "5 Minute": 6
+    },
+    {
+        "Date Sampled": "6/28/18",
+        "Street": "00 E. Elm St.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60611,
+        "1st Draw": 0.99,
+        "3 Minute": 0.99,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "6/15/18",
+        "Street": "00 E. Jackson Blvd.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60604,
+        "1st Draw": 0.99,
+        "3 Minute": 0.99,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "4/21/16",
+        "Street": "00 E. Scott St.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60610,
+        "1st Draw": 1.54,
+        "3 Minute": 3.41,
+        "5 Minute": 1.59
+    },
+    {
+        "Date Sampled": "2/18/16",
+        "Street": "00 E. Scott St.*",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60610,
+        "1st Draw": 2.09,
+        "3 Minute": 3.54,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "7/29/18",
+        "Street": "00 Michigan Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60602,
+        "1st Draw": 0.99,
+        "3 Minute": 0.99,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "11/8/16",
+        "Street": "00 N. Lasalle St.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60602,
+        "1st Draw": 0.99,
+        "3 Minute": 0.99,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "12/1/16",
+        "Street": "00 N. Peoria St.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60607,
+        "1st Draw": 0.99,
+        "3 Minute": 0.99,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "12/1/16",
+        "Street": "00 N. Peoria St. 2f",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60607,
+        "1st Draw": 0.99,
+        "3 Minute": 0.99,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "12/11/16",
+        "Street": "00 N. Peoria St. 2g",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60607,
+        "1st Draw": 0.99,
+        "3 Minute": 0.99,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "6/18/17",
+        "Street": "00 S. Ashland Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60607,
+        "1st Draw": 0.99,
+        "3 Minute": 0.99,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "6/14/16",
+        "Street": "00 S. Laflin St.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60607,
+        "1st Draw": 0.99,
+        "3 Minute": 0.99,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "6/3/18",
+        "Street": "00 W 72nd St",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60621,
+        "1st Draw": 1.8,
+        "3 Minute": 1.8,
+        "5 Minute": 1.7
+    },
+    {
+        "Date Sampled": "6/30/18",
+        "Street": "00 W. 15th St.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60605,
+        "1st Draw": 0.99,
+        "3 Minute": 0.99,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "4/6/16",
+        "Street": "00 W. 15th St.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60605,
+        "1st Draw": 0.99,
+        "3 Minute": 0.99,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "2/11/16",
+        "Street": "00 W. 15th St.*",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60605,
+        "1st Draw": 0.99,
+        "3 Minute": 0.99,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "1/10/18",
+        "Street": "00 W. Burton Pl.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60610,
+        "1st Draw": 0.99,
+        "3 Minute": 0.99,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "10/14/16",
+        "Street": "00 W. Chestnut St.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60610,
+        "1st Draw": 0.99,
+        "3 Minute": 0.99,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "7/17/18",
+        "Street": "00 W. Delaware Pl.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60610,
+        "1st Draw": 0.99,
+        "3 Minute": 0.99,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "6/4/18",
+        "Street": "00 W. Goethe St.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60610,
+        "1st Draw": 0.99,
+        "3 Minute": 0.99,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "8/22/17",
+        "Street": "00 W. Goethe St.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60610,
+        "1st Draw": 0.99,
+        "3 Minute": 0.99,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "8/9/16",
+        "Street": "00 W. Schiller St.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60610,
+        "1st Draw": 0.99,
+        "3 Minute": 0.99,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "6/10/18",
+        "Street": "100 E. 18 St.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60616,
+        "1st Draw": 0.99,
+        "3 Minute": 0.99,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "12/1/16",
+        "Street": "100 E. 21st St.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60616,
+        "1st Draw": 0.99,
+        "3 Minute": 0.99,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "6/17/18",
+        "Street": "100 E. 21st St.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60616,
+        "1st Draw": 0.99,
+        "3 Minute": 0.99,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "10/27/16",
+        "Street": "100 E. 70th St.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60637,
+        "1st Draw": 0.99,
+        "3 Minute": 0.99,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "11/15/16",
+        "Street": "100 E. 83rd St.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60619,
+        "1st Draw": 8.5,
+        "3 Minute": 14,
+        "5 Minute": 2.9
+    },
+    {
+        "Date Sampled": "6/5/16",
+        "Street": "100 E. Bellevue Pl.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60611,
+        "1st Draw": 0.99,
+        "3 Minute": 0.99,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "7/25/16",
+        "Street": "100 E. Chestnut St.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60611,
+        "1st Draw": 0.99,
+        "3 Minute": 0.99,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "12/30/16",
+        "Street": "100 E. Chestnut St.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60611,
+        "1st Draw": 0.99,
+        "3 Minute": 0.99,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "7/17/17",
+        "Street": "100 E. Delaware Pl.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60611,
+        "1st Draw": 0.99,
+        "3 Minute": 0.99,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "7/28/16",
+        "Street": "100 E. Lake Shore Dr.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60611,
+        "1st Draw": 1,
+        "3 Minute": 0.99,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "2/1/17",
+        "Street": "100 N. Canal St.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60606,
+        "1st Draw": 0.99,
+        "3 Minute": 0.99,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "10/9/16",
+        "Street": "100 N. Damen Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60612,
+        "1st Draw": 2.3,
+        "3 Minute": 1.6,
+        "5 Minute": 1.5
+    },
+    {
+        "Date Sampled": "7/15/18",
+        "Street": "100 N. Garland Ct.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60602,
+        "1st Draw": 0.99,
+        "3 Minute": 0.99,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "11/28/16",
+        "Street": "100 N. Harbor Dr.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60601,
+        "1st Draw": 0.99,
+        "3 Minute": 0.99,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "8/30/17",
+        "Street": "100 N. Harbor Dr.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60601,
+        "1st Draw": 0.99,
+        "3 Minute": 0.99,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "5/31/18",
+        "Street": "100 N. Harbor Dr.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60601,
+        "1st Draw": 0.99,
+        "3 Minute": 0.99,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "4/13/18",
+        "Street": "100 N. Harbor Dr.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60601,
+        "1st Draw": 0.99,
+        "3 Minute": 0.99,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "6/19/18",
+        "Street": "100 N. Harbor Dr.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60601,
+        "1st Draw": 1.3,
+        "3 Minute": 0.99,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "7/31/18",
+        "Street": "100 N. La Salle St.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60602,
+        "1st Draw": 0.99,
+        "3 Minute": 0.99,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "6/28/16",
+        "Street": "100 N. Lamon Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60644,
+        "1st Draw": 2.6,
+        "3 Minute": 3.1,
+        "5 Minute": 1.8
+    },
+    {
+        "Date Sampled": "4/17/18",
+        "Street": "100 N. Laramie Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60644,
+        "1st Draw": 0.99,
+        "3 Minute": 0.99,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "7/18/18",
+        "Street": "100 S Canal St",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60606,
+        "1st Draw": 0.99,
+        "3 Minute": 0.99,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "5/4/17",
+        "Street": "100 S. Green St.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60607,
+        "1st Draw": 0.99,
+        "3 Minute": 0.99,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "5/9/17",
+        "Street": "100 S. Morgan St.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60607,
+        "1st Draw": 0.99,
+        "3 Minute": 0.99,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "6/13/18",
+        "Street": "100 S. Waller Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60644,
+        "1st Draw": 1.1,
+        "3 Minute": 1.1,
+        "5 Minute": 1.1
+    },
+    {
+        "Date Sampled": "7/8/18",
+        "Street": "100 W Kinzie St",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60654,
+        "1st Draw": 0.99,
+        "3 Minute": 0.99,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "6/5/18",
+        "Street": "100 W. 127th St.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60628,
+        "1st Draw": 3.7,
+        "3 Minute": 3.1,
+        "5 Minute": 1.8
+    },
+    {
+        "Date Sampled": "6/5/18",
+        "Street": "100 W. 127th St.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60628,
+        "1st Draw": 5.3,
+        "3 Minute": 8.3,
+        "5 Minute": 4.4
+    },
+    {
+        "Date Sampled": "7/3/18",
+        "Street": "100 W. Chestnut St.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60610,
+        "1st Draw": 0.99,
+        "3 Minute": 0.99,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "7/13/18",
+        "Street": "100 W. Harrison St.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60605,
+        "1st Draw": 0.99,
+        "3 Minute": 0.99,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "5/23/16",
+        "Street": "100 W. Oak St.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60610,
+        "1st Draw": 2,
+        "3 Minute": 0.99,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "6/18/17",
+        "Street": "100 W. Oak St.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60610,
+        "1st Draw": 0.99,
+        "3 Minute": 0.99,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "7/3/18",
+        "Street": "100 W. Randolph St.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60601,
+        "1st Draw": 0.99,
+        "3 Minute": 0.99,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "6/14/18",
+        "Street": "1000 E 47th St",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60653,
+        "1st Draw": 0.99,
+        "3 Minute": 0.99,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "12/6/17",
+        "Street": "1000 E. 41st Pl.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60653,
+        "1st Draw": 0.99,
+        "3 Minute": 0.99,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "8/1/17",
+        "Street": "1000 E. 49th St.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60615,
+        "1st Draw": 1.1,
+        "3 Minute": 0.99,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "2/5/17",
+        "Street": "1000 E. 53rd St.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60615,
+        "1st Draw": 0.99,
+        "3 Minute": 0.99,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "6/7/16",
+        "Street": "1000 E. Hyde Park Blvd.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60615,
+        "1st Draw": 0.99,
+        "3 Minute": 0.99,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "8/5/18",
+        "Street": "1000 N River Walk St.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60610,
+        "1st Draw": 0.99,
+        "3 Minute": 0.99,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "3/23/16",
+        "Street": "1000 N. Cleveland Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60610,
+        "1st Draw": 0.99,
+        "3 Minute": 0.99,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "6/24/18",
+        "Street": "1000 N. Crosby St.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60610,
+        "1st Draw": 0.99,
+        "3 Minute": 0.99,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "9/21/16",
+        "Street": "1000 N. Damen Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60622,
+        "1st Draw": 0.99,
+        "3 Minute": 0.99,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "11/17/17",
+        "Street": "1000 N. Hermitage Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60622,
+        "1st Draw": 2.5,
+        "3 Minute": 1,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "6/9/18",
+        "Street": "1000 N. Hermitage Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60622,
+        "1st Draw": 0.99,
+        "3 Minute": 0.99,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "9/7/16",
+        "Street": "1000 N. Honore St",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60622,
+        "1st Draw": 0.99,
+        "3 Minute": 0.99,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "1/17/17",
+        "Street": "1000 N. Honore St.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60622,
+        "1st Draw": 6.5,
+        "3 Minute": 2,
+        "5 Minute": 2.2
+    },
+    {
+        "Date Sampled": "10/2/17",
+        "Street": "1000 N. Hoyne St.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60622,
+        "1st Draw": 0.99,
+        "3 Minute": 0.99,
+        "5 Minute": 1
+    },
+    {
+        "Date Sampled": "7/23/16",
+        "Street": "1000 N. La Salle Dr.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60610,
+        "1st Draw": 1.5,
+        "3 Minute": 1.5,
+        "5 Minute": 1.3
+    },
+    {
+        "Date Sampled": "8/29/16",
+        "Street": "1000 N. Lawndale Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60651,
+        "1st Draw": 13,
+        "3 Minute": 4.4,
+        "5 Minute": 3.6
+    },
+    {
+        "Date Sampled": "7/8/18",
+        "Street": "1000 N. Leavitt St.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60622,
+        "1st Draw": 0.99,
+        "3 Minute": 0.99,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "6/21/18",
+        "Street": "1000 N. Marshfield Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60622,
+        "1st Draw": 0.99,
+        "3 Minute": 0.99,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "8/31/17",
+        "Street": "1000 N. Mozart St.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60622,
+        "1st Draw": 1.4,
+        "3 Minute": 1.6,
+        "5 Minute": 1.4
+    },
+    {
+        "Date Sampled": "5/21/18",
+        "Street": "1000 N. Mozart St.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60622,
+        "1st Draw": 0.99,
+        "3 Minute": 0.99,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "5/22/18",
+        "Street": "1000 N. Paulina St.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60622,
+        "1st Draw": 0.99,
+        "3 Minute": 0.99,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "1/25/18",
+        "Street": "1000 N. State St.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60610,
+        "1st Draw": 0.99,
+        "3 Minute": 0.99,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "3/13/17",
+        "Street": "1000 N. State St.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60610,
+        "1st Draw": 0.99,
+        "3 Minute": 0.99,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "7/12/18",
+        "Street": "1000 N. Western Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60622,
+        "1st Draw": 2.7,
+        "3 Minute": 3.4,
+        "5 Minute": 2.5
+    },
+    {
+        "Date Sampled": "6/3/16",
+        "Street": "1000 N. Winchester Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60622,
+        "1st Draw": 0.99,
+        "3 Minute": 0.99,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "6/30/18",
+        "Street": "1000 N. Winchester Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60622,
+        "1st Draw": 3.6,
+        "3 Minute": 3.9,
+        "5 Minute": 3.6
+    },
+    {
+        "Date Sampled": "7/8/18",
+        "Street": "1000 N. Wood St.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60622,
+        "1st Draw": 0.99,
+        "3 Minute": 0.99,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "11/28/16",
+        "Street": "1000 N. Wood St.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60622,
+        "1st Draw": 0.99,
+        "3 Minute": 0.99,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "10/3/17",
+        "Street": "1000 S. Plymouth Ct.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60605,
+        "1st Draw": 0.99,
+        "3 Minute": 0.99,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "7/11/18",
+        "Street": "1000 S. Wabash Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60605,
+        "1st Draw": 0.99,
+        "3 Minute": 0.99,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "9/8/16",
+        "Street": "1000 W 129th Pl",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60643,
+        "1st Draw": 6.1,
+        "3 Minute": 2.9,
+        "5 Minute": 3.2
+    },
+    {
+        "Date Sampled": "7/8/18",
+        "Street": "1000 W Foster Ave",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60643,
+        "1st Draw": 0.99,
+        "3 Minute": 0.99,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "4/21/16",
+        "Street": "1000 W. 102nd St.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60643,
+        "1st Draw": 1.82,
+        "3 Minute": 0.99,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "6/3/16",
+        "Street": "1000 W. 102nd St.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60643,
+        "1st Draw": 2.6,
+        "3 Minute": 7.4,
+        "5 Minute": 1.7
+    },
+    {
+        "Date Sampled": "2/12/16",
+        "Street": "1000 W. 102nd St.*",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60643,
+        "1st Draw": 1.37,
+        "3 Minute": 0.99,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "8/17/16",
+        "Street": "1000 W. 108th St.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60643,
+        "1st Draw": 3.4,
+        "3 Minute": 3.3,
+        "5 Minute": 2.4
+    },
+    {
+        "Date Sampled": "7/24/18",
+        "Street": "1000 W. 15th St.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60608,
+        "1st Draw": 0.99,
+        "3 Minute": 0.99,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "7/20/17",
+        "Street": "1000 W. 18th St. Apt. 2r",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60608,
+        "1st Draw": 110,
+        "3 Minute": 3,
+        "5 Minute": 1.4
+    },
+    {
+        "Date Sampled": "6/2/18",
+        "Street": "1000 W. Albion Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60626,
+        "1st Draw": 3.3,
+        "3 Minute": 6.5,
+        "5 Minute": 1.7
+    },
+    {
+        "Date Sampled": "7/10/18",
+        "Street": "1000 W. Albion Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60626,
+        "1st Draw": 0.99,
+        "3 Minute": 0.99,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "3/14/17",
+        "Street": "1000 W. Balmoral Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60640,
+        "1st Draw": 0.99,
+        "3 Minute": 0.99,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "1/21/18",
+        "Street": "1000 W. Barry Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60657,
+        "1st Draw": 1.2,
+        "3 Minute": 0.99,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "8/16/16",
+        "Street": "1000 W. Byron St.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60613,
+        "1st Draw": 1,
+        "3 Minute": 0.99,
+        "5 Minute": 1
+    },
+    {
+        "Date Sampled": "6/21/18",
+        "Street": "1000 W. Catalpa Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60640,
+        "1st Draw": 0.99,
+        "3 Minute": 0.99,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "2/20/18",
+        "Street": "1000 W. Columbia Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60626,
+        "1st Draw": 0.99,
+        "3 Minute": 0.99,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "4/29/18",
+        "Street": "1000 W. Columbia Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60626,
+        "1st Draw": 0.99,
+        "3 Minute": 0.99,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "10/17/16",
+        "Street": "1000 W. Cullerton St.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60608,
+        "1st Draw": 0.99,
+        "3 Minute": 0.99,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "8/9/16",
+        "Street": "1000 W. Dakin St.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60613,
+        "1st Draw": 1.7,
+        "3 Minute": 1.7,
+        "5 Minute": 4.5
+    },
+    {
+        "Date Sampled": "7/26/18",
+        "Street": "1000 W. Dakin St.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60613,
+        "1st Draw": 2.2,
+        "3 Minute": 1.1,
+        "5 Minute": 1.1
+    },
+    {
+        "Date Sampled": "6/18/17",
+        "Street": "1000 W. Dickens Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60614,
+        "1st Draw": 4.2,
+        "3 Minute": 9.2,
+        "5 Minute": 16
+    },
+    {
+        "Date Sampled": "5/12/18",
+        "Street": "1000 W. Dickens Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60614,
+        "1st Draw": 0.99,
+        "3 Minute": 0.99,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "7/4/16",
+        "Street": "1000 W. Foster Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60640,
+        "1st Draw": 0.99,
+        "3 Minute": 0.99,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "7/24/16",
+        "Street": "1000 W. Grace St.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60613,
+        "1st Draw": 1.7,
+        "3 Minute": 0.99,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "6/27/18",
+        "Street": "1000 W. Hubbard St.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60642,
+        "1st Draw": 0.99,
+        "3 Minute": 0.99,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "7/29/18",
+        "Street": "1000 W. Lawrence Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60640,
+        "1st Draw": 0.99,
+        "3 Minute": 0.99,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "6/17/18",
+        "Street": "1000 W. Van Buren St.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60607,
+        "1st Draw": 0.99,
+        "3 Minute": 0.99,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "7/30/18",
+        "Street": "1000 W. Vernon Park Pl.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60607,
+        "1st Draw": 0.99,
+        "3 Minute": 0.99,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "2/4/17",
+        "Street": "1000 W. Washington Blvd.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60607,
+        "1st Draw": 0.99,
+        "3 Minute": 0.99,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "1/25/17",
+        "Street": "1000 W. Washington Blvd.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60607,
+        "1st Draw": 0.99,
+        "3 Minute": 0.99,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "6/23/16",
+        "Street": "10000 S Washtenaw Ave",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60655,
+        "1st Draw": 4,
+        "3 Minute": 4.7,
+        "5 Minute": 11
+    },
+    {
+        "Date Sampled": "4/23/18",
+        "Street": "10000 S. Bell Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60643,
+        "1st Draw": 1.7,
+        "3 Minute": 3.4,
+        "5 Minute": 1.6
+    },
+    {
+        "Date Sampled": "6/6/16",
+        "Street": "10000 S. Calhoun Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60617,
+        "1st Draw": 4.1,
+        "3 Minute": 5.1,
+        "5 Minute": 9.8
+    },
+    {
+        "Date Sampled": "7/4/16",
+        "Street": "10000 S. Damen Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60643,
+        "1st Draw": 1.6,
+        "3 Minute": 5.5,
+        "5 Minute": 1.5
+    },
+    {
+        "Date Sampled": "7/30/16",
+        "Street": "10000 S. Damen Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60643,
+        "1st Draw": 1.7,
+        "3 Minute": 2.5,
+        "5 Minute": 1.4
+    },
+    {
+        "Date Sampled": "7/8/16",
+        "Street": "10000 S. Damen Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60643,
+        "1st Draw": 2.5,
+        "3 Minute": 4.8,
+        "5 Minute": 1.9
+    },
+    {
+        "Date Sampled": "6/18/18",
+        "Street": "10000 S. Exchange Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60617,
+        "1st Draw": 5.2,
+        "3 Minute": 3,
+        "5 Minute": 2.8
+    },
+    {
+        "Date Sampled": "10/19/16",
+        "Street": "10000 S. Fairfield Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60655,
+        "1st Draw": 2.4,
+        "3 Minute": 2.3,
+        "5 Minute": 1.7
+    },
+    {
+        "Date Sampled": "9/29/16",
+        "Street": "10000 S. Hamilton Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60643,
+        "1st Draw": 2.9,
+        "3 Minute": 3,
+        "5 Minute": 2.7
+    },
+    {
+        "Date Sampled": "10/2/16",
+        "Street": "10000 S. Hoyne Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60643,
+        "1st Draw": 1.3,
+        "3 Minute": 2.3,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "3/30/18",
+        "Street": "10000 S. Morgan St.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60643,
+        "1st Draw": 1.6,
+        "3 Minute": 5.6,
+        "5 Minute": 1.3
+    },
+    {
+        "Date Sampled": "7/3/16",
+        "Street": "10000 S. Oakley Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60643,
+        "1st Draw": 2.1,
+        "3 Minute": 2.2,
+        "5 Minute": 2.1
+    },
+    {
+        "Date Sampled": "7/6/16",
+        "Street": "10000 S. Oakley Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60643,
+        "1st Draw": 2.6,
+        "3 Minute": 1.1,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "3/26/17",
+        "Street": "10000 S. Seeley Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60643,
+        "1st Draw": 7.4,
+        "3 Minute": 3.1,
+        "5 Minute": 1.9
+    },
+    {
+        "Date Sampled": "8/2/16",
+        "Street": "1001 N. Oak Park Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60302,
+        "1st Draw": 3.4,
+        "3 Minute": 1.7,
+        "5 Minute": 1.6
+    },
+    {
+        "Date Sampled": "7/11/16",
+        "Street": "10100 S. Artesian Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60655,
+        "1st Draw": 1.5,
+        "3 Minute": 4.1,
+        "5 Minute": 1.4
+    },
+    {
+        "Date Sampled": "7/11/16",
+        "Street": "10100 S. Beverly Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60643,
+        "1st Draw": 3.8,
+        "3 Minute": 12,
+        "5 Minute": 5.7
+    },
+    {
+        "Date Sampled": "6/16/18",
+        "Street": "10100 S. Eberhart Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60628,
+        "1st Draw": 1.8,
+        "3 Minute": 1.1,
+        "5 Minute": 1.1
+    },
+    {
+        "Date Sampled": "7/11/16",
+        "Street": "10100 S. Emerald Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60628,
+        "1st Draw": 1.5,
+        "3 Minute": 1.2,
+        "5 Minute": 1.2
+    },
+    {
+        "Date Sampled": "6/25/18",
+        "Street": "10100 S. Hoyne Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60643,
+        "1st Draw": 1.4,
+        "3 Minute": 2.6,
+        "5 Minute": 3.7
+    },
+    {
+        "Date Sampled": "5/16/16",
+        "Street": "10100 S. Indiana Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60628,
+        "1st Draw": 1.9,
+        "3 Minute": 1.5,
+        "5 Minute": 1.4
+    },
+    {
+        "Date Sampled": "3/9/18",
+        "Street": "10100 S. Indiana Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60628,
+        "1st Draw": 3.4,
+        "3 Minute": 0.99,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "1/25/17",
+        "Street": "10100 S. Morgan St.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60643,
+        "1st Draw": 6.2,
+        "3 Minute": 7.3,
+        "5 Minute": 2.2
+    },
+    {
+        "Date Sampled": "7/10/16",
+        "Street": "10100 S. Prospect Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60643,
+        "1st Draw": 3.4,
+        "3 Minute": 3.1,
+        "5 Minute": 2.8
+    },
+    {
+        "Date Sampled": "10/11/16",
+        "Street": "10100 S. Seeley Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60643,
+        "1st Draw": 3.6,
+        "3 Minute": 11,
+        "5 Minute": 10
+    },
+    {
+        "Date Sampled": "8/4/16",
+        "Street": "10100 S. Seeley Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60643,
+        "1st Draw": 4.6,
+        "3 Minute": 3.8,
+        "5 Minute": 2.5
+    },
+    {
+        "Date Sampled": "7/3/18",
+        "Street": "10200 S Leavitt St",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60643,
+        "1st Draw": 2.1,
+        "3 Minute": 4,
+        "5 Minute": 2.5
+    },
+    {
+        "Date Sampled": "8/16/16",
+        "Street": "10200 S. Aberdeen St.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60643,
+        "1st Draw": 4.7,
+        "3 Minute": 10,
+        "5 Minute": 5.3
+    },
+    {
+        "Date Sampled": "11/30/16",
+        "Street": "10200 S. Artesian Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60655,
+        "1st Draw": 2.8,
+        "3 Minute": 2.1,
+        "5 Minute": 1.4
+    },
+    {
+        "Date Sampled": "10/22/16",
+        "Street": "10200 S. Artesian Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60655,
+        "1st Draw": 6.1,
+        "3 Minute": 15,
+        "5 Minute": 4.7
+    },
+    {
+        "Date Sampled": "7/23/16",
+        "Street": "10200 S. Beverly Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60643,
+        "1st Draw": 5.4,
+        "3 Minute": 3.6,
+        "5 Minute": 3.2
+    },
+    {
+        "Date Sampled": "7/24/16",
+        "Street": "10200 S. California Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60655,
+        "1st Draw": 0.99,
+        "3 Minute": 0.99,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "8/1/16",
+        "Street": "10200 S. Crandon Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60617,
+        "1st Draw": 2.6,
+        "3 Minute": 6.4,
+        "5 Minute": 1.3
+    },
+    {
+        "Date Sampled": "9/25/16",
+        "Street": "10200 S. Leavitt St.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60643,
+        "1st Draw": 2.6,
+        "3 Minute": 3,
+        "5 Minute": 2.7
+    },
+    {
+        "Date Sampled": "8/6/16",
+        "Street": "10200 S. Seeley Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60643,
+        "1st Draw": 3.1,
+        "3 Minute": 2.2,
+        "5 Minute": 2
+    },
+    {
+        "Date Sampled": "8/6/16",
+        "Street": "10200 S. Springfield Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60655,
+        "1st Draw": 3.8,
+        "3 Minute": 8.8,
+        "5 Minute": 3.4
+    },
+    {
+        "Date Sampled": "6/21/16",
+        "Street": "10200 S. Whipple St.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60655,
+        "1st Draw": 1.4,
+        "3 Minute": 1.4,
+        "5 Minute": 1.3
+    },
+    {
+        "Date Sampled": "7/2/18",
+        "Street": "10300 S Bell Ave",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60643,
+        "1st Draw": 1.3,
+        "3 Minute": 1.6,
+        "5 Minute": 1.5
+    },
+    {
+        "Date Sampled": "8/7/18",
+        "Street": "10300 S California Ave",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60655,
+        "1st Draw": 0.99,
+        "3 Minute": 0.99,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "6/25/16",
+        "Street": "10300 S. Albany Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60655,
+        "1st Draw": 1.6,
+        "3 Minute": 1,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "6/16/18",
+        "Street": "10300 S. California Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60655,
+        "1st Draw": 1.1,
+        "3 Minute": 1.2,
+        "5 Minute": 1.2
+    },
+    {
+        "Date Sampled": "7/23/18",
+        "Street": "10300 S. Christiana Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60655,
+        "1st Draw": 2.8,
+        "3 Minute": 14,
+        "5 Minute": 2.9
+    },
+    {
+        "Date Sampled": "6/30/18",
+        "Street": "10300 S. Christiana Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60655,
+        "1st Draw": 4.5,
+        "3 Minute": 7,
+        "5 Minute": 2.8
+    },
+    {
+        "Date Sampled": "6/5/18",
+        "Street": "10300 S. Crandon Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60617,
+        "1st Draw": 4.7,
+        "3 Minute": 5.2,
+        "5 Minute": 4.1
+    },
+    {
+        "Date Sampled": "7/31/18",
+        "Street": "10300 S. Hamilton Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60643,
+        "1st Draw": 1.4,
+        "3 Minute": 2.3,
+        "5 Minute": 1.9
+    },
+    {
+        "Date Sampled": "10/21/16",
+        "Street": "10300 S. Hamilton Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60643,
+        "1st Draw": 3.5,
+        "3 Minute": 4.5,
+        "5 Minute": 4.1
+    },
+    {
+        "Date Sampled": "8/13/16",
+        "Street": "10300 S. Hamilton Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60643,
+        "1st Draw": 7.6,
+        "3 Minute": 16,
+        "5 Minute": 13
+    },
+    {
+        "Date Sampled": "8/21/16",
+        "Street": "10300 S. Hamlin Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60655,
+        "1st Draw": 3.1,
+        "3 Minute": 2.1,
+        "5 Minute": 1.5
+    },
+    {
+        "Date Sampled": "10/5/16",
+        "Street": "10300 S. Hamlin Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60655,
+        "1st Draw": 5.2,
+        "3 Minute": 15,
+        "5 Minute": 6.7
+    },
+    {
+        "Date Sampled": "9/19/16",
+        "Street": "10300 S. Lawndale Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60655,
+        "1st Draw": 7.4,
+        "3 Minute": 1.2,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "9/22/16",
+        "Street": "10300 S. Peoria St.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60643,
+        "1st Draw": 10,
+        "3 Minute": 3.7,
+        "5 Minute": 3
+    },
+    {
+        "Date Sampled": "7/25/16",
+        "Street": "10300 S. Prospect Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60643,
+        "1st Draw": 7.3,
+        "3 Minute": 17,
+        "5 Minute": 7.9
+    },
+    {
+        "Date Sampled": "7/7/16",
+        "Street": "10300 S. St. Louis Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60655,
+        "1st Draw": 2.2,
+        "3 Minute": 17,
+        "5 Minute": 7
+    },
+    {
+        "Date Sampled": "5/10/17",
+        "Street": "10300 S. Talman Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60655,
+        "1st Draw": 2.5,
+        "3 Minute": 1.4,
+        "5 Minute": 1.2
+    },
+    {
+        "Date Sampled": "7/10/16",
+        "Street": "10300 S. Talman Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60655,
+        "1st Draw": 2.8,
+        "3 Minute": 6.8,
+        "5 Minute": 2.2
+    },
+    {
+        "Date Sampled": "7/18/16",
+        "Street": "10300 S. Troy St.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60655,
+        "1st Draw": 2.2,
+        "3 Minute": 6.2,
+        "5 Minute": 3
+    },
+    {
+        "Date Sampled": "10/3/16",
+        "Street": "10300 S. Whipple St.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60655,
+        "1st Draw": 5.7,
+        "3 Minute": 4.2,
+        "5 Minute": 3.9
+    },
+    {
+        "Date Sampled": "4/17/18",
+        "Street": "10400 S. Albany Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60655,
+        "1st Draw": 2.2,
+        "3 Minute": 4.1,
+        "5 Minute": 4.4
+    },
+    {
+        "Date Sampled": "9/24/16",
+        "Street": "10400 S. Artesian Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60655,
+        "1st Draw": 5.1,
+        "3 Minute": 1.5,
+        "5 Minute": 1.3
+    },
+    {
+        "Date Sampled": "6/30/16",
+        "Street": "10400 S. Avers Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60655,
+        "1st Draw": 1.1,
+        "3 Minute": 2.2,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "5/12/18",
+        "Street": "10400 S. Avers Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60655,
+        "1st Draw": 3.1,
+        "3 Minute": 10,
+        "5 Minute": 1.7
+    },
+    {
+        "Date Sampled": "5/31/16",
+        "Street": "10400 S. Calumet Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60628,
+        "1st Draw": 2.6,
+        "3 Minute": 3.8,
+        "5 Minute": 2
+    },
+    {
+        "Date Sampled": "4/9/16",
+        "Street": "10400 S. Campbell Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60655,
+        "1st Draw": 1.16,
+        "3 Minute": 2.3,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "2/27/16",
+        "Street": "10400 S. Campbell Ave.*",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60655,
+        "1st Draw": 0.99,
+        "3 Minute": 2.42,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "4/7/16",
+        "Street": "10400 S. Central Park Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60655,
+        "1st Draw": 1.59,
+        "3 Minute": 4.51,
+        "5 Minute": 1.31
+    },
+    {
+        "Date Sampled": "2/10/16",
+        "Street": "10400 S. Central Park Ave.*",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60655,
+        "1st Draw": 3.76,
+        "3 Minute": 3.96,
+        "5 Minute": 1.43
+    },
+    {
+        "Date Sampled": "7/2/18",
+        "Street": "10400 S. Dr Martin Luther King Jr Dr.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60628,
+        "1st Draw": 6.2,
+        "3 Minute": 8.9,
+        "5 Minute": 4.4
+    },
+    {
+        "Date Sampled": "7/29/18",
+        "Street": "10400 S. Drake Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60655,
+        "1st Draw": 2.9,
+        "3 Minute": 3.4,
+        "5 Minute": 2.3
+    },
+    {
+        "Date Sampled": "8/5/16",
+        "Street": "10400 S. Green St.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60643,
+        "1st Draw": 7.9,
+        "3 Minute": 11,
+        "5 Minute": 3.8
+    },
+    {
+        "Date Sampled": "7/28/16",
+        "Street": "10400 S. Hamilton Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60643,
+        "1st Draw": 4.3,
+        "3 Minute": 1.5,
+        "5 Minute": 1.2
+    },
+    {
+        "Date Sampled": "5/16/17",
+        "Street": "10400 S. Homan Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60655,
+        "1st Draw": 3,
+        "3 Minute": 2.3,
+        "5 Minute": 1.2
+    },
+    {
+        "Date Sampled": "2/5/17",
+        "Street": "10400 S. Hoyne Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60643,
+        "1st Draw": 2.5,
+        "3 Minute": 2.2,
+        "5 Minute": 1.1
+    },
+    {
+        "Date Sampled": "6/4/18",
+        "Street": "10400 S. Hoyne Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60643,
+        "1st Draw": 3.1,
+        "3 Minute": 3.9,
+        "5 Minute": 2.4
+    },
+    {
+        "Date Sampled": "7/29/18",
+        "Street": "10400 S. Leavitt St.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60643,
+        "1st Draw": 4,
+        "3 Minute": 4.6,
+        "5 Minute": 3.8
+    },
+    {
+        "Date Sampled": "9/26/16",
+        "Street": "10400 S. Longwood Dr.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60643,
+        "1st Draw": 3.5,
+        "3 Minute": 5.4,
+        "5 Minute": 4.7
+    },
+    {
+        "Date Sampled": "6/29/16",
+        "Street": "10400 S. Millard Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60655,
+        "1st Draw": 5.1,
+        "3 Minute": 7.6,
+        "5 Minute": 2.6
+    },
+    {
+        "Date Sampled": "12/12/16",
+        "Street": "10400 S. Sawyer Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60655,
+        "1st Draw": 1.1,
+        "3 Minute": 0.99,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "7/7/16",
+        "Street": "10400 S. Sawyer Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60655,
+        "1st Draw": 2.5,
+        "3 Minute": 2,
+        "5 Minute": 1.7
+    },
+    {
+        "Date Sampled": "1/23/18",
+        "Street": "10400 S. Seeley Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60643,
+        "1st Draw": 1.1,
+        "3 Minute": 0.99,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "6/5/16",
+        "Street": "10400 S. Seeley Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60643,
+        "1st Draw": 1.2,
+        "3 Minute": 1.5,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "9/27/16",
+        "Street": "10400 S. Springfield Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60655,
+        "1st Draw": 2.1,
+        "3 Minute": 8.8,
+        "5 Minute": 2
+    },
+    {
+        "Date Sampled": "11/23/16",
+        "Street": "10400 S. Springfield Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60655,
+        "1st Draw": 2.6,
+        "3 Minute": 2.6,
+        "5 Minute": 1.3
+    },
+    {
+        "Date Sampled": "10/13/16",
+        "Street": "10400 S. St Louis Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60655,
+        "1st Draw": 1.1,
+        "3 Minute": 1.2,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "7/6/16",
+        "Street": "10400 S. Troy St.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60655,
+        "1st Draw": 2.5,
+        "3 Minute": 3.7,
+        "5 Minute": 1.8
+    },
+    {
+        "Date Sampled": "7/31/16",
+        "Street": "10400 S. Trumball Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60655,
+        "1st Draw": 15,
+        "3 Minute": 20,
+        "5 Minute": 2.7
+    },
+    {
+        "Date Sampled": "6/3/16",
+        "Street": "10400 S. Trumbull Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60655,
+        "1st Draw": 0.99,
+        "3 Minute": 2.4,
+        "5 Minute": 1.2
+    },
+    {
+        "Date Sampled": "2/23/16",
+        "Street": "10400 S. Vernon Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60628,
+        "1st Draw": 25.6,
+        "3 Minute": 3.71,
+        "5 Minute": 2.46
+    },
+    {
+        "Date Sampled": "7/30/16",
+        "Street": "10400 S. Walden Pkwy.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60643,
+        "1st Draw": 3.5,
+        "3 Minute": 3.4,
+        "5 Minute": 5.6
+    },
+    {
+        "Date Sampled": "7/28/16",
+        "Street": "10400 S. Whipple St.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60655,
+        "1st Draw": 2,
+        "3 Minute": 1.1,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "11/26/16",
+        "Street": "10400 S. Whipple St.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60655,
+        "1st Draw": 3.9,
+        "3 Minute": 4.9,
+        "5 Minute": 1.9
+    },
+    {
+        "Date Sampled": "7/31/16",
+        "Street": "10400 S. Whipple St.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60655,
+        "1st Draw": 0.99,
+        "3 Minute": 0.99,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "3/25/16",
+        "Street": "10500 S. Ave. J",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60617,
+        "1st Draw": 2.95,
+        "3 Minute": 1.52,
+        "5 Minute": 1.55
+    },
+    {
+        "Date Sampled": "2/4/16",
+        "Street": "10500 S. Ave. J *",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60617,
+        "1st Draw": 3.58,
+        "3 Minute": 1.36,
+        "5 Minute": 1.22
+    },
+    {
+        "Date Sampled": "3/25/17",
+        "Street": "10500 S. Ave. N.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60617,
+        "1st Draw": 3,
+        "3 Minute": 1.2,
+        "5 Minute": 1.1
+    },
+    {
+        "Date Sampled": "7/29/16",
+        "Street": "10500 S. Avers Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60655,
+        "1st Draw": 8.6,
+        "3 Minute": 2.4,
+        "5 Minute": 2.1
+    },
+    {
+        "Date Sampled": "11/9/16",
+        "Street": "10500 S. Campbell Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60655,
+        "1st Draw": 1.8,
+        "3 Minute": 2,
+        "5 Minute": 1.2
+    },
+    {
+        "Date Sampled": "7/14/17",
+        "Street": "10500 S. Central Park Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60655,
+        "1st Draw": 2.8,
+        "3 Minute": 6.2,
+        "5 Minute": 6.6
+    },
+    {
+        "Date Sampled": "10/22/17",
+        "Street": "10500 S. Christiana Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60655,
+        "1st Draw": 3.6,
+        "3 Minute": 15,
+        "5 Minute": 4.1
+    },
+    {
+        "Date Sampled": "11/19/16",
+        "Street": "10500 S. Claremont Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60643,
+        "1st Draw": 3.1,
+        "3 Minute": 3.2,
+        "5 Minute": 2.4
+    },
+    {
+        "Date Sampled": "7/3/18",
+        "Street": "10500 S. Harding Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60655,
+        "1st Draw": 2.8,
+        "3 Minute": 4.8,
+        "5 Minute": 2.3
+    },
+    {
+        "Date Sampled": "9/30/16",
+        "Street": "10500 S. Hoyne Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60643,
+        "1st Draw": 3,
+        "3 Minute": 3.8,
+        "5 Minute": 2.4
+    },
+    {
+        "Date Sampled": "2/25/16",
+        "Street": "10500 S. Indiana Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60628,
+        "1st Draw": 1.96,
+        "3 Minute": 0.99,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "10/18/16",
+        "Street": "10500 S. Kedzie Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60655,
+        "1st Draw": 5.7,
+        "3 Minute": 2.7,
+        "5 Minute": 2
+    },
+    {
+        "Date Sampled": "6/14/16",
+        "Street": "10500 S. Maplewood Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60655,
+        "1st Draw": 2.5,
+        "3 Minute": 6.2,
+        "5 Minute": 1.2
+    },
+    {
+        "Date Sampled": "7/19/16",
+        "Street": "10500 S. Maplewood Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60655,
+        "1st Draw": 0.99,
+        "3 Minute": 1.4,
+        "5 Minute": 1.4
+    },
+    {
+        "Date Sampled": "6/6/18",
+        "Street": "10500 S. Michigan Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60628,
+        "1st Draw": 0.99,
+        "3 Minute": 0.99,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "6/8/18",
+        "Street": "10500 S. Michigan Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60628,
+        "1st Draw": 0.99,
+        "3 Minute": 0.99,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "2/21/17",
+        "Street": "10500 S. Millard Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60655,
+        "1st Draw": 2.5,
+        "3 Minute": 2,
+        "5 Minute": 1.2
+    },
+    {
+        "Date Sampled": "8/5/16",
+        "Street": "10500 S. Normal Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60628,
+        "1st Draw": 4,
+        "3 Minute": 7.8,
+        "5 Minute": 3.6
+    },
+    {
+        "Date Sampled": "4/16/18",
+        "Street": "10500 S. Prairie Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60628,
+        "1st Draw": 2.4,
+        "3 Minute": 3,
+        "5 Minute": 2.9
+    },
+    {
+        "Date Sampled": "10/2/16",
+        "Street": "10500 S. Ridgeway Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60655,
+        "1st Draw": 3.1,
+        "3 Minute": 2.6,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "10/2/16",
+        "Street": "10500 S. Sawyer Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60655,
+        "1st Draw": 1.6,
+        "3 Minute": 5.3,
+        "5 Minute": 2
+    },
+    {
+        "Date Sampled": "6/17/18",
+        "Street": "10500 S. Sawyer Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60655,
+        "1st Draw": 0.99,
+        "3 Minute": 0.99,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "8/25/16",
+        "Street": "10500 S. Springfield Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60655,
+        "1st Draw": 1.4,
+        "3 Minute": 0.99,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "6/22/16",
+        "Street": "10500 S. Talman Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60655,
+        "1st Draw": 3,
+        "3 Minute": 11,
+        "5 Minute": 2.1
+    },
+    {
+        "Date Sampled": "9/4/16",
+        "Street": "10500 S. Talman Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60655,
+        "1st Draw": 3.2,
+        "3 Minute": 2.8,
+        "5 Minute": 2.6
+    },
+    {
+        "Date Sampled": "8/10/16",
+        "Street": "10500 S. Troy St.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60652,
+        "1st Draw": 5.2,
+        "3 Minute": 3.4,
+        "5 Minute": 2.9
+    },
+    {
+        "Date Sampled": "11/14/16",
+        "Street": "10500 S. Trumbull Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60655,
+        "1st Draw": 2,
+        "3 Minute": 1.7,
+        "5 Minute": 1.4
+    },
+    {
+        "Date Sampled": "8/5/16",
+        "Street": "10500 S. Trumbull Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60655,
+        "1st Draw": 2.1,
+        "3 Minute": 7.2,
+        "5 Minute": 1.4
+    },
+    {
+        "Date Sampled": "5/19/16",
+        "Street": "10500 S. Vernon Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60628,
+        "1st Draw": 2.6,
+        "3 Minute": 2.9,
+        "5 Minute": 1.7
+    },
+    {
+        "Date Sampled": "6/14/16",
+        "Street": "10500 S. Vernon Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60628,
+        "1st Draw": 3.7,
+        "3 Minute": 3.2,
+        "5 Minute": 2.3
+    },
+    {
+        "Date Sampled": "6/14/16",
+        "Street": "10500 S. Vernon Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60628,
+        "1st Draw": 6.9,
+        "3 Minute": 7.5,
+        "5 Minute": 3.8
+    },
+    {
+        "Date Sampled": "6/11/17",
+        "Street": "10500 S. Walden Pkwy.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60643,
+        "1st Draw": 1.4,
+        "3 Minute": 0.99,
+        "5 Minute": 2.2
+    },
+    {
+        "Date Sampled": "7/27/17",
+        "Street": "10500 S. Walden Pkwy.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60643,
+        "1st Draw": 3.1,
+        "3 Minute": 3.3,
+        "5 Minute": 3.4
+    },
+    {
+        "Date Sampled": "1/16/17",
+        "Street": "10500 S. Whipple St.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60655,
+        "1st Draw": 1.6,
+        "3 Minute": 2.4,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "6/29/18",
+        "Street": "10600 S Avenue C",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60617,
+        "1st Draw": 4.3,
+        "3 Minute": 1.4,
+        "5 Minute": 1.5
+    },
+    {
+        "Date Sampled": "7/24/16",
+        "Street": "10600 S. Avers Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60655,
+        "1st Draw": 1.9,
+        "3 Minute": 3.1,
+        "5 Minute": 2.6
+    },
+    {
+        "Date Sampled": "8/11/16",
+        "Street": "10600 S. Bell Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60643,
+        "1st Draw": 2.9,
+        "3 Minute": 12,
+        "5 Minute": 2.7
+    },
+    {
+        "Date Sampled": "7/3/18",
+        "Street": "10600 S. Bell Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60643,
+        "1st Draw": 3.5,
+        "3 Minute": 2.8,
+        "5 Minute": 2
+    },
+    {
+        "Date Sampled": "6/14/16",
+        "Street": "10600 S. California Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60655,
+        "1st Draw": 4.2,
+        "3 Minute": 3.5,
+        "5 Minute": 1.4
+    },
+    {
+        "Date Sampled": "10/4/16",
+        "Street": "10600 S. Champlain Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60628,
+        "1st Draw": 4.9,
+        "3 Minute": 2.4,
+        "5 Minute": 1.9
+    },
+    {
+        "Date Sampled": "7/22/16",
+        "Street": "10600 S. Christiana Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60655,
+        "1st Draw": 3.2,
+        "3 Minute": 6.7,
+        "5 Minute": 4
+    },
+    {
+        "Date Sampled": "6/17/16",
+        "Street": "10600 S. Church St.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60643,
+        "1st Draw": 8.4,
+        "3 Minute": 8.5,
+        "5 Minute": 7.9
+    },
+    {
+        "Date Sampled": "5/15/16",
+        "Street": "10600 S. Edbrooke Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60628,
+        "1st Draw": 1.2,
+        "3 Minute": 1,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "4/20/16",
+        "Street": "10600 S. Emerald Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60628,
+        "1st Draw": 1.55,
+        "3 Minute": 0.99,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "2/29/16",
+        "Street": "10600 S. Emerald Ave.*",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60628,
+        "1st Draw": 1.76,
+        "3 Minute": 0.99,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "9/2/16",
+        "Street": "10600 S. Fairfield Ave",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60655,
+        "1st Draw": 3.4,
+        "3 Minute": 4.6,
+        "5 Minute": 2.9
+    },
+    {
+        "Date Sampled": "6/30/18",
+        "Street": "10600 S. Hale Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60643,
+        "1st Draw": 1.4,
+        "3 Minute": 0.99,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "7/10/16",
+        "Street": "10600 S. Homan Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60655,
+        "1st Draw": 3.3,
+        "3 Minute": 3.1,
+        "5 Minute": 2.4
+    },
+    {
+        "Date Sampled": "2/23/17",
+        "Street": "10600 S. Longwood Dr.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60643,
+        "1st Draw": 1.9,
+        "3 Minute": 1.5,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "6/20/18",
+        "Street": "10600 S. Longwood Dr.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60643,
+        "1st Draw": 5.6,
+        "3 Minute": 3.9,
+        "5 Minute": 3.5
+    },
+    {
+        "Date Sampled": "7/27/16",
+        "Street": "10600 S. Oakley Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60643,
+        "1st Draw": 12,
+        "3 Minute": 10,
+        "5 Minute": 3.3
+    },
+    {
+        "Date Sampled": "9/29/16",
+        "Street": "10600 S. Springfield Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60655,
+        "1st Draw": 3.7,
+        "3 Minute": 4.5,
+        "5 Minute": 2.9
+    },
+    {
+        "Date Sampled": "9/29/16",
+        "Street": "10600 S. St Louis Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60655,
+        "1st Draw": 2.2,
+        "3 Minute": 5.8,
+        "5 Minute": 1.9
+    },
+    {
+        "Date Sampled": "7/24/16",
+        "Street": "10600 S. Troy St.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60655,
+        "1st Draw": 1.5,
+        "3 Minute": 2.3,
+        "5 Minute": 2
+    },
+    {
+        "Date Sampled": "6/19/16",
+        "Street": "10600 S. Trumbull Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60655,
+        "1st Draw": 0.99,
+        "3 Minute": 0.99,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "6/30/18",
+        "Street": "10600 S. Trumbull Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60655,
+        "1st Draw": 0.99,
+        "3 Minute": 0.99,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "9/7/16",
+        "Street": "10600 S. Wood St.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60643,
+        "1st Draw": 3,
+        "3 Minute": 3.2,
+        "5 Minute": 2.9
+    },
+    {
+        "Date Sampled": "10/5/17",
+        "Street": "10600 S. Wood St.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60643,
+        "1st Draw": 5.9,
+        "3 Minute": 3.4,
+        "5 Minute": 3
+    },
+    {
+        "Date Sampled": "1/3/17",
+        "Street": "10700 Ave. O",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60617,
+        "1st Draw": 6.4,
+        "3 Minute": 16,
+        "5 Minute": 2
+    },
+    {
+        "Date Sampled": "6/19/18",
+        "Street": "10700 S. Central Park Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60655,
+        "1st Draw": 4,
+        "3 Minute": 1.4,
+        "5 Minute": 1.3
+    },
+    {
+        "Date Sampled": "6/22/17",
+        "Street": "10700 S. Champlain Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60628,
+        "1st Draw": 8.1,
+        "3 Minute": 9.7,
+        "5 Minute": 9.5
+    },
+    {
+        "Date Sampled": "10/2/16",
+        "Street": "10700 S. Hamlin Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60655,
+        "1st Draw": 1.5,
+        "3 Minute": 3.2,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "8/3/17",
+        "Street": "10700 S. Homan Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60655,
+        "1st Draw": 5.2,
+        "3 Minute": 4.4,
+        "5 Minute": 4.1
+    },
+    {
+        "Date Sampled": "3/14/16",
+        "Street": "10700 S. Hoyne Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60643,
+        "1st Draw": 1.09,
+        "3 Minute": 0.99,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "10/30/16",
+        "Street": "10700 S. Sacramento Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60655,
+        "1st Draw": 1.6,
+        "3 Minute": 0.99,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "8/24/16",
+        "Street": "10700 S. Spaulding Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60655,
+        "1st Draw": 6.7,
+        "3 Minute": 15,
+        "5 Minute": 16
+    },
+    {
+        "Date Sampled": "9/13/16",
+        "Street": "10700 S. Talman Ave",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60655,
+        "1st Draw": 4.1,
+        "3 Minute": 4.6,
+        "5 Minute": 3.8
+    },
+    {
+        "Date Sampled": "7/22/16",
+        "Street": "10700 S. Talman Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60655,
+        "1st Draw": 4.2,
+        "3 Minute": 5.8,
+        "5 Minute": 1.2
+    },
+    {
+        "Date Sampled": "1/16/17",
+        "Street": "10700 S. Troy St.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60655,
+        "1st Draw": 5.9,
+        "3 Minute": 2.5,
+        "5 Minute": 2
+    },
+    {
+        "Date Sampled": "7/10/16",
+        "Street": "10700 S. Trumbull Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60655,
+        "1st Draw": 3.6,
+        "3 Minute": 3.3,
+        "5 Minute": 3.2
+    },
+    {
+        "Date Sampled": "1/25/17",
+        "Street": "10700 S. Washtenaw Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60655,
+        "1st Draw": 0.99,
+        "3 Minute": 0.99,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "9/19/17",
+        "Street": "10800 S Avenue H",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60617,
+        "1st Draw": 4.2,
+        "3 Minute": 2.2,
+        "5 Minute": 2
+    },
+    {
+        "Date Sampled": "11/10/16",
+        "Street": "10800 S. Artesian Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60655,
+        "1st Draw": 2.8,
+        "3 Minute": 3.4,
+        "5 Minute": 1.8
+    },
+    {
+        "Date Sampled": "6/29/16",
+        "Street": "10800 S. Drake Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60655,
+        "1st Draw": 3,
+        "3 Minute": 11,
+        "5 Minute": 4.4
+    },
+    {
+        "Date Sampled": "8/1/18",
+        "Street": "10800 S. Hamlin Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60655,
+        "1st Draw": 1.1,
+        "3 Minute": 2.9,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "6/28/16",
+        "Street": "10800 S. Hoyne Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60643,
+        "1st Draw": 3.9,
+        "3 Minute": 6.1,
+        "5 Minute": 5.4
+    },
+    {
+        "Date Sampled": "10/22/17",
+        "Street": "10800 S. Lawndale Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60655,
+        "1st Draw": 5.2,
+        "3 Minute": 4.7,
+        "5 Minute": 1.7
+    },
+    {
+        "Date Sampled": "5/15/18",
+        "Street": "10800 S. Lowe Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60628,
+        "1st Draw": 2.8,
+        "3 Minute": 6.1,
+        "5 Minute": 1.4
+    },
+    {
+        "Date Sampled": "6/3/16",
+        "Street": "10800 S. Lowe Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60628,
+        "1st Draw": 6.8,
+        "3 Minute": 1.9,
+        "5 Minute": 1.7
+    },
+    {
+        "Date Sampled": "10/17/17",
+        "Street": "10800 S. Maplewood Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60655,
+        "1st Draw": 1.3,
+        "3 Minute": 1.3,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "6/21/16",
+        "Street": "10800 S. Ridgeway Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60655,
+        "1st Draw": 9.5,
+        "3 Minute": 10,
+        "5 Minute": 8.1
+    },
+    {
+        "Date Sampled": "2/26/18",
+        "Street": "10800 S. Rockwell St.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60655,
+        "1st Draw": 2.1,
+        "3 Minute": 0.99,
+        "5 Minute": 0.99
+    },
+    {
+        "Date Sampled": "11/10/16",
+        "Street": "10800 S. St Louis Ave.",
+        "City": "Chicago",
+        "State": "IL",
+        "Zip": 60655,
+        "1st Draw": 2.3,
+        "3 Minute": 4,
+        "5 Minute": 1.6
+    }
+]

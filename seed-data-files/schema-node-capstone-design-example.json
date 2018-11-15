@@ -1,0 +1,47 @@
+const userSchema = mongoose.Schema({
+    email: {
+        type: String,
+        required: true,
+        unique: true
+    },
+    password: {
+        type: String,
+        required: true
+    }
+});
+
+const resultsSchema = mongoose.Schema({
+    user: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'User'
+    },
+    address: {
+        street: {
+            type: String
+        },
+        city: {
+            type: String
+        },
+        state: {
+            type: String
+        },
+        zip: {
+            type: Number
+        }
+    },
+    testResults: {
+        firstDraw: {
+            type: Number
+        },
+        threeMinute: {
+            type: Number
+        },
+        fiveMinute: {
+            type: Number
+        },
+        created: {
+            type: Date,
+            default: Date.now
+        }
+    }
+});
