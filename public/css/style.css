@@ -167,3 +167,20 @@ header {
     height: auto;
     margin-bottom: 15px;
 }
+
+/*---------------------*/
+/* Next Steps */
+/*---------------------*/
+
+.next-steps {
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.next-steps h2 {
+    margin-bottom: 30px;
+}
+
+.next-steps img {
+    padding: 30px;
+}
