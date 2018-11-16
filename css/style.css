@@ -111,6 +111,7 @@ header {
 
 .hero-text-box {
     position: absolute;
+    text-align: center;
     width: 1140px;
     top: 50%;
     left: 50%;
@@ -147,4 +148,22 @@ header {
 .main-nav li a:hover,
 .main-nav li a:active {
     border-bottom: 2px solid #228ce6;
+}
+
+/*---------------------*/
+/* Learn More */
+/*---------------------*/
+
+.learn-more {
+    text-align: center;
+}
+
+.learn-more h2 {
+    margin-bottom: 30px;
+}
+
+.box img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
 }
