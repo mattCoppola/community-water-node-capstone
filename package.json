@@ -1,0 +1,40 @@
+{
+    "name": "community-water-node-capstone",
+    "version": "1.0.0",
+    "description": "This website provides the user with resources to learn about the health impacts of lead in water. Additionally, it's a website for a user to access their local government's website to order a water testing kit. After testing water they are able to create a login and enter their results. The results will become part of a community database that shares resident information with the local government providing them with relevant data to take action in areas of concern.",
+    "main": "server.js",
+    "dependencies": {
+        "bcryptjs": "^2.3.0",
+        "body-parser": "^1.15.2",
+        "cors": "^2.8.4",
+        "express": "^4.14.0",
+        "moment": "^2.18.1",
+        "mongodb": "^2.2.9",
+        "mongoose": "^4.5.10",
+        "npm": "^6.1.0",
+        "passport": "^0.3.2",
+        "passport-http": "^0.3.0",
+        "request": "^2.88.0",
+        "unirest": "^0.5.1"
+    },
+    "devDependencies": {
+        "chai": "^3.5.0",
+        "chai-http": "^3.0.0",
+        "faker": "^3.1.0",
+        "mocha": "^3.2.0"
+    },
+    "scripts": {
+        "test": "mocha",
+        "start": "node server.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/mattCoppola/community-water-node-capstone.git"
+    },
+    "author": "Matt Coppola",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/mattCoppola/community-water-node-capstone/issues"
+    },
+    "homepage": "https://github.com/mattCoppola/community-water-node-capstone#readme"
+}
