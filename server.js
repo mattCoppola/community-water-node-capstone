@@ -17,6 +17,9 @@ app.use(express.json());
 
 app.use(express.static('public'))
 
+app.get('/users', function (req, res) {
+    res.sendFile(path.join(__dirname, 'public'), 'users.html');
+});
 
 // closeServer needs access to a server object, but that only
 // gets created when `runServer` runs, so we declare `server` here
