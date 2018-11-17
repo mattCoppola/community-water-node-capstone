@@ -15,8 +15,8 @@
 </head>
 
 <body>
-    <header id="home">
-        <nav>
+    <header id="home" role="banner">
+        <nav role="navigation">
             <div class="row">
                 <h1 class="logo">Community Water</h1>
                 <ul class="main-nav">
@@ -40,11 +40,11 @@
                 <button>&times;</button>
             </div>
             <div class="login-form">
-                <form>
-                    <label>Username</label>
-                    <input type="text" name="username" placeholder="Enter Username" required>
-                    <label>Password</label>
-                    <input type="password" name="password" placeholder="Enter Password" required>
+                <form role="form">
+                    <label for="login-username">Username</label>
+                    <input type="text" name="username" id="login-username" placeholder="Enter Username" required>
+                    <label for="login-password">Password</label>
+                    <input type="password" name="password" id="login-password" placeholder="Enter Password" required>
                     <button>Log In</button>
                 </form>
             </div>
@@ -59,56 +59,57 @@
                 <button>&times;</button>
             </div>
             <div class="signup-form">
-                <form>
-                    <label>Username</label>
-                    <input type="text" name="username" placeholder="Enter Username" required>
-                    <label>Password</label>
-                    <input type="password" name="password" placeholder="Enter Password" required>
+                <form role="form">
+                    <label for="signup-username">Username</label>
+                    <input type="text" name="username" id="signup-username" placeholder="Enter Username" required>
+                    <label for="signup-password">Password</label>
+                    <input type="password" name="password" id="signup-password" placeholder="Enter Password" required>
                     <button>Sign In</button>
                 </form>
             </div>
         </div>
     </section>
 
-    <section id="learn-more" class="learn-more">
-        <h2>Learn about the health impacts of lead in your drinking water</h2>
-        <div class="row">
-            <div class="col span-1-of-2 box">
-                <h3>How lead gets into drinking water</h3>
-                <img src="css/images/lead-into-water.png" alt="How lead gets into drinking water">
+    <main role="main">
+        <section id="learn-more" class="learn-more">
+            <h2>Learn about the health impacts of lead in your drinking water</h2>
+            <div class="row">
+                <div class="col span-1-of-2 box">
+                    <h3>How lead gets into drinking water</h3>
+                    <img src="css/images/lead-into-water.png" alt="How lead gets into drinking water">
+                </div>
+                <div class="col span-1-of-2 box">
+                    <h3>The health impacts of lead</h3>
+                    <img src="css/images/health-impacts.png" alt="Health impacts of lead in drinking water">
+                </div>
             </div>
-            <div class="col span-1-of-2 box">
-                <h3>The health impacts of lead</h3>
-                <img src="css/images/health-impacts.png" alt="Health impacts of lead in drinking water">
-            </div>
-        </div>
-        <a class="btn btn-full" href="#next-steps">Next Steps</a>
-    </section>
+            <a class="btn btn-full" href="#next-steps">Next Steps</a>
+        </section>
 
-    <section id="next-steps" class="next-steps">
-        <h2>Follow these steps to test your water and share your results</h2>
-        <div class="row">
-            <div class="col span-1-of-4 box">
-                <img src="css/images/next-step-dummy-img.jpg" alt="Placeholder Image">
-                <h3>Order your test kit</h3>
-                <a href="http://www.chicagowaterquality.org/index.html" target="_blank">Chicago Water Quality</a>
+        <section id="next-steps" class="next-steps">
+            <h2>Follow these steps to test your water and share your results</h2>
+            <div class="row">
+                <div class="col span-1-of-4 box">
+                    <img src="css/images/next-step-dummy-img.jpg" alt="Placeholder Image">
+                    <h3>Order your test kit</h3>
+                    <a href="http://www.chicagowaterquality.org/index.html" target="_blank">Chicago Water Quality</a>
+                </div>
+                <div class="col span-1-of-4 box">
+                    <img src="css/images/next-step-dummy-img2.jpg" alt="Placeholder Image">
+                    <h3>Return here &amp; signup/login</h3>
+                </div>
+                <div class="col span-1-of-4 box">
+                    <img src="css/images/next-step-dummy-img3.jpg" alt="Placeholder Image">
+                    <h3>Enter your data &amp; compare</h3>
+                </div>
+                <div class="col span-1-of-4 box">
+                    <img src="css/images/next-step-dummy-img4.jpg" alt="Placeholder Image">
+                    <h3>Get Involved</h3>
+                </div>
             </div>
-            <div class="col span-1-of-4 box">
-                <img src="css/images/next-step-dummy-img2.jpg" alt="Placeholder Image">
-                <h3>Return here &amp; signup/login</h3>
-            </div>
-            <div class="col span-1-of-4 box">
-                <img src="css/images/next-step-dummy-img3.jpg" alt="Placeholder Image">
-                <h3>Enter your data &amp; compare</h3>
-            </div>
-            <div class="col span-1-of-4 box">
-                <img src="css/images/next-step-dummy-img4.jpg" alt="Placeholder Image">
-                <h3>Get Involved</h3>
-            </div>
-        </div>
-    </section>
-
-    <footer>
+        </section>
+    </main>
+    <footer role="contentinfo">
         <a class="btn btn-full" href="#home">Back to top</a>
         <div class="row">
             <a href="#">About Us</a>

@@ -38,6 +38,11 @@
         padding: 10px;
         height: 150px;
     }
+
+    .map-container {
+        width: 600px;
+        height: 400px;
+    }
 }
 
 /*ipads from 481px to 767px*/
@@ -113,6 +118,11 @@
         padding: 10px;
         height: 100%;
     }
+
+    .map-container {
+        width: 500px;
+        height: 400px;
+    }
 }
 
 /*Small Phones from 0 to 480px*/
@@ -128,6 +138,11 @@
     .next-steps img {
         padding: 20px;
         height: 100%;
+    }
+
+    .map-container {
+        width: 250px;
+        height: 300px;
     }
 
     footer {

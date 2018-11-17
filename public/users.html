@@ -17,8 +17,8 @@
 </head>
 
 <body>
-    <header id="user">
-        <nav>
+    <header id="user" role="banner">
+        <nav role="navigation">
             <div class="row">
                 <h1 class="logo">User Dashboard</h1>
                 <ul class="main-nav">
@@ -30,45 +30,61 @@
         </nav>
     </header>
 
-    <section class="user-info">
+    <main role="main">
+        <section class="user-info">
+            <div class="row">
+                <div class="col span-1-of-2">
+                    <div class="info-box">
+                        <div>
+                            <h3>User Info</h3>
+                        </div>
+                        <div>
+                            <ul>
+                                <li>Name: Jen Jenkins</li>
+                                <li>Address: Chicago IL </li>
+                                <li>Results Average: 0.98</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-2">
+                    <div class="info-box">
+                        <div>
+                            <h3>Results Review</h3>
+                        </div>
+                        <div>
+                            <ul>
+                                <li>Green: OK! Get Involved!</li>
+                                <li>Red: Exceeds! Get Info!</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="map">
+            <h3>Compare your results with your neighbors</h3>
+            <div class="map-container">
+                <div id='map' class="map"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer role="contentinfo">
+        <a class="btn btn-full" href="#user">Back to top</a>
         <div class="row">
-            <div class="col span-1-of-2">
-                <div class="info-box">
-                    <div>
-                        <h3>User Info</h3>
-                    </div>
-                    <div>
-                        <ul>
-                            <li>Name: Jen Jenkins</li>
-                            <li>Address: Chicago IL </li>
-                            <li>Results Average: 0.98</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col span-1-of-2">
-                <div class="info-box">
-                    <div>
-                        <h3>Results Review</h3>
-                    </div>
-                    <div>
-                        <ul>
-                            <li>Green: OK! Get Involved!</li>
-                            <li>Red: Exceeds! Get Info!</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+            <a href="#">About Us</a>
+            <ul class="social-links">
+                <li><a href="#"><i class="fab fa-github"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            </ul>
 
-    <section class="map">
-        <h3>Compare your results with your neighbors</h3>
-        <div class="map-container">
-            <div id='map' class="map"></div>
         </div>
+    </footer>
 
-    </section>
     <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.js'></script>
     <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v2.3.0/mapbox-gl-geocoder.min.js'></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
