@@ -365,6 +365,7 @@ footer .btn-full:visited {
 
 .user-info {
     background-color: #f4f4f4;
+    padding: 5px;
 }
 
 .info-box {
@@ -397,4 +398,31 @@ footer .btn-full:visited {
 
 .info-box ul li {
     padding: 5px;
+}
+
+/*---------------------*/
+/* Map Section */
+/*---------------------*/
+
+.map {
+    background-color: #f4f4f4;
+    padding: 5px;
+}
+
+.map h3 {
+    text-align: center;
+}
+
+.map-container {
+    position: relative;
+    margin: 20px auto;
+    width: 1000px;
+    height: 400px;
+}
+
+#map {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
 }

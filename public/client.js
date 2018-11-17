@@ -52,3 +52,14 @@ function showSignupModal() {
 function closeSignupModal() {
     $('#signup').css('display', 'none');
 }
+
+
+///////////////////////////////////////
+//Mapbox                             //
+///////////////////////////////////////
+
+mapboxgl.accessToken = 'pk.eyJ1IjoibWF0dGNvcHBvbGEiLCJhIjoiY2ptb3ZsdmFuMTh1YTNrbWowa3gzZm82ZiJ9.S7EhnqCwmFeZmy-obXH41g';
+var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/streets-v9'
+});
