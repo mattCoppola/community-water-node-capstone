@@ -151,10 +151,11 @@ header {
 }
 
 /*---------------------*/
-/* Login Modal */
+/* Login Modal & Signup Modal */
 /*---------------------*/
 
-#login {
+#login,
+#signup {
     display: none;
     position: fixed;
     top: 0;
@@ -164,7 +165,8 @@ header {
     background-color: rgba(0, 0, 0, 0.6);
 }
 
-.login-wrapper {
+.login-wrapper,
+.signup-wrapper {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -178,12 +180,24 @@ header {
     border-radius: 5px;
 }
 
-.login-close {
+.login-wrapper h3,
+.signup-wrapper h3 {
+    position: absolute;
+    font-size: 175%;
+    font-weight: bold;
+    color: #228ce6;
+    left: 1.1rem;
+    top: 1rem;
+}
+
+.login-close,
+.signup-close {
     text-align: right;
     padding-bottom: 2rem;
 }
 
-.login-close button {
+.login-close button,
+.signup-close button {
     font-size: 150%;
     border: none;
     width: 3rem;
@@ -193,25 +207,29 @@ header {
     outline: none;
 }
 
-.login-close button:hover {
+.login-close button:hover,
+.signup-close button:hover {
     background-color: #ff4c4c;
     color: #ffffff;
     cursor: pointer;
     border-bottom-left-radius: 5px;
 }
 
-.login-form {
+.login-form,
+.signup-form {
     width: 90%;
     margin: 0 auto;
 }
 
-.login-form label {
+.login-form label,
+.signup-form label {
     display: block;
     font-weight: bold;
     padding: .5rem 0;
 }
 
-.login-form input {
+.login-form input,
+.signup-form input {
     display: block;
     width: 100%;
     border-style: none;
@@ -222,7 +240,8 @@ header {
     font-size: 80%;
 }
 
-.login-form button {
+.login-form button,
+.signup-form button {
     width: 100%;
     padding: .7rem 0;
     border-style: none;
@@ -234,7 +253,8 @@ header {
     border-radius: 5px;
 }
 
-.login-form button:hover {
+.login-form button:hover,
+.signup-form button:hover {
     cursor: pointer;
     background-color: #229be6;
 }
