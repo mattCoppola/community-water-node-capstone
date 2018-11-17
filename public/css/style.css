@@ -60,6 +60,20 @@ h1 {
 /*PARAGRAPHS*/
 
 /*LINKS*/
+a:link,
+a:visited {
+    color: #228ce6;
+    text-decoration: none;
+    padding-bottom: 1px;
+    border-bottom: 1px solid #228ce6;
+}
+
+a:hover,
+a:active {
+    color: #555;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.2s, color 0.2s;
+}
 
 /*BUTTONS*/
 
@@ -291,6 +305,13 @@ header {
     margin-bottom: 30px;
 }
 
+.next-steps h3 {
+    font-size: 80%;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
 .next-steps img {
     padding: 30px;
+    height: 200px
 }
