@@ -94,7 +94,7 @@ input[type="submit"] {
     background-color: #228ce6;
     border: 1px solid #228ce6;
     color: #fff;
-    margin-right: 15px;
+    /*    margin-right: 15px;*/
 }
 
 .btn:hover,
@@ -314,4 +314,43 @@ header {
 .next-steps img {
     padding: 30px;
     height: 200px
+}
+
+/*---------------------*/
+/* Footer */
+/*---------------------*/
+
+footer {
+    background-color: #333;
+    padding: 50px;
+    font-size: 80%;
+    text-align: center;
+}
+
+footer .btn-full:link,
+footer .btn-full:visited {
+    padding: 5px 15px;
+    margin-bottom: 20px;
+    font-size: 70%;
+}
+
+.social-links {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.social-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.social-links li:last-child {
+    margin-right: 0;
+}
+
+.social-links li a:link,
+.social-links li a:visited {
+    text-decoration: none;
+    border: 0;
+    color: #888;
 }
