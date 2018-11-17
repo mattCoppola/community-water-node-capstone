@@ -197,8 +197,8 @@ header#user {
     width: 40%;
     height: 50%;
     margin: 0 auto;
-    min-height: 25rem;
-    max-width: 38rem;
+    min-height: 20rem;
+    max-width: 30rem;
     border-radius: 5px;
 }
 

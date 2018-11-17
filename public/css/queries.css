@@ -8,6 +8,7 @@
     .row {
         padding: 0 2%;
     }
+
 }
 
 /*Small Tablet to big tablet from 768px to 1023px*/
@@ -18,6 +19,11 @@
 
     section {
         padding: 60px 0;
+    }
+
+    .signup-wrapper,
+    .login-wrapper {
+        width: 265px;
     }
 
     .main-nav li {
