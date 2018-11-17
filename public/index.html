@@ -20,7 +20,7 @@
                 <h1 class="logo">Community Water</h1>
                 <ul class="main-nav">
                     <li><a href="#">Sign Up</a></li>
-                    <li><a href="#">Login</a></li>
+                    <li class="login"><a href="#">Login</a></li>
                 </ul>
             </div>
         </nav>
@@ -29,6 +29,24 @@
             <a class="btn btn-full" href="#learn-more">Learn More</a>
         </div>
     </header>
+
+    <!--section for login modal-->
+    <section id="login" class="animated">
+        <div class="login-wrapper">
+            <div class="login-close">
+                <button>&times;</button>
+            </div>
+            <div class="login-form">
+                <form>
+                    <label>Username</label>
+                    <input type="text" name="username" placeholder="Enter Username" required>
+                    <label>Password</label>
+                    <input type="password" name="password" placeholder="Enter Password" required>
+                    <button>Log In</button>
+                </form>
+            </div>
+        </div>
+    </section>
 
     <section id="learn-more" class="learn-more">
         <h2>Learn about the health impacts of lead in your drinking water</h2>
