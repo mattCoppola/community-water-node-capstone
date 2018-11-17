@@ -9,6 +9,16 @@ $('.btn').on('click', function (e) {
     }, 500, 'linear');
 });
 
+
+///////////////////////////////////////////
+//on.click Hamburger Icon                //
+///////////////////////////////////////////
+
+$('.fa-bars').on('click', function (e) {
+    e.preventDefault();
+    $('.main-nav li').toggleClass('responsive');
+});
+
 ///////////////////////////////////////
 //Modal Functions and jQuery Actions //
 ///////////////////////////////////////

@@ -168,6 +168,10 @@ header#user {
     border-bottom: 2px solid #228ce6;
 }
 
+.hamburger a {
+    display: none;
+}
+
 /*---------------------*/
 /* Login Modal & Signup Modal */
 /*---------------------*/
@@ -317,7 +321,7 @@ header#user {
 
 .next-steps img {
     padding: 30px;
-    height: 200px
+    height: 200px;
 }
 
 /*---------------------*/

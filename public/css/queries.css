@@ -1,0 +1,127 @@
+/*Big tablets to 1200px (widths smaller than pixel row (1140px)*/
+@media only screen and (max-width: 1200px) {
+    .hero-text-box {
+        width: 100%;
+        padding: 0 2%;
+    }
+
+    .row {
+        padding: 0 2%;
+    }
+}
+
+/*Small Tablet to big tablet from 768px to 1023px*/
+@media only screen and (max-width: 1023px) {
+    body {
+        font-size: 18px;
+    }
+
+    section {
+        padding: 60px 0;
+    }
+
+    .main-nav li {
+        margin: 15px;
+    }
+
+    .next-steps {
+        font-size: 90%;
+    }
+
+    .next-steps img {
+        padding: 10px;
+        height: 150px;
+    }
+}
+
+/*ipads from 481px to 767px*/
+@media only screen and (max-width: 767px) {
+    body {
+        font-size: 16px;
+    }
+
+    section {
+        padding: 30px 0;
+    }
+
+    .signup a,
+    .login a {
+        display: none;
+    }
+
+    .hamburger a {
+        position: absolute;
+        top: 15px;
+        right: 35px;
+        display: block;
+    }
+
+    li.responsive {
+        float: none;
+        display: block;
+    }
+
+    .main-nav li.signup.responsive a,
+    .main-nav li.login.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    .fa-bars {
+        font-size: 180%;
+    }
+
+    .row,
+    .hero-text-box {
+        padding: 0 4%;
+    }
+
+    .col {
+        width: 100%;
+        margin: 0 0 4% 0;
+    }
+
+    h1 {
+        font-size: 180%;
+    }
+
+    h2 {
+        font-size: 150%;
+    }
+
+    .next-steps h3,
+    .next-steps a {
+        font-size: 150%;
+    }
+
+    .next-steps {
+        font-size: 70%;
+    }
+
+    .next-steps img {
+        padding: 10px;
+        height: 100%;
+    }
+}
+
+/*Small Phones from 0 to 480px*/
+@media only screen and (max-width: 480px) {
+    body {
+        font-size: 12px;
+    }
+
+    section {
+        padding: 25px 25px;
+    }
+
+    .next-steps img {
+        padding: 20px;
+        height: 100%;
+    }
+
+    footer {
+        font-size: 120%;
+    }
+
+}
