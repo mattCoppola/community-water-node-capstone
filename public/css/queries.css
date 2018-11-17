@@ -51,7 +51,9 @@
     }
 
     .signup a,
-    .login a {
+    .login a,
+    .back-home a,
+    .logout a {
         display: none;
     }
 
@@ -68,7 +70,9 @@
     }
 
     .main-nav li.signup.responsive a,
-    .main-nav li.login.responsive a {
+    .main-nav li.login.responsive a,
+    .main-nav li.back-home.responsive a,
+    .main-nav li.logout.responsive a {
         float: none;
         display: block;
         text-align: left;
