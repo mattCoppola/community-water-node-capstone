@@ -115,12 +115,16 @@ input[type="submit"]:active {
 /* Header */
 /*---------------------*/
 
-header {
+header#home {
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(images/water-background.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     height: 100vh;
+}
+
+header#user {
+    background-color: #333;
 }
 
 .hero-text-box {
@@ -353,4 +357,44 @@ footer .btn-full:visited {
     text-decoration: none;
     border: 0;
     color: #888;
+}
+
+/*---------------------*/
+/* User-Info Dashboard */
+/*---------------------*/
+
+.user-info {
+    background-color: #f4f4f4;
+}
+
+.info-box {
+    background-color: #fff;
+    border-radius: 5px;
+    width: 90%;
+    margin-left: 5%;
+    box-shadow: 0 2px 2px #efefef;
+    height: 200px;
+}
+
+.info-box div {
+    padding: 15px;
+    border-bottom: 1px solid #efefef;
+}
+
+.info-box div:first-child {
+    background-color: #fcfcfc;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.info-box div:last-child {
+    border: 0;
+}
+
+.info-box ul {
+    list-style: none;
+}
+
+.info-box ul li {
+    padding: 5px;
 }
