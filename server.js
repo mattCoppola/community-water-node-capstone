@@ -12,7 +12,9 @@ const {
 
 const app = express();
 
-const {User} = require('./models/user');
+const {
+    User
+} = require('./models/user');
 
 app.use(morgan('common'));
 app.use(express.json());
@@ -37,6 +39,7 @@ app.post('/users/login', function (req, res) {
             });
         }
         if (!items) {
+            console.log('no users with this user name');
             return res.status(401).json({
                 message: "No users with this username"
             });
@@ -48,10 +51,12 @@ app.post('/users/login', function (req, res) {
                     });
                 }
                 if (!isValid) {
+                    console.log('Password is Invalid');
                     return res.status(401).json({
                         message: "Password Invalid"
                     });
                 } else {
+                    console.log(items);
                     return res.json(items);
                 }
             });
