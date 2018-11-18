@@ -1,3 +1,82 @@
+/////////////////////////////////////////
+//Capture user input on Signup or Login//
+/////////////////////////////////////////
+
+/////////// LOGIN FORM ///////////
+$('.login-form').submit(function (e) {
+    e.preventDefault();
+    const username = $('#login-username').val();
+    const password = $('#login-password').val();
+
+    if (username == "") {
+        alert('Please input a user name.');
+    } else if (password == "") {
+        alert('Please input a password.');
+    } else {
+        const loginUserObject = {
+            username: username,
+            password: password
+        };
+        $('#login-username').val('');
+        $('#login-password').val('');
+        console.log(loginUserObject);
+
+        $.ajax({
+                type: 'POST',
+                url: '/users/login',
+                dataType: 'json',
+                data: JSON.stringify(loginUserObject),
+                contentType: 'application/json'
+            })
+            .done(function (result) {
+                console.log(result);
+            })
+            .fail(function (jqXHR, error, errorThrown) {
+                console.log(jqXHR);
+                console.log(error);
+                console.log(errorThrown);
+            });
+    };
+});
+
+/////////// SIGNUP FORM ///////////
+$('.signup-form').submit(function (e) {
+    e.preventDefault();
+    const username = $('#signup-username').val();
+    const password = $('#signup-password').val();
+
+    if (username == "") {
+        alert('Please input a user name.');
+    } else if (password == "") {
+        alert('Please input a password.');
+    } else {
+        const loginUserObject = {
+            username: username,
+            password: password
+        };
+        $('#signup-username').val('');
+        $('#signup-password').val('');
+        console.log(loginUserObject);
+
+        $.ajax({
+                type: 'POST',
+                url: '/users/login',
+                dataType: 'json',
+                data: JSON.stringify(loginUserObject),
+                contentType: 'application/json'
+            })
+            .done(function (result) {
+                console.log(result);
+            })
+            .fail(function (jqXHR, error, errorThrown) {
+                console.log(jqXHR);
+                console.log(error);
+                console.log(errorThrown);
+            });
+    };
+});
+
+
 ///////////////////////////////////////////
 //on.click Button Scroll to next Section //
 ///////////////////////////////////////////
