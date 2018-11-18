@@ -22,7 +22,7 @@ $('.login-form').submit(function (e) {
         console.log(loginUserObject);
 
         $.ajax({
-                type: 'POST',
+                type: 'GET',
                 url: '/users/login',
                 dataType: 'json',
                 data: JSON.stringify(loginUserObject),
