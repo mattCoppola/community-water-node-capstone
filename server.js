@@ -12,10 +12,51 @@ const {
 
 const app = express();
 
+const User = require('./models/user');
+
 app.use(morgan('common'));
 app.use(express.json());
 
 app.use(express.static('public'))
+
+// signing in a user
+app.post('/users/login', function (req, res) {
+
+    // grab username and password from ajax api call
+    const username = req.body.username;
+    const password = req.body.password;
+
+    // connect to DB with mongoose schema
+    User.findOne({
+        username: username
+    }, function (err, items) {
+        if (err) {
+            return res.status(500).json({
+                message: "Error connection to the DB"
+            });
+        }
+        if (!items) {
+            return res.status(401).json({
+                message: "No users with this username"
+            });
+        } else {
+            items.validatePassword(password, function (err, isValid) {
+                if (err) {
+                    return res.status(500).json({
+                        message: "Could not connect to DB to validate password"
+                    });
+                }
+                if (!isValid) {
+                    return res.status(401).json({
+                        message: "Password Invalid"
+                    });
+                } else {
+                    return res.json(items);
+                }
+            });
+        };
+    });
+});
 
 
 // closeServer needs access to a server object, but that only
