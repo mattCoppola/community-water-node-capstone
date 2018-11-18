@@ -22,7 +22,7 @@ app.use(express.json());
 app.use(express.static('public'))
 
 // signing in a user
-app.get('/users/login', function (req, res) {
+app.post('/users/login', function (req, res) {
 
     // grab username and password from ajax api call
     const username = req.body.username;
