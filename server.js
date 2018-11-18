@@ -26,6 +26,7 @@ app.post('/users/login', function (req, res) {
     const username = req.body.username;
     const password = req.body.password;
 
+    console.log(username + " & " + password);
     // connect to DB with mongoose schema
     User.findOne({
         username: username

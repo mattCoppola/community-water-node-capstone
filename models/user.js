@@ -22,4 +22,4 @@ userSchema.methods.validatePassword = function (password, callback) {
 
 const User = mongoose.model('User', userSchema);
 
-module.exports = User;
+module.exports = {User};
