@@ -12,7 +12,7 @@ const {
 
 const app = express();
 
-const User = require('./models/user');
+const {User} = require('./models/user');
 
 app.use(morgan('common'));
 app.use(express.json());
