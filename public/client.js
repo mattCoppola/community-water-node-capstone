@@ -23,7 +23,7 @@ $('.login-form').submit(function (e) {
 
         $.ajax({
                 type: 'POST',
-                url: '/users/login',
+                url: 'https://community-water.herokuapp.com/users/login',
                 dataType: 'json',
                 data: JSON.stringify(loginUserObject),
                 contentType: 'application/json'
