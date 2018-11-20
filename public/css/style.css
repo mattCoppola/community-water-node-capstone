@@ -50,7 +50,7 @@ h1,
 h2,
 h3 {
     font-weight: 300;
-    text-transform: uppercase;
+    /*    text-transform: uppercase;*/
 }
 
 h1 {
@@ -127,6 +127,10 @@ header#user {
     background-color: #333;
 }
 
+nav#user {
+    background-color: #333;
+}
+
 .hero-text-box {
     position: absolute;
     text-align: center;
@@ -157,7 +161,7 @@ header#user {
     padding: 8px 0;
     color: #fff;
     text-decoration: none;
-    text-transform: uppercase;
+    /*    text-transform: uppercase;*/
     font-size: 90%;
     border-bottom: 2px solid transparent;
     transition: border-bottom 0.2s;
@@ -177,7 +181,8 @@ header#user {
 /*---------------------*/
 
 #login,
-#signup {
+#signup,
+#enter-results {
     display: none;
     position: fixed;
     top: 0;
@@ -188,7 +193,8 @@ header#user {
 }
 
 .login-wrapper,
-.signup-wrapper {
+.signup-wrapper,
+.results-wrapper {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -197,13 +203,14 @@ header#user {
     width: 40%;
     height: 50%;
     margin: 0 auto;
-    min-height: 20rem;
+    min-height: 25rem;
     max-width: 30rem;
     border-radius: 5px;
 }
 
 .login-wrapper h3,
-.signup-wrapper h3 {
+.signup-wrapper h3,
+.results-wrapper h3 {
     position: absolute;
     font-size: 175%;
     font-weight: bold;
@@ -213,13 +220,15 @@ header#user {
 }
 
 .login-close,
-.signup-close {
+.signup-close,
+.results-close {
     text-align: right;
     padding-bottom: 2rem;
 }
 
 .login-close button,
-.signup-close button {
+.signup-close button,
+.results-close button {
     font-size: 150%;
     border: none;
     width: 3rem;
@@ -230,7 +239,8 @@ header#user {
 }
 
 .login-close button:hover,
-.signup-close button:hover {
+.signup-close button:hover,
+.results-close button:hover {
     background-color: #ff4c4c;
     color: #ffffff;
     cursor: pointer;
@@ -238,20 +248,23 @@ header#user {
 }
 
 .login-form,
-.signup-form {
+.signup-form,
+.results-form {
     width: 90%;
     margin: 0 auto;
 }
 
 .login-form label,
-.signup-form label {
+.signup-form label,
+.results-form label {
     display: block;
     font-weight: bold;
     padding: .5rem 0;
 }
 
 .login-form input,
-.signup-form input {
+.signup-form input,
+.results-form input {
     display: block;
     width: 100%;
     border-style: none;
@@ -263,7 +276,8 @@ header#user {
 }
 
 .login-form button,
-.signup-form button {
+.signup-form button,
+.results-form button {
     width: 100%;
     padding: .7rem 0;
     border-style: none;
@@ -276,7 +290,8 @@ header#user {
 }
 
 .login-form button:hover,
-.signup-form button:hover {
+.signup-form button:hover,
+.results-form button:hover {
     cursor: pointer;
     background-color: #229be6;
 }
@@ -402,6 +417,29 @@ footer .btn-full:visited {
 
 .info-box ul li {
     padding: 5px;
+}
+
+.edit-results {
+    text-align: center;
+}
+
+.edit-results .btn {
+    font-size: 70%;
+    padding: 5px;
+    width: 6rem;
+    margin-left: 10px;
+}
+
+.delete-results:link,
+.delete-results:visited {
+    background-color: #fd2727;
+    border: 1px solid #fd2727;
+}
+
+.delete-results:hover,
+.delete-results:active {
+    background-color: #f24141;
+    border: 1px solid #f24141;
 }
 
 /*---------------------*/

@@ -11,6 +11,8 @@
     <link>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
+    <link rel='stylesheet' href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.css' />
+    <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v2.3.0/mapbox-gl-geocoder.css' type='text/css' />
     <title>Community Water</title>
 </head>
 
@@ -28,7 +30,7 @@
         </nav>
         <div class="hero-text-box">
             <h1>Protect your Drinking Water <br> Learn &rsaquo; Test &rsaquo; Share</h1>
-            <a class="btn btn-full" href="#learn-more">Learn More</a>
+            <a class="btn btn-full scroll" href="#learn-more">Learn More</a>
         </div>
     </header>
 
@@ -64,6 +66,8 @@
                     <input type="text" name="username" id="signup-username" placeholder="Enter Username" required>
                     <label for="signup-password">Password</label>
                     <input type="password" name="password" id="signup-password" placeholder="Enter Password" required>
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" name="confirm-password" id="confirm-password" placeholder="Confirm Password" required>
                     <button type="submit" id="signup-button">Sign Up</button>
                 </form>
             </div>
@@ -83,7 +87,7 @@
                     <img src="css/images/health-impacts.png" alt="Health impacts of lead in drinking water">
                 </div>
             </div>
-            <a class="btn btn-full" href="#next-steps">Next Steps</a>
+            <a class="btn btn-full scroll" href="#next-steps">Next Steps</a>
         </section>
 
         <section id="next-steps" class="next-steps">
@@ -108,9 +112,84 @@
                 </div>
             </div>
         </section>
+        <section class="user-info">
+
+            <nav role="navigation" id="user">
+                <div class="row">
+                    <h1 class="logo">User Dashboard</h1>
+                    <ul class="main-nav">
+                        <li class="back-home"><a href="#">Home</a></li>
+                        <li class="logout"><a href="#">Log Out</a></li>
+                        <li class="hamburger"><a href="#"><i class="fas fa-bars"></i></a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="row">
+                <div class="col span-1-of-2">
+                    <div class="info-box">
+                        <div>
+                            <h3>User Info</h3>
+                        </div>
+                        <div>
+                            <ul>
+                                <li>Name: Jen Jenkins</li>
+                                <li>Address: Chicago IL </li>
+                                <li>Results Average: 0.98</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-2">
+                    <div class="info-box">
+                        <div>
+                            <h3>Results Review</h3>
+                        </div>
+                        <div>
+                            <ul>
+                                <li>Green: OK! Get Involved!</li>
+                                <li>Red: Exceeds! Get Info!</li>
+                            </ul>
+                            <div class="col span-2-of-2 edit-results">
+                                <a class="btn btn-full add-results" href="#add-results">Add Results</a>
+                                <a class="btn btn-full update-results" href="#update-results">Update Results</a>
+                                <a class="btn btn-full delete-results" href="#delete-results">Delete Results</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section id="enter-results">
+                <div class="results-wrapper">
+                    <h3>Enter Results</h3>
+                    <div class="results-close">
+                        <button>&times;</button>
+                    </div>
+                    <div class="results-form">
+                        <form role="form">
+                            <label for="first-draw">1st Draw</label>
+                            <input type="text" name="first-draw" id="first-draw" placeholder=".99" required>
+                            <label for="three-minute">3 Minute</label>
+                            <input type="text" name="three-minute" id="three-minute" placeholder=".99" required>
+                            <label for="five-minute">5 Minute</label>
+                            <input type="text" name="five-minute" id="five-minute" placeholder=".99" required>
+                            <button type="submit" id="results-button">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <section class="map">
+            <h3>Compare your results with your neighbors</h3>
+            <div class="map-container">
+                <div id='map' class="map"></div>
+            </div>
+        </section>
+
     </main>
     <footer role="contentinfo">
-        <a class="btn btn-full" href="#home">Back to top</a>
+        <a class="btn btn-full scroll" href="#home">Back to top</a>
         <div class="row">
             <a href="#">About Us</a>
             <ul class="social-links">
@@ -123,7 +202,8 @@
         </div>
     </footer>
 
-
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.js'></script>
+    <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v2.3.0/mapbox-gl-geocoder.min.js'></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="client.js"></script>
 </body>

@@ -44,8 +44,11 @@ $('.signup-form').submit(function (e) {
     e.preventDefault();
     const username = $('#signup-username').val();
     const password = $('#signup-password').val();
+    const confirmPW = $('#confirm-password').val();
 
-    if (username == "") {
+    if (password !== confirmPW) {
+        alert('Passwords must match!');
+    } else if (username == "") {
         alert('Please input a user name.');
     } else if (password == "") {
         alert('Please input a password.');
@@ -56,6 +59,7 @@ $('.signup-form').submit(function (e) {
         };
         $('#signup-username').val('');
         $('#signup-password').val('');
+        $('#confirm-password').val('');
         console.log(loginUserObject);
 
         $.ajax({
@@ -81,7 +85,7 @@ $('.signup-form').submit(function (e) {
 //on.click Button Scroll to next Section //
 ///////////////////////////////////////////
 
-$('.btn').on('click', function (e) {
+$('.scroll').on('click', function (e) {
     e.preventDefault();
     $('html, body').animate({
         scrollTop: $($(this).attr('href')).offset().top
@@ -126,6 +130,18 @@ $('.signup-close').on('click', function (e) {
     closeSignupModal();
 });
 
+$('.add-results').on('click', function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+    showResultsModal();
+});
+
+$('.results-close').on('click', function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+    closeResultsModal();
+});
+
 function showLoginModal() {
     $('#login').css('display', 'block');
 }
@@ -140,6 +156,14 @@ function showSignupModal() {
 
 function closeSignupModal() {
     $('#signup').css('display', 'none');
+}
+
+function showResultsModal() {
+    $('#enter-results').css('display', 'block');
+}
+
+function closeResultsModal() {
+    $('#enter-results').css('display', 'none');
 }
 
 
