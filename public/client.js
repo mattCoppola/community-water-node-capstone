@@ -1,3 +1,12 @@
+//////////////////
+// On Page Load //
+//////////////////
+$(function () {
+    $('.hide-everything').hide();
+    $('#landing-page').show();
+})
+
+
 /////////////////////////////////////////
 //Capture user input on Signup or Login//
 /////////////////////////////////////////
@@ -37,6 +46,11 @@ $('.login-form').submit(function (e) {
                 console.log(errorThrown);
             });
     };
+    // hide home, landing pages, close login form, display user dashboard
+    $('#login').hide();
+    $('#home').hide();
+    $('#landing-page').hide();
+    $('#user-dashboard').show();
 });
 
 /////////// SIGNUP FORM ///////////
@@ -237,6 +251,17 @@ function closeUpdateModal() {
     $('#update-results').css('display', 'none');
 }
 
+
+///////////////////////////////////////
+//User Dashboard jQuery              //
+///////////////////////////////////////
+
+$('.back-home').on('click', function (e) {
+    e.preventDefault();
+    $('#home').show();
+    $('#landing-page').show();
+    $('#user-dashboard').hide();
+})
 
 ///////////////////////////////////////
 //Mapbox                             //
