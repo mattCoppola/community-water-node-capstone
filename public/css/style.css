@@ -182,7 +182,8 @@ nav#user {
 
 #login,
 #signup,
-#enter-results {
+#enter-results,
+#update-results {
     display: none;
     position: fixed;
     top: 0;
@@ -194,7 +195,8 @@ nav#user {
 
 .login-wrapper,
 .signup-wrapper,
-.results-wrapper {
+.results-wrapper,
+.update-wrapper {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -210,7 +212,8 @@ nav#user {
 
 .login-wrapper h3,
 .signup-wrapper h3,
-.results-wrapper h3 {
+.results-wrapper h3,
+.update-wrapper h3 {
     position: absolute;
     font-size: 175%;
     font-weight: bold;
@@ -221,14 +224,16 @@ nav#user {
 
 .login-close,
 .signup-close,
-.results-close {
+.results-close,
+.update-close {
     text-align: right;
     padding-bottom: 2rem;
 }
 
 .login-close button,
 .signup-close button,
-.results-close button {
+.results-close button,
+.update-close button {
     font-size: 150%;
     border: none;
     width: 3rem;
@@ -240,7 +245,8 @@ nav#user {
 
 .login-close button:hover,
 .signup-close button:hover,
-.results-close button:hover {
+.results-close button:hover,
+.update-close button:hover {
     background-color: #ff4c4c;
     color: #ffffff;
     cursor: pointer;
@@ -249,14 +255,16 @@ nav#user {
 
 .login-form,
 .signup-form,
-.results-form {
+.results-form,
+.update-form {
     width: 90%;
     margin: 0 auto;
 }
 
 .login-form label,
 .signup-form label,
-.results-form label {
+.results-form label,
+.update-form label {
     display: block;
     font-weight: bold;
     padding: .5rem 0;
@@ -264,7 +272,8 @@ nav#user {
 
 .login-form input,
 .signup-form input,
-.results-form input {
+.results-form input,
+.update-form input {
     display: block;
     width: 100%;
     border-style: none;
@@ -277,7 +286,8 @@ nav#user {
 
 .login-form button,
 .signup-form button,
-.results-form button {
+.results-form button,
+.update-form button {
     width: 100%;
     padding: .7rem 0;
     border-style: none;
@@ -291,7 +301,8 @@ nav#user {
 
 .login-form button:hover,
 .signup-form button:hover,
-.results-form button:hover {
+.results-form button:hover,
+.update-form button:hover {
     cursor: pointer;
     background-color: #229be6;
 }
@@ -426,7 +437,7 @@ footer .btn-full:visited {
 .edit-results .btn {
     font-size: 70%;
     padding: 5px;
-    width: 6rem;
+    width: 25%;
     margin-left: 10px;
 }
 

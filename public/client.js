@@ -80,6 +80,57 @@ $('.signup-form').submit(function (e) {
     };
 });
 
+///////////////////////////////////////////
+//Capture user input on Add Results Form //
+///////////////////////////////////////////
+$('.results-form').submit(function (e) {
+    e.preventDefault();
+    const firstDraw = $('#first-draw').val();
+    const threeMinute = $('#three-minute').val();
+    const fiveMinute = $('#five-minute').val();
+
+    if (![firstDraw, threeMinute, fiveMinute].every(Number)) {
+        alert("Entries must be a number");
+    } else {
+        const results = {
+            firstDraw: firstDraw,
+            threeMinute: threeMinute,
+            fiveMinute: fiveMinute
+        };
+
+        console.log('results', results);
+
+        $('#first-draw').val('');
+        $('#three-minute').val('');
+        $('#five-minute').val('');
+    };
+});
+
+///////////////////////////////////////////
+//Capture user input on Update Results Form //
+///////////////////////////////////////////
+$('.update-form').submit(function (e) {
+    e.preventDefault();
+    const firstDraw = $('#first-draw-update').val();
+    const threeMinute = $('#three-minute-update').val();
+    const fiveMinute = $('#five-minute-update').val();
+
+    if (![firstDraw, threeMinute, fiveMinute].every(Number)) {
+        alert("Entries must be a number");
+    } else {
+        const updateResults = {
+            firstDraw: firstDraw,
+            threeMinute: threeMinute,
+            fiveMinute: fiveMinute
+        }
+
+        console.log('updateResults:', updateResults);
+
+        $('#first-draw-update').val('');
+        $('#three-minute-update').val('');
+        $('#five-minute-update').val('');
+    };
+});
 
 ///////////////////////////////////////////
 //on.click Button Scroll to next Section //
@@ -142,6 +193,18 @@ $('.results-close').on('click', function (e) {
     closeResultsModal();
 });
 
+$('.update-results').on('click', function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+    showUpdateModal();
+});
+
+$('.update-close').on('click', function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+    closeUpdateModal();
+});
+
 function showLoginModal() {
     $('#login').css('display', 'block');
 }
@@ -164,6 +227,14 @@ function showResultsModal() {
 
 function closeResultsModal() {
     $('#enter-results').css('display', 'none');
+}
+
+function showUpdateModal() {
+    $('#update-results').css('display', 'block');
+}
+
+function closeUpdateModal() {
+    $('#update-results').css('display', 'none');
 }
 
 
