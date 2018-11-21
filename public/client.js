@@ -45,12 +45,12 @@ $('.login-form').submit(function (e) {
                 console.log(error);
                 console.log(errorThrown);
             });
+        // hide home, landing pages, close login form, display user dashboard
+        $('#login').hide();
+        $('#home').hide();
+        $('#landing-page').hide();
+        $('#user-dashboard').show();
     };
-    // hide home, landing pages, close login form, display user dashboard
-    $('#login').hide();
-    $('#home').hide();
-    $('#landing-page').hide();
-    $('#user-dashboard').show();
 });
 
 /////////// SIGNUP FORM ///////////
@@ -91,12 +91,12 @@ $('.signup-form').submit(function (e) {
                 console.log(error);
                 console.log(errorThrown);
             });
+        // hide home, landing pages, close signup form, display user dashboard
+        $('#signup').hide();
+        $('#home').hide();
+        $('#landing-page').hide();
+        $('#user-dashboard').show();
     };
-    // hide home, landing pages, close signup form, display user dashboard
-    $('#signup').hide();
-    $('#home').hide();
-    $('#landing-page').hide();
-    $('#user-dashboard').show();
 });
 
 ///////////////////////////////////////////
@@ -267,6 +267,11 @@ $('.back-home').on('click', function (e) {
     $('#landing-page').show();
     $('#user-dashboard').hide();
 })
+
+$('.logout').on('click', function (e) {
+    e.preventDefault();
+    location.reload();
+});
 
 ///////////////////////////////////////
 //Mapbox                             //
