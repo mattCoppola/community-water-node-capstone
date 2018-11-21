@@ -92,6 +92,11 @@ $('.signup-form').submit(function (e) {
                 console.log(errorThrown);
             });
     };
+    // hide home, landing pages, close signup form, display user dashboard
+    $('#signup').hide();
+    $('#home').hide();
+    $('#landing-page').hide();
+    $('#user-dashboard').show();
 });
 
 ///////////////////////////////////////////
