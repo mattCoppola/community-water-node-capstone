@@ -2,6 +2,7 @@
 
 const express = require('express');
 const morgan = require('morgan');
+const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 mongoose.Promise = global.Promise;
 
@@ -17,8 +18,8 @@ const {
 } = require('./models/user');
 
 app.use(morgan('common'));
+app.use(bodyParser.json());
 app.use(express.json());
-
 app.use(express.static('public'))
 
 // signing in a user
