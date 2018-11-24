@@ -316,5 +316,7 @@ function showResults() {
 mapboxgl.accessToken = 'pk.eyJ1IjoibWF0dGNvcHBvbGEiLCJhIjoiY2ptb3ZsdmFuMTh1YTNrbWowa3gzZm82ZiJ9.S7EhnqCwmFeZmy-obXH41g';
 var map = new mapboxgl.Map({
     container: 'map',
-    style: 'mapbox://styles/mapbox/streets-v9'
+    style: 'mapbox://styles/mapbox/streets-v9',
+    center: [-87.6298, 41.8781],
+    zoom: 10
 });
