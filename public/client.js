@@ -224,6 +224,18 @@ $('.update-close').on('click', function (e) {
     closeUpdateModal();
 });
 
+$('.delete-results').on('click', function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+    showDeleteModal();
+});
+
+$('.delete-close').on('click', function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+    closeDeleteModal();
+});
+
 function showLoginModal() {
     $('#login').css('display', 'block');
 }
@@ -256,6 +268,13 @@ function closeUpdateModal() {
     $('#update-results').css('display', 'none');
 }
 
+function showDeleteModal() {
+    $('#delete-results').css('display', 'block');
+}
+
+function closeDeleteModal() {
+    $('#delete-results').css('display', 'none');
+}
 
 ///////////////////////////////////////
 //User Dashboard jQuery              //

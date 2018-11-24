@@ -177,13 +177,14 @@ nav#user {
 }
 
 /*---------------------*/
-/* Login Modal & Signup Modal */
+/* Login Modal & Signup Modal & all Modals */
 /*---------------------*/
 
 #login,
 #signup,
 #enter-results,
-#update-results {
+#update-results,
+#delete-results {
     display: none;
     position: fixed;
     top: 0;
@@ -196,7 +197,8 @@ nav#user {
 .login-wrapper,
 .signup-wrapper,
 .results-wrapper,
-.update-wrapper {
+.update-wrapper,
+.delete-wrapper {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -210,10 +212,16 @@ nav#user {
     border-radius: 5px;
 }
 
+.delete-wrapper {
+    height: 30%;
+    min-height: 10rem;
+}
+
 .login-wrapper h3,
 .signup-wrapper h3,
 .results-wrapper h3,
-.update-wrapper h3 {
+.update-wrapper h3,
+.delete-wrapper h3 {
     position: absolute;
     font-size: 175%;
     font-weight: bold;
@@ -222,10 +230,15 @@ nav#user {
     top: 1rem;
 }
 
+.delete-wrapper h3 {
+    color: #fd2727;
+}
+
 .login-close,
 .signup-close,
 .results-close,
-.update-close {
+.update-close,
+.delete-close {
     text-align: right;
     padding-bottom: 2rem;
 }
@@ -233,7 +246,8 @@ nav#user {
 .login-close button,
 .signup-close button,
 .results-close button,
-.update-close button {
+.update-close button,
+.delete-close button {
     font-size: 150%;
     border: none;
     width: 3rem;
@@ -246,7 +260,8 @@ nav#user {
 .login-close button:hover,
 .signup-close button:hover,
 .results-close button:hover,
-.update-close button:hover {
+.update-close button:hover,
+.delete-close button:hover {
     background-color: #ff4c4c;
     color: #ffffff;
     cursor: pointer;
@@ -256,7 +271,8 @@ nav#user {
 .login-form,
 .signup-form,
 .results-form,
-.update-form {
+.update-form,
+.delete-form {
     width: 90%;
     margin: 0 auto;
 }
@@ -287,7 +303,8 @@ nav#user {
 .login-form button,
 .signup-form button,
 .results-form button,
-.update-form button {
+.update-form button,
+.delete-form button {
     width: 100%;
     padding: .7rem 0;
     border-style: none;
@@ -297,6 +314,15 @@ nav#user {
     font-size: 80%;
     font-weight: bold;
     border-radius: 5px;
+}
+
+#delete-button {
+    background-color: #fd2727;
+}
+
+#delete-button:hover {
+    cursor: pointer;
+    background-color: #f24141;
 }
 
 .login-form button:hover,
