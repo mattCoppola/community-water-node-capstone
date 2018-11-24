@@ -4,6 +4,7 @@
 $(function () {
     $('.hide-everything').hide();
     $('#landing-page').show();
+    showResults();
 })
 
 
@@ -125,9 +126,9 @@ $('.results-form').submit(function (e) {
     };
 });
 
-///////////////////////////////////////////
+//////////////////////////////////////////////
 //Capture user input on Update Results Form //
-///////////////////////////////////////////
+//////////////////////////////////////////////
 $('.update-form').submit(function (e) {
     e.preventDefault();
     const firstDraw = $('#first-draw-update').val();
@@ -291,6 +292,22 @@ $('.logout').on('click', function (e) {
     e.preventDefault();
     location.reload();
 });
+
+///////////////////////////////////////
+//Show Results (green or red)        //
+///////////////////////////////////////
+
+
+
+function showResults() {
+    const resultsAverage = 2;
+    if (resultsAverage < .99) {
+        $('.green-results').show();
+    } else {
+        $('.red-results').show();
+    }
+    $('.user-landing').hide();
+};
 
 ///////////////////////////////////////
 //Mapbox                             //

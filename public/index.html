@@ -152,11 +152,27 @@
                         <div>
                             <h3>Results Review</h3>
                         </div>
-                        <div>
+                        <!--                        Show green-results if average is below 1.0-->
+                        <div class="green-results hide-everything">
+                            <h4>Your results are below threshold</h4>
                             <ul>
-                                <li>Green: OK! Get Involved!</li>
-                                <li>Red: Exceeds! Get Info!</li>
+                                <li><a href="">Link One</a></li>
+                                <li><a href="">Link Two</a></li>
+                                <li><a href="">Link Three</a></li>
                             </ul>
+                        </div>
+                        <!--                        Show red-results if average is above 1.0-->
+                        <div class="red-results hide-everything">
+                            <h4>Your results are above threshold</h4>
+                            <ul>
+                                <li><a href="">Link One</a></li>
+                                <li><a href="">Link Two</a></li>
+                                <li><a href="">Link Three</a></li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <h4 class="user-landing">Add your data to see your results</h4>
                             <div class="col span-2-of-2 edit-results">
                                 <a class="btn btn-full add-results" href="#add-results">Add</a>
                                 <a class="btn btn-full update-results" href="#update-results">Update</a>
