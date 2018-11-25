@@ -4,7 +4,7 @@
 $(function () {
     $('.hide-everything').hide();
     $('#landing-page').show();
-    showResults();
+    //    showResults();
 })
 
 
@@ -51,6 +51,7 @@ $('.login-form').submit(function (e) {
         $('#home').hide();
         $('#landing-page').hide();
         $('#user-dashboard').show();
+        $('.main-nav li').removeClass('responsive');
     };
 });
 
@@ -97,6 +98,7 @@ $('.signup-form').submit(function (e) {
         $('#home').hide();
         $('#landing-page').hide();
         $('#user-dashboard').show();
+        $('.main-nav li').removeClass('responsive');
     };
 });
 
@@ -286,6 +288,7 @@ $('.back-home').on('click', function (e) {
     $('#home').show();
     $('#landing-page').show();
     $('#user-dashboard').hide();
+    $('.main-nav li').removeClass('responsive');
 })
 
 $('.logout').on('click', function (e) {
