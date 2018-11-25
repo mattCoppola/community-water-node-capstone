@@ -225,14 +225,28 @@ function populateUserInfoCard(username) {
             contentType: 'application/json'
         })
         .done(function (resultsOutput) {
-            console.log('GET RESULTS: ', resultsOutput);
-
+            let userInfo = userInfoCard(resultsOutput);
+            $('.username').text(userObject.user);
+            $('.address').text(userInfo.address);
+            $('.resultAverage').text(userInfo.resultsAvg);
+            $('.lastUpdated').text(userInfo.lastUpdated);
         })
         .fail(function (jqXHR, error, errorThrown) {
             console.log(jqXHR);
             console.log(error);
             console.log(errorThrown);
         });
+}
+
+function userInfoCard(resultsOutput) {
+    let info = resultsOutput.resultsOutput;
+    const userInfo = {
+        address: info[0].address.street,
+        // this is currently hardcoded in - need to make average function
+        resultsAvg: info[0].testResults.firstDraw,
+        lastUpdated: info[0].testResults.created
+    }
+    return userInfo;
 }
 
 
