@@ -31,6 +31,16 @@ body {
     visibility: hidden;
 }
 
+fieldset legend {
+    position: absolute;
+    left: -5000px;
+}
+
+fieldset {
+    border: 0;
+    padding: 0;
+    margin-left: 0px;
+}
 
 /*---------------------*/
 /* Reusable Components */
@@ -430,8 +440,9 @@ footer .btn-full:visited {
     border-radius: 5px;
     width: 90%;
     margin-left: 5%;
+    margin-top: 5%;
     box-shadow: 0 2px 2px #efefef;
-    height: 200px;
+    height: 300px;
 }
 
 .info-box div {

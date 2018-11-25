@@ -43,11 +43,14 @@
             </div>
             <div class="login-form">
                 <form role="form">
-                    <label for="login-username">Username</label>
-                    <input type="text" name="username" id="login-username" placeholder="Enter Username" required>
-                    <label for="login-password">Password</label>
-                    <input type="password" name="password" id="login-password" placeholder="Enter Password" required>
-                    <button type="submit" id="login-button">Log In</button>
+                    <fieldset>
+                        <legend>Login Form</legend>
+                        <label for="login-username">Username</label>
+                        <input type="text" name="username" id="login-username" placeholder="Enter Username" required>
+                        <label for="login-password">Password</label>
+                        <input type="password" name="password" id="login-password" placeholder="Enter Password" required>
+                        <button type="submit" id="login-button">Log In</button>
+                    </fieldset>
                 </form>
             </div>
         </div>
@@ -62,13 +65,16 @@
             </div>
             <div class="signup-form">
                 <form role="form">
-                    <label for="signup-username">Username</label>
-                    <input type="text" name="username" id="signup-username" placeholder="Enter Username" required>
-                    <label for="signup-password">Password</label>
-                    <input type="password" name="password" id="signup-password" placeholder="Enter Password" required>
-                    <label for="confirm-password">Confirm Password</label>
-                    <input type="password" name="confirm-password" id="confirm-password" placeholder="Confirm Password" required>
-                    <button type="submit" id="signup-button">Sign Up</button>
+                    <fieldset>
+                        <legend>Signup Form</legend>
+                        <label for="signup-username">Username</label>
+                        <input type="text" name="username" id="signup-username" placeholder="Enter Username" required>
+                        <label for="signup-password">Password</label>
+                        <input type="password" name="password" id="signup-password" placeholder="Enter Password" required>
+                        <label for="confirm-password">Confirm Password</label>
+                        <input type="password" name="confirm-password" id="confirm-password" placeholder="Confirm Password" required>
+                        <button type="submit" id="signup-button">Sign Up</button>
+                    </fieldset>
                 </form>
             </div>
         </div>
@@ -171,7 +177,7 @@
                             </ul>
                         </div>
 
-                        <div>
+                        <div class="crud-results">
                             <h4 class="user-landing">Add your data to see your results</h4>
                             <div class="col span-2-of-2 edit-results">
                                 <a class="btn btn-full add-results" href="#add-results">Add</a>
@@ -190,13 +196,16 @@
                     </div>
                     <div class="results-form">
                         <form role="form">
-                            <label for="first-draw">1st Draw</label>
-                            <input type="text" name="first-draw" id="first-draw" placeholder=".99" required>
-                            <label for="three-minute">3 Minute</label>
-                            <input type="text" name="three-minute" id="three-minute" placeholder=".99" required>
-                            <label for="five-minute">5 Minute</label>
-                            <input type="text" name="five-minute" id="five-minute" placeholder=".99" required>
-                            <button type="submit" id="results-button">Submit</button>
+                            <fieldset>
+                                <legend>Enter Results Form</legend>
+                                <label for="first-draw">1st Draw</label>
+                                <input type="text" name="first-draw" id="first-draw" placeholder=".99" required>
+                                <label for="three-minute">3 Minute</label>
+                                <input type="text" name="three-minute" id="three-minute" placeholder=".99" required>
+                                <label for="five-minute">5 Minute</label>
+                                <input type="text" name="five-minute" id="five-minute" placeholder=".99" required>
+                                <button type="submit" id="results-button">Submit</button>
+                            </fieldset>
                         </form>
                     </div>
                 </div>
@@ -209,13 +218,16 @@
                     </div>
                     <div class="update-form">
                         <form role="form">
-                            <label for="first-draw-update">1st Draw</label>
-                            <input type="text" name="first-draw-update" id="first-draw-update" placeholder=".99" required>
-                            <label for="three-minute-update">3 Minute</label>
-                            <input type="text" name="three-minute-update" id="three-minute-update" placeholder=".99" required>
-                            <label for="five-minute-update">5 Minute</label>
-                            <input type="text" name="five-minute-update" id="five-minute-update" placeholder=".99" required>
-                            <button type="submit" id="update-button">Submit</button>
+                            <fieldset>
+                                <legend>Update Results Form</legend>
+                                <label for="first-draw-update">1st Draw</label>
+                                <input type="text" name="first-draw-update" id="first-draw-update" placeholder=".99" required>
+                                <label for="three-minute-update">3 Minute</label>
+                                <input type="text" name="three-minute-update" id="three-minute-update" placeholder=".99" required>
+                                <label for="five-minute-update">5 Minute</label>
+                                <input type="text" name="five-minute-update" id="five-minute-update" placeholder=".99" required>
+                                <button type="submit" id="update-button">Submit</button>
+                            </fieldset>
                         </form>
                     </div>
                 </div>

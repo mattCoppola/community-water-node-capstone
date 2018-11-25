@@ -297,8 +297,6 @@ $('.logout').on('click', function (e) {
 //Show Results (green or red)        //
 ///////////////////////////////////////
 
-
-
 function showResults() {
     const resultsAverage = 2;
     if (resultsAverage < .99) {

@@ -22,8 +22,19 @@
     }
 
     .signup-wrapper,
-    .login-wrapper {
+    .login-wrapper,
+    .results-wrapper,
+    .update-wrapper,
+    .delete-wrapper {
         width: 265px;
+    }
+
+    .login-wrapper h3,
+    .signup-wrapper h3,
+    .results-wrapper h3,
+    .update-wrapper h3,
+    .delete-wrapper h3 {
+        font-size: 150%;
     }
 
     .main-nav li {
@@ -138,6 +149,11 @@
     .next-steps img {
         padding: 20px;
         height: 100%;
+    }
+
+    .info-box {
+        height: 90%;
+        min-height: 20em;
     }
 
     .map-container {
