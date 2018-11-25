@@ -83,7 +83,7 @@ $('.signup-form').submit(function (e) {
 
         $.ajax({
                 type: 'POST',
-                url: '/users/create',
+                url: '/api/users',
                 dataType: 'json',
                 data: JSON.stringify(newUserObject),
                 contentType: 'application/json'
