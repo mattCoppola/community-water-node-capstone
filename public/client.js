@@ -1,3 +1,5 @@
+let TOKEN;
+
 //////////////////
 // On Page Load //
 //////////////////
@@ -38,7 +40,7 @@ $('.login-form').submit(function (e) {
                 contentType: 'application/json'
             })
             .done(function (result) {
-                console.log(result);
+                TOKEN = result.authToken;
                 // hide home, landing pages, close login form, display user dashboard
                 $('#login').hide();
                 $('#home').hide();
@@ -119,6 +121,15 @@ $('.results-form').submit(function (e) {
     const threeMinute = $('#three-minute').val();
     const fiveMinute = $('#five-minute').val();
 
+    // reset user input
+    $('#street').val('');
+    $('#city').val('');
+    $('#state').val('');
+    $('#zip').val('');
+    $('#first-draw').val('');
+    $('#three-minute').val('');
+    $('#five-minute').val('');
+
     if (![firstDraw, threeMinute, fiveMinute].every(Number)) {
         alert("Entries must be a number");
     } else {
@@ -132,15 +143,30 @@ $('.results-form').submit(function (e) {
             fiveMinute: fiveMinute
         };
 
-        console.log('results', results);
 
-        $('#street').val('');
-        $('#city').val('');
-        $('#state').val('');
-        $('#zip').val('');
-        $('#first-draw').val('');
-        $('#three-minute').val('');
-        $('#five-minute').val('');
+        console.log('results', results);
+        const token = ("bearer " + TOKEN);
+
+        $.ajax({
+                type: 'POST',
+                beforeSend: function (xhr) {
+                    xhr.setRequestHeader('Authorization', token)
+                },
+                url: '/api/results',
+                dataType: 'json',
+                data: JSON.stringify(results),
+                contentType: 'application/json'
+            })
+            .done(function (result) {
+                console.log(result.street);
+                // hide enter-results form
+                $('#enter-results').hide();
+            })
+            .fail(function (jqXHR, error, errorThrown) {
+                console.log(jqXHR);
+                console.log(error);
+                console.log(errorThrown);
+            });
     };
 });
 

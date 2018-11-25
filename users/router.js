@@ -4,7 +4,8 @@ const bodyParser = require('body-parser');
 const bcrypt = require('bcryptjs');
 
 const {
-    User
+    User,
+    Result
 } = require('../models/user');
 
 const router = express.Router();

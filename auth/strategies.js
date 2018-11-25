@@ -8,7 +8,8 @@ const {
 } = require('passport-jwt');
 
 const {
-    User
+    User,
+    Result
 } = require('../models/user');
 const {
     JWT_SECRET

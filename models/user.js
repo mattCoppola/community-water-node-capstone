@@ -12,6 +12,43 @@ const userSchema = new mongoose.Schema({
     }
 });
 
+const resultsSchema = new mongoose.Schema({
+    user: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'User'
+    },
+    address: {
+        street: {
+            type: String
+        },
+        city: {
+            type: String
+        },
+        state: {
+            type: String
+        },
+        zip: {
+            type: Number
+        }
+    },
+    testResults: {
+        firstDraw: {
+            type: Number
+        },
+        threeMinute: {
+            type: Number
+        },
+        fiveMinute: {
+            type: Number
+        },
+        created: {
+            type: Date,
+            default: Date.now
+        }
+    }
+});
+
+
 // Returns user information without password info
 userSchema.methods.serialize = function () {
     return {
@@ -29,7 +66,9 @@ userSchema.statics.hashPassword = function (password) {
 }
 
 const User = mongoose.model('User', userSchema, 'user');
+const Result = mongoose.model('Result', resultsSchema);
 
 module.exports = {
-    User
+    User,
+    Result
 };

@@ -27,7 +27,8 @@ const {
 const app = express();
 
 const {
-    User
+    User,
+    Result
 } = require('./models/user');
 
 app.use(morgan('common'));
@@ -47,6 +48,26 @@ app.use('/api/auth/', authRouter);
 const jwtAuth = passport.authenticate('jwt', {
     session: false
 });
+
+/////////////////////////////
+//Authorized POST Endpoints//
+/////////////////////////////
+
+app.post('/api/results', jwtAuth, (req, res) => {
+    console.log('POSTing New Results');
+
+    let newResults = req.body;
+    let userInfo = req.user;
+    console.log('New Results: ', newResults);
+    console.log('User Info: ', userInfo);
+    return res.json(req.body);
+});
+
+
+
+
+
+
 
 
 //// creating a new user
