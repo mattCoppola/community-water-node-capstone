@@ -55,12 +55,36 @@ const jwtAuth = passport.authenticate('jwt', {
 
 app.post('/api/results', jwtAuth, (req, res) => {
     console.log('POSTing New Results');
-
-    let newResults = req.body;
     let userInfo = req.user;
+    let userID = userInfo._id;
+
+    const newResults = {
+        address: {
+            street: req.body.street,
+            city: req.body.city,
+            state: req.body.state,
+            zip: req.body.zip
+        },
+        testResults: {
+            firstDraw: req.body.firstDraw,
+            threeMinute: req.body.threeMinute,
+            fiveMinute: req.body.fiveMinute
+        },
+        user: userID
+    };
+
     console.log('New Results: ', newResults);
-    console.log('User Info: ', userInfo);
-    return res.json(req.body);
+
+    Result.create(newResults)
+        .then(created => {
+            res.status(201).json(created);
+        })
+        .catch(err => {
+            console.log('Error: ', err);
+            return res.status(500).json({
+                error: 'internal server error'
+            });
+        });
 });
 
 

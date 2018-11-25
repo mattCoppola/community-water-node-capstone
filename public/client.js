@@ -90,7 +90,9 @@ $('.signup-form').submit(function (e) {
                 contentType: 'application/json'
             })
             .done(function (result) {
+                TOKEN = result.authToken;
                 console.log(result);
+                console.log(TOKEN);
                 // hide home, landing pages, close signup form, display user dashboard
                 $('#signup').hide();
                 $('#home').hide();
@@ -157,8 +159,8 @@ $('.results-form').submit(function (e) {
                 data: JSON.stringify(results),
                 contentType: 'application/json'
             })
-            .done(function (result) {
-                console.log(result.street);
+            .done(function (created) {
+                console.log(created);
                 // hide enter-results form
                 $('#enter-results').hide();
             })
