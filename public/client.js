@@ -110,6 +110,11 @@ $('.signup-form').submit(function (e) {
 ///////////////////////////////////////////
 $('.results-form').submit(function (e) {
     e.preventDefault();
+    const street = $('#street').val();
+    const city = $('#city').val();
+    const state = $('#state').val();
+    const zip = $('#zip').val();
+
     const firstDraw = $('#first-draw').val();
     const threeMinute = $('#three-minute').val();
     const fiveMinute = $('#five-minute').val();
@@ -118,6 +123,10 @@ $('.results-form').submit(function (e) {
         alert("Entries must be a number");
     } else {
         const results = {
+            street: street,
+            city: city,
+            state: state,
+            zip: zip,
             firstDraw: firstDraw,
             threeMinute: threeMinute,
             fiveMinute: fiveMinute
@@ -125,6 +134,10 @@ $('.results-form').submit(function (e) {
 
         console.log('results', results);
 
+        $('#street').val('');
+        $('#city').val('');
+        $('#state').val('');
+        $('#zip').val('');
         $('#first-draw').val('');
         $('#three-minute').val('');
         $('#five-minute').val('');

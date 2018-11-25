@@ -198,12 +198,35 @@
                         <form role="form">
                             <fieldset>
                                 <legend>Enter Results Form</legend>
-                                <label for="first-draw">1st Draw</label>
-                                <input type="text" name="first-draw" id="first-draw" placeholder=".99" required>
-                                <label for="three-minute">3 Minute</label>
-                                <input type="text" name="three-minute" id="three-minute" placeholder=".99" required>
-                                <label for="five-minute">5 Minute</label>
-                                <input type="text" name="five-minute" id="five-minute" placeholder=".99" required>
+                                <div class="left">
+                                    <label for="street">Street</label>
+                                    <input type="text" name="street" id="street" placeholder="street" required>
+                                </div>
+                                <div class="left">
+                                    <label for="city">City</label>
+                                    <input type="text" name="city" id="city" placeholder="city" required>
+                                </div>
+                                <div class="left">
+                                    <label for="state">State</label>
+                                    <input type="text" name="state" id="state" placeholder="state" required>
+                                </div>
+                                <div class="left">
+                                    <label for="zip">Zip</label>
+                                    <input type="text" name="zip" id="zip" placeholder="zip" required>
+                                </div>
+                                <div class="left draw">
+                                    <label for="first-draw">1st Draw</label>
+                                    <input type="text" name="first-draw" id="first-draw" placeholder=".99" required>
+                                </div>
+                                <div class="left draw">
+                                    <label for="three-minute">3 Minute</label>
+                                    <input type="text" name="three-minute" id="three-minute" placeholder=".99" required>
+                                </div>
+                                <div class="left draw">
+                                    <label for="five-minute">5 Minute</label>
+                                    <input type="text" name="five-minute" id="five-minute" placeholder=".99" required>
+                                </div>
+                                <div class="clear">&nbsp;</div>
                                 <button type="submit" id="results-button">Submit</button>
                             </fieldset>
                         </form>

@@ -344,6 +344,26 @@ nav#user {
     background-color: #229be6;
 }
 
+.left {
+    float: left;
+    position: relative;
+    width: 50%;
+    padding-right: 10%;
+}
+
+.left.draw {
+    width: 30%;
+    padding-right: 5%;
+}
+
+.draw label {
+    font-size: 80%;
+}
+
+.clear {
+    clear: both;
+}
+
 
 /*---------------------*/
 /* Learn More */

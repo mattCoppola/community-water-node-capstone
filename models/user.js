@@ -14,7 +14,6 @@ const userSchema = new mongoose.Schema({
 
 // Returns user information without password info
 userSchema.methods.serialize = function () {
-
     return {
         username: this.username || '',
     };
@@ -23,12 +22,6 @@ userSchema.methods.serialize = function () {
 // Validates password using bcryptjs
 userSchema.methods.validatePassword = function (password) {
     return bcrypt.compare(password, this.password);
-    //    bcrypt.compare(password, this.password, (err, isValid) => {
-    //        if (err) {
-    //            return;
-    //        }
-    //        return isValid;
-    //    });
 };
 
 userSchema.statics.hashPassword = function (password) {
