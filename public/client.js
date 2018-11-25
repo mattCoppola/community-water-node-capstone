@@ -40,28 +40,34 @@ $('.login-form').submit(function (e) {
             })
             .done(function (result) {
                 console.log(result);
+                // hide home, landing pages, close login form, display user dashboard
+                $('#login').hide();
+                $('#home').hide();
+                $('#landing-page').hide();
+                $('#user-dashboard').show();
+                $('.main-nav li').removeClass('responsive');
             })
             .fail(function (jqXHR, error, errorThrown) {
                 console.log(jqXHR);
                 console.log(error);
                 console.log(errorThrown);
             });
-        // hide home, landing pages, close login form, display user dashboard
-        $('#login').hide();
-        $('#home').hide();
-        $('#landing-page').hide();
-        $('#user-dashboard').show();
-        $('.main-nav li').removeClass('responsive');
     };
 });
 
 /////////// SIGNUP FORM ///////////
 $('.signup-form').submit(function (e) {
     e.preventDefault();
+    // Take the input from the user
     const username = $('#signup-username').val();
     const password = $('#signup-password').val();
     const confirmPW = $('#confirm-password').val();
+    // Reset user input
+    $('#signup-username').val('');
+    $('#signup-password').val('');
+    $('#confirm-password').val('');
 
+    // Validate input
     if (password !== confirmPW) {
         alert('Passwords must match!');
     } else if (username == "") {
@@ -69,36 +75,33 @@ $('.signup-form').submit(function (e) {
     } else if (password == "") {
         alert('Please input a password.');
     } else {
-        const loginUserObject = {
+        const newUserObject = {
             username: username,
             password: password
         };
-        $('#signup-username').val('');
-        $('#signup-password').val('');
-        $('#confirm-password').val('');
-        console.log(loginUserObject);
+        console.log(newUserObject);
 
         $.ajax({
                 type: 'POST',
-                url: '/users/login',
+                url: '/users/create',
                 dataType: 'json',
-                data: JSON.stringify(loginUserObject),
+                data: JSON.stringify(newUserObject),
                 contentType: 'application/json'
             })
             .done(function (result) {
                 console.log(result);
+                // hide home, landing pages, close signup form, display user dashboard
+                $('#signup').hide();
+                $('#home').hide();
+                $('#landing-page').hide();
+                $('#user-dashboard').show();
+                $('.main-nav li').removeClass('responsive');
             })
             .fail(function (jqXHR, error, errorThrown) {
                 console.log(jqXHR);
                 console.log(error);
                 console.log(errorThrown);
             });
-        // hide home, landing pages, close signup form, display user dashboard
-        $('#signup').hide();
-        $('#home').hide();
-        $('#landing-page').hide();
-        $('#user-dashboard').show();
-        $('.main-nav li').removeClass('responsive');
     };
 });
 
@@ -301,7 +304,8 @@ $('.logout').on('click', function (e) {
 ///////////////////////////////////////
 
 function showResults() {
-    const resultsAverage = 2;
+    // for development - resultsAverage is hardcoded for development
+    //    const resultsAverage = 2;
     if (resultsAverage < .99) {
         $('.green-results').show();
     } else {
