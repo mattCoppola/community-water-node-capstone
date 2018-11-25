@@ -33,7 +33,7 @@ $('.login-form').submit(function (e) {
 
         $.ajax({
                 type: 'POST',
-                url: '/users/login',
+                url: '/api/auth/login',
                 dataType: 'json',
                 data: JSON.stringify(loginUserObject),
                 contentType: 'application/json'

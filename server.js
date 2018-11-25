@@ -12,11 +12,11 @@ mongoose.Promise = global.Promise;
 const {
     router: usersRouter
 } = require('./users');
-//const {
-//    router: authRouter,
-//    localStrategy,
-//    jwtStrategy
-//} = require('./auth');
+const {
+    router: authRouter,
+    localStrategy,
+    jwtStrategy
+} = require('./auth');
 
 
 const {
@@ -36,12 +36,12 @@ app.use(express.json());
 app.use(express.static('public'))
 
 //Authentication
-//passport.use(localStrategy);
-//passport.use(jwtStrategy);
+passport.use(localStrategy);
+passport.use(jwtStrategy);
 
 //Tells our app to use users and authentication routes
 app.use('/api/users/', usersRouter);
-//app.use('/api/auth/', authRouter);
+app.use('/api/auth/', authRouter);
 
 //Middleware for authenticating users
 const jwtAuth = passport.authenticate('jwt', {
@@ -110,47 +110,47 @@ const jwtAuth = passport.authenticate('jwt', {
 
 // signing in a user
 
-app.post('/users/login', function (req, res) {
-
-    // grab username and password from ajax api call
-    const username = req.body.username;
-    const password = req.body.password;
-
-    console.log(username + " & " + password);
-    // connect to DB with mongoose schema
-    User.findOne({
-        username: username
-    }, function (err, items) {
-        if (err) {
-            return res.status(500).json({
-                message: "Error connection to the DB"
-            });
-        }
-        if (!items) {
-            console.log('no users with this user name');
-            return res.status(401).json({
-                message: "No users with this username"
-            });
-        } else {
-            items.validatePassword(password, function (err, isValid) {
-                if (err) {
-                    return res.status(500).json({
-                        message: "Could not connect to DB to validate password"
-                    });
-                }
-                if (!isValid) {
-                    console.log('Password is Invalid');
-                    return res.status(401).json({
-                        message: "Password Invalid"
-                    });
-                } else {
-                    console.log(items);
-                    return res.json(items);
-                }
-            });
-        };
-    });
-});
+//app.post('/users/login', function (req, res) {
+//
+//    // grab username and password from ajax api call
+//    const username = req.body.username;
+//    const password = req.body.password;
+//
+//    console.log(username + " & " + password);
+//    // connect to DB with mongoose schema
+//    User.findOne({
+//        username: username
+//    }, function (err, items) {
+//        if (err) {
+//            return res.status(500).json({
+//                message: "Error connection to the DB"
+//            });
+//        }
+//        if (!items) {
+//            console.log('no users with this user name');
+//            return res.status(401).json({
+//                message: "No users with this username"
+//            });
+//        } else {
+//            items.validatePassword(password, function (err, isValid) {
+//                if (err) {
+//                    return res.status(500).json({
+//                        message: "Could not connect to DB to validate password"
+//                    });
+//                }
+//                if (!isValid) {
+//                    console.log('Password is Invalid');
+//                    return res.status(401).json({
+//                        message: "Password Invalid"
+//                    });
+//                } else {
+//                    console.log(items);
+//                    return res.json(items);
+//                }
+//            });
+//        };
+//    });
+//});
 
 
 // closeServer needs access to a server object, but that only

@@ -12,15 +12,28 @@ const userSchema = new mongoose.Schema({
     }
 });
 
-userSchema.methods.validatePassword = function (password, callback) {
-    bcrypt.compare(password, this.password, (err, isValid) => {
-        if (err) {
-            callback(err);
-            return;
-        }
-        callback(null, isValid);
-    });
+// Returns user information without password info
+userSchema.methods.serialize = function () {
+
+    return {
+        username: this.username || '',
+    };
 };
+
+// Validates password using bcryptjs
+userSchema.methods.validatePassword = function (password) {
+    return bcrypt.compare(password, this.password);
+    //    bcrypt.compare(password, this.password, (err, isValid) => {
+    //        if (err) {
+    //            return;
+    //        }
+    //        return isValid;
+    //    });
+};
+
+userSchema.statics.hashPassword = function (password) {
+    return bcrypt.hash(password, 10);
+}
 
 const User = mongoose.model('User', userSchema, 'user');
 
