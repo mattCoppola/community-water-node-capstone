@@ -94,15 +94,11 @@ app.post('/api/results', jwtAuth, (req, res) => {
 /////////////////////////////
 
 app.get('/api/results/:username', jwtAuth, (req, res) => {
-
-    console.log(req.user._id);
-
     Result.find()
         .then(function (results) {
             let resultsOutput = [];
             results.map(function (result) {
                 if (req.user._id == result.user) {
-                    console.log('loggedinUserName: ', result);
                     resultsOutput.push(result);
                 }
             });

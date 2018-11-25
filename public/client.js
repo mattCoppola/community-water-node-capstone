@@ -49,7 +49,7 @@ $('.login-form').submit(function (e) {
                 $('#landing-page').hide();
                 $('#user-dashboard').show();
                 $('.main-nav li').removeClass('responsive');
-                populateUserInfoCard(loggedInUserName);
+                populateUserDashboard(loggedInUserName);
             })
             .fail(function (jqXHR, error, errorThrown) {
                 console.log(jqXHR);
@@ -202,14 +202,11 @@ $('.update-form').submit(function (e) {
 });
 
 ////////////////////////////
-//Populate User Info card //
+//Populate User Dashboard //
 ////////////////////////////
 
-function populateUserInfoCard(username) {
-    console.log('username for get: ', username);
-
+function populateUserDashboard(username) {
     const token = ("bearer " + TOKEN);
-
     const userObject = {
         user: username
     };
@@ -243,10 +240,23 @@ function userInfoCard(resultsOutput) {
     const userInfo = {
         address: info[0].address.street,
         // this is currently hardcoded in - need to make average function
-        resultsAvg: info[0].testResults.firstDraw,
+        resultsAvg: userResultsAverage(resultsOutput),
         lastUpdated: info[0].testResults.created
     }
     return userInfo;
+};
+
+function userResultsAverage(resultsOutput) {
+    let resultEntries = resultsOutput.resultsOutput;
+    let totalEntries = [
+        resultEntries[0].testResults.firstDraw,
+            resultEntries[0].testResults.threeMinute,
+            resultEntries[0].testResults.fiveMinute
+    ];
+
+    const resultsAvg = totalEntries.reduce((a, b) => a + b, 0) / totalEntries.length;
+
+    return resultsAvg.toFixed(2);
 }
 
 
