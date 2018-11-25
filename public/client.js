@@ -223,6 +223,7 @@ function populateUserDashboard(username) {
         })
         .done(function (resultsOutput) {
             let userInfo = userInfoCard(resultsOutput);
+            resultsReview(resultsOutput);
             $('.username').text(userObject.user);
             $('.address').text(userInfo.address);
             $('.resultAverage').text(userInfo.resultsAvg);
@@ -257,7 +258,18 @@ function userResultsAverage(resultsOutput) {
     const resultsAvg = totalEntries.reduce((a, b) => a + b, 0) / totalEntries.length;
 
     return resultsAvg.toFixed(2);
-}
+};
+
+function resultsReview(resultsOutput) {
+    let resultsAvg = userResultsAverage(resultsOutput)
+    console.log(resultsAvg);
+    if (resultsAvg >= 1) {
+        $('.red-results').show();
+    } else {
+        $('.green-results').show();
+    }
+    $('.user-landing').hide();
+};
 
 
 
