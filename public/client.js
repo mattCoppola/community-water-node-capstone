@@ -29,7 +29,6 @@ $('.login-form').submit(function (e) {
         };
         $('#login-username').val('');
         $('#login-password').val('');
-        console.log(loginUserObject);
 
         $.ajax({
                 type: 'POST',
@@ -101,6 +100,7 @@ $('.signup-form').submit(function (e) {
                 console.log(jqXHR);
                 console.log(error);
                 console.log(errorThrown);
+                alert("Username is already taken. Choose another username.")
             });
     };
 });

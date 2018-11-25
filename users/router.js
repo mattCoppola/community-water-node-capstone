@@ -22,51 +22,64 @@ router.post('/', jsonParser, (req, res) => {
     username = username.trim();
     password = password.trim();
 
-    //create an encryption key
-    bcrypt.genSalt(10, (err, salt) => {
+    let findDuplicates;
+    User.find({
+        username
+    }).count(function (err, results) {
+        findDuplicates = results;
 
-        //if creating the key returns an error...
-        if (err) {
-
-            //display it
-            return res.status(500).json({
-                message: 'Internal server error'
+        if (findDuplicates > 0) {
+            return res.status(422).json({
+                message: 'Username is already taken'
             });
-        }
+        } else {
+            //create an encryption key
+            bcrypt.genSalt(10, (err, salt) => {
 
-        //using the encryption key above generate an encrypted pasword
-        bcrypt.hash(password, salt, (err, hash) => {
-
-            //if creating the ncrypted pasword returns an error..
-            if (err) {
-
-                //display it
-                return res.status(500).json({
-                    message: 'Internal server error'
-                });
-            }
-
-            //using the mongoose DB schema, connect to the database and create the new user
-            User.create({
-                username,
-                password: hash,
-            }, (err, item) => {
-
-                //if creating a new user in the DB returns an error..
+                //if creating the key returns an error...
                 if (err) {
+
                     //display it
                     return res.status(500).json({
-                        message: 'Internal Server Error'
+                        message: 'Internal server error'
                     });
                 }
-                //if creating a new user in the DB is succefull
-                if (item) {
 
-                    //display the new user
-                    return res.json(item);
-                }
+                //using the encryption key above generate an encrypted pasword
+                bcrypt.hash(password, salt, (err, hash) => {
+
+                    //if creating the ncrypted pasword returns an error..
+                    if (err) {
+
+                        //display it
+                        return res.status(500).json({
+                            message: 'Internal server error'
+                        });
+                    }
+
+                    //using the mongoose DB schema, connect to the database and create the new user
+                    User.create({
+                        username,
+                        password: hash,
+                    }, (err, item) => {
+
+                        //if creating a new user in the DB returns an error..
+                        if (err) {
+                            //display it
+                            return res.status(500).json({
+                                message: 'Internal Server Error'
+                            });
+                        }
+                        //if creating a new user in the DB is succefull
+                        if (item) {
+
+                            //display the new user
+                            return res.json(item);
+                        }
+                    });
+                });
             });
-        });
+        }
     });
 });
 
