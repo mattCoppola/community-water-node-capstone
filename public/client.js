@@ -1,4 +1,5 @@
 let TOKEN;
+let loggedInUserName;
 
 //////////////////
 // On Page Load //
@@ -41,12 +42,14 @@ $('.login-form').submit(function (e) {
             })
             .done(function (result) {
                 TOKEN = result.authToken;
+                loggedInUserName = username;
                 // hide home, landing pages, close login form, display user dashboard
                 $('#login').hide();
                 $('#home').hide();
                 $('#landing-page').hide();
                 $('#user-dashboard').show();
                 $('.main-nav li').removeClass('responsive');
+                populateUserInfoCard(loggedInUserName);
             })
             .fail(function (jqXHR, error, errorThrown) {
                 console.log(jqXHR);
@@ -197,6 +200,42 @@ $('.update-form').submit(function (e) {
         $('#five-minute-update').val('');
     };
 });
+
+////////////////////////////
+//Populate User Info card //
+////////////////////////////
+
+function populateUserInfoCard(username) {
+    console.log('username for get: ', username);
+
+    const token = ("bearer " + TOKEN);
+
+    const userObject = {
+        user: username
+    };
+
+    $.ajax({
+            type: 'GET',
+            beforeSend: function (xhr) {
+                xhr.setRequestHeader('Authorization', token)
+            },
+            url: `/api/results/${username}`,
+            dataType: 'json',
+            data: JSON.stringify(userObject),
+            contentType: 'application/json'
+        })
+        .done(function (resultsOutput) {
+            console.log('GET RESULTS: ', resultsOutput);
+
+        })
+        .fail(function (jqXHR, error, errorThrown) {
+            console.log(jqXHR);
+            console.log(error);
+            console.log(errorThrown);
+        });
+}
+
+
 
 ///////////////////////////////////////////
 //on.click Button Scroll to next Section //
