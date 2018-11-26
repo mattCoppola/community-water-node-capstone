@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 const bcrypt = require('bcryptjs');
+const moment = require('moment');
 
 const userSchema = new mongoose.Schema({
     username: {
@@ -42,8 +43,8 @@ const resultsSchema = new mongoose.Schema({
             type: Number
         },
         created: {
-            type: Date,
-            default: Date.now
+            type: String,
+            default: () => moment().format('MMMM Do YYYY, h:mm:ss a')
         }
     }
 });

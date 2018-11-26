@@ -2,6 +2,7 @@
 
 const express = require('express');
 const morgan = require('morgan');
+const moment = require('moment');
 const bodyParser = require('body-parser');
 const bcrypt = require('bcryptjs');
 const passport = require('passport');
@@ -95,6 +96,9 @@ app.post('/api/results', jwtAuth, (req, res) => {
 
 app.get('/api/results/:username', jwtAuth, (req, res) => {
     Result.find()
+        .sort({
+            "testResults.created": 1
+        })
         .then(function (results) {
             let resultsOutput = [];
             results.map(function (result) {

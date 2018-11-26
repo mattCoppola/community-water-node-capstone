@@ -262,7 +262,6 @@ function userResultsAverage(resultsOutput) {
 
 function resultsReview(resultsOutput) {
     let resultsAvg = userResultsAverage(resultsOutput)
-    console.log(resultsAvg);
     if (resultsAvg >= 1) {
         $('.red-results').show();
     } else {
