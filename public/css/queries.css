@@ -146,6 +146,15 @@
         padding: 25px 25px;
     }
 
+    .hero-text-box .btn {
+        width: 7.4rem;
+        margin-top: 15px;
+    }
+
+    .hero-text-box .btn:last-of-type {
+        margin-left: 0;
+    }
+
     .next-steps img {
         padding: 20px;
         height: 100%;

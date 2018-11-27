@@ -157,6 +157,15 @@ nav#user {
     transform: translate(-50%, -50%);
 }
 
+.hero-text-box .btn {
+    width: 11rem;
+    margin-top: 15px;
+}
+
+.hero-text-box .btn:last-of-type {
+    margin-left: 1rem;
+}
+
 .logo {
     float: left;
     margin-top: 20px;
@@ -224,9 +233,17 @@ nav#user {
     width: 40%;
     height: 50%;
     margin: 0 auto;
-    min-height: 25rem;
+    min-height: 27rem;
     max-width: 30rem;
     border-radius: 5px;
+}
+
+.signup-wrapper {
+    min-height: 27rem;
+}
+
+.login-wrapper {
+    min-height: 22rem;
 }
 
 .delete-wrapper {
@@ -369,6 +386,10 @@ nav#user {
     clear: both;
 }
 
+.change-form {
+    text-align: center;
+}
+
 
 /*---------------------*/
 /* Learn More */
@@ -380,6 +401,15 @@ nav#user {
 
 .learn-more h2 {
     margin-bottom: 2%;
+}
+
+.box h3 {
+    line-height: 1.08
+}
+
+.box a:link,
+.box a:visited {
+    border-bottom: 1px solid transparent;
 }
 
 .box img {

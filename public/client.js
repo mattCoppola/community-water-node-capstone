@@ -294,6 +294,15 @@ $('.fa-bars').on('click', function (e) {
     $('.main-nav li').toggleClass('responsive');
 });
 
+///////////////////////////////////////////
+//on.click Explore our Map button        //
+///////////////////////////////////////////
+
+$('.explore').on('click', function (e) {
+    e.preventDefault();
+    showSignupModal();
+});
+
 ///////////////////////////////////////
 //Modal Functions and jQuery Actions //
 ///////////////////////////////////////
