@@ -52,7 +52,7 @@ fieldset {
 }
 
 section {
-    padding: 80px 0;
+    padding: 40px 0;
 }
 
 /*HEADINGS*/
@@ -69,6 +69,12 @@ h1 {
 }
 
 /*PARAGRAPHS*/
+.long-copy {
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%;
+    padding-bottom: 3%;
+}
 
 /*LINKS*/
 a:link,
@@ -373,7 +379,7 @@ nav#user {
 }
 
 .learn-more h2 {
-    margin-bottom: 30px;
+    margin-bottom: 2%;
 }
 
 .box img {
