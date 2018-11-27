@@ -1,3 +1,4 @@
+// Set Global Variables
 let TOKEN;
 let loggedInUserName;
 
@@ -296,6 +297,21 @@ $('.fa-bars').on('click', function (e) {
 ///////////////////////////////////////
 //Modal Functions and jQuery Actions //
 ///////////////////////////////////////
+
+// If user has not yet registered
+$('#change-form-signup').click(function (e) {
+    e.preventDefault();
+    closeLoginModal();
+    showSignupModal();
+});
+
+// If user is already a registered user
+$('#change-form-login').click(function (e) {
+    e.preventDefault();
+    closeSignupModal();
+    showLoginModal();
+});
+
 
 $('.login').on('click', function (e) {
     e.preventDefault();

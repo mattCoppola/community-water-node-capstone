@@ -11,6 +11,7 @@ const {
     User,
     Result
 } = require('../models/user');
+
 const {
     JWT_SECRET
 } = require('../config');

@@ -54,6 +54,7 @@ const jwtAuth = passport.authenticate('jwt', {
 //Authorized POST Endpoints//
 /////////////////////////////
 
+// Create new results
 app.post('/api/results', jwtAuth, (req, res) => {
     console.log('POSTing New Results');
     let userInfo = req.user;
@@ -94,6 +95,7 @@ app.post('/api/results', jwtAuth, (req, res) => {
 //Authorized GET Endpoints //
 /////////////////////////////
 
+// Read user info for displaying on website
 app.get('/api/results/:username', jwtAuth, (req, res) => {
     Result.find()
         .sort({

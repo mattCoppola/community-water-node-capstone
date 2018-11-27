@@ -49,7 +49,7 @@ router.post('/', jsonParser, (req, res) => {
                 //using the encryption key above generate an encrypted pasword
                 bcrypt.hash(password, salt, (err, hash) => {
 
-                    //if creating the ncrypted pasword returns an error..
+                    //if creating the encrypted pasword returns an error..
                     if (err) {
 
                         //display it
@@ -71,9 +71,8 @@ router.post('/', jsonParser, (req, res) => {
                                 message: 'Internal Server Error'
                             });
                         }
-                        //if creating a new user in the DB is succefull
+                        //if creating a new user in the DB is successfull
                         if (item) {
-
                             //display the new user
                             return res.json(item);
                         }
