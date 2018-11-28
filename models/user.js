@@ -43,8 +43,8 @@ const resultsSchema = new mongoose.Schema({
             type: Number
         },
         created: {
-            type: String,
-            default: () => moment().format('MMMM Do YYYY, h:mm:ss a')
+            type: Date,
+            default: Date.now
         }
     }
 });

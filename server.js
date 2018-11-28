@@ -108,9 +108,9 @@ app.post('/api/results', jwtAuth, (req, res) => {
 // Read user info for displaying on website
 app.get('/api/results/:username', jwtAuth, (req, res) => {
     Result.find()
-        .sort({
-            "testResults.created": 1
-        })
+        .sort(
+            "testResults.created"
+        )
         .then(function (results) {
             let resultsOutput = [];
             results.map(function (result) {
