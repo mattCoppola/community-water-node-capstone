@@ -313,6 +313,53 @@ function resultsReview(resultsOutput) {
     }
 };
 
+////////////////////////////////
+//Populate Update Results Form//
+////////////////////////////////
+$('.update-results').on('click', function (e) {
+    e.preventDefault();
+    populateUpdateResultsForm(loggedInUserName);
+});
+
+
+function populateUpdateResultsForm(username) {
+    const token = ("bearer " + TOKEN);
+    const userObject = {
+        user: username
+    };
+
+    $.ajax({
+            type: 'GET',
+            beforeSend: function (xhr) {
+                xhr.setRequestHeader('Authorization', token)
+            },
+            url: `/api/results/${username}`,
+            dataType: 'json',
+            data: JSON.stringify(userObject),
+            contentType: 'application/json'
+        })
+        .done(function (resultsOutput) {
+            console.log(resultsOutput.resultsOutput.length);
+            if (resultsOutput.resultsOutput.length > 0) {
+                let resultEntries = resultsOutput.resultsOutput;
+                let totalEntries = [
+                resultEntries[resultEntries.length - 1].testResults.firstDraw,
+                resultEntries[resultEntries.length - 1].testResults.threeMinute,
+                resultEntries[resultEntries.length - 1].testResults.fiveMinute
+            ];
+                console.log(totalEntries);
+                $('#first-draw-update').val(totalEntries[0]);
+                $('#three-minute-update').val(totalEntries[1]);
+                $('#five-minute-update').val(totalEntries[2]);
+            }
+        })
+        .fail(function (jqXHR, error, errorThrown) {
+            console.log(jqXHR);
+            console.log(error);
+            console.log(errorThrown);
+        });
+};
+
 
 
 ///////////////////////////////////////////
