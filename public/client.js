@@ -94,15 +94,40 @@ $('.signup-form').submit(function (e) {
                 contentType: 'application/json'
             })
             .done(function (result) {
-                TOKEN = result.authToken;
-                console.log(result);
-                console.log(TOKEN);
-                // hide home, landing pages, close signup form, display user dashboard
+                //                TOKEN = result.authToken;
+                //                console.log(result);
+                //                console.log(TOKEN);
+                //                // hide home, landing pages, close signup form, display user dashboard
+                //                $('#signup').hide();
+                //                $('#home').hide();
+                //                $('#landing-page').hide();
+                //                $('#user-dashboard').show();
+                //                $('.main-nav li').removeClass('responsive');
                 $('#signup').hide();
-                $('#home').hide();
-                $('#landing-page').hide();
-                $('#user-dashboard').show();
-                $('.main-nav li').removeClass('responsive');
+                $.ajax({
+                        type: 'POST',
+                        url: '/api/auth/login',
+                        dataType: 'json',
+                        data: JSON.stringify(newUserObject),
+                        contentType: 'application/json'
+                    })
+                    .done(function (result) {
+                        TOKEN = result.authToken;
+                        loggedInUserName = username;
+                        // hide home, landing pages, close login form, display user dashboard
+                        $('#login').hide();
+                        $('#home').hide();
+                        $('#landing-page').hide();
+                        $('#user-dashboard').show();
+                        $('.main-nav li').removeClass('responsive');
+                        populateUserDashboard(loggedInUserName);
+                    })
+                    .fail(function (jqXHR, error, errorThrown) {
+                        console.log(jqXHR);
+                        console.log(error);
+                        console.log(errorThrown);
+                    });
+
             })
             .fail(function (jqXHR, error, errorThrown) {
                 console.log(jqXHR);
@@ -167,6 +192,7 @@ $('.results-form').submit(function (e) {
                 console.log(created);
                 // hide enter-results form
                 $('#enter-results').hide();
+                populateUserDashboard(loggedInUserName);
             })
             .fail(function (jqXHR, error, errorThrown) {
                 console.log(jqXHR);
@@ -223,12 +249,15 @@ function populateUserDashboard(username) {
             contentType: 'application/json'
         })
         .done(function (resultsOutput) {
-            let userInfo = userInfoCard(resultsOutput);
-            resultsReview(resultsOutput);
-            $('.username').text(userObject.user);
-            $('.address').text(userInfo.address);
-            $('.resultAverage').text(userInfo.resultsAvg);
-            $('.lastUpdated').text(userInfo.lastUpdated);
+            console.log(resultsOutput.resultsOutput.length);
+            if (resultsOutput.resultsOutput.length > 0) {
+                let userInfo = userInfoCard(resultsOutput);
+                resultsReview(resultsOutput);
+                $('.username').text(userObject.user);
+                $('.address').text(userInfo.address);
+                $('.resultAverage').text(userInfo.resultsAvg);
+                $('.lastUpdated').text(userInfo.lastUpdated);
+            }
         })
         .fail(function (jqXHR, error, errorThrown) {
             console.log(jqXHR);
@@ -238,37 +267,50 @@ function populateUserDashboard(username) {
 }
 
 function userInfoCard(resultsOutput) {
-    let info = resultsOutput.resultsOutput;
-    const userInfo = {
-        address: info[0].address.street,
-        // this is currently hardcoded in - need to make average function
-        resultsAvg: userResultsAverage(resultsOutput),
-        lastUpdated: info[0].testResults.created
+    if (resultsOutput.resultsOutput.length > 0) {
+        let info = resultsOutput.resultsOutput;
+
+        const userInfo = {
+            address: info[info.length - 1].address.street,
+            // this is currently hardcoded in - need to make average function
+            resultsAvg: userResultsAverage(resultsOutput),
+            lastUpdated: info[info.length - 1].testResults.created
+        }
+        return userInfo;
+    } else {
+        return;
     }
-    return userInfo;
 };
 
 function userResultsAverage(resultsOutput) {
-    let resultEntries = resultsOutput.resultsOutput;
-    let totalEntries = [
-        resultEntries[0].testResults.firstDraw,
-            resultEntries[0].testResults.threeMinute,
-            resultEntries[0].testResults.fiveMinute
+    if (resultsOutput.resultsOutput.length > 0) {
+        let resultEntries = resultsOutput.resultsOutput;
+        let totalEntries = [
+            resultEntries[resultEntries.length - 1].testResults.firstDraw,
+            resultEntries[resultEntries.length - 1].testResults.threeMinute,
+            resultEntries[resultEntries.length - 1].testResults.fiveMinute
     ];
 
-    const resultsAvg = totalEntries.reduce((a, b) => a + b, 0) / totalEntries.length;
+        const resultsAvg = totalEntries.reduce((a, b) => a + b, 0) / totalEntries.length;
+        return resultsAvg.toFixed(2);
+    } else {
+        return;
+    }
 
-    return resultsAvg.toFixed(2);
 };
 
 function resultsReview(resultsOutput) {
-    let resultsAvg = userResultsAverage(resultsOutput)
-    if (resultsAvg >= 1) {
-        $('.red-results').show();
+    if (resultsOutput.resultsOutput.length > 0) {
+        let resultsAvg = userResultsAverage(resultsOutput)
+        if (resultsAvg >= 1) {
+            $('.red-results').show();
+        } else {
+            $('.green-results').show();
+        }
+        $('.user-landing').hide();
     } else {
-        $('.green-results').show();
+        return;
     }
-    $('.user-landing').hide();
 };
 
 
