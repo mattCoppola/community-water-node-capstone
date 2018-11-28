@@ -207,24 +207,43 @@ $('.results-form').submit(function (e) {
 //////////////////////////////////////////////
 $('.update-form').submit(function (e) {
     e.preventDefault();
+    const street = $('#street-update').val();
+    const city = $('#city-update').val();
+    const state = $('#state-update').val();
+    const zip = $('#zip-update').val();
+
     const firstDraw = $('#first-draw-update').val();
     const threeMinute = $('#three-minute-update').val();
     const fiveMinute = $('#five-minute-update').val();
+
+    // reset user update input
+    $('#street-update').val('');
+    $('#city-update').val('');
+    $('#state-update').val('');
+    $('#zip-update').val('');
+    $('#first-draw-update').val('');
+    $('#three-minute-update').val('');
+    $('#five-minute-update').val('');
 
     if (![firstDraw, threeMinute, fiveMinute].every(Number)) {
         alert("Entries must be a number");
     } else {
         const updateResults = {
+            street: street,
+            city: city,
+            state: state,
+            zip: zip,
             firstDraw: firstDraw,
             threeMinute: threeMinute,
             fiveMinute: fiveMinute
-        }
+        };
 
         console.log('updateResults:', updateResults);
+        const token = ("bearer " + TOKEN);
 
-        $('#first-draw-update').val('');
-        $('#three-minute-update').val('');
-        $('#five-minute-update').val('');
+        // ADD AJAX CALL FOR PUT TO SERVER.JS
+
+
     };
 });
 

@@ -90,6 +90,16 @@ app.post('/api/results', jwtAuth, (req, res) => {
 });
 
 
+/////////////////////////////
+//Authorized PUT Endpoints//
+/////////////////////////////
+//app.put('/api/update/:id', jwtAuth, (req, res) => {
+//    let updateInfo = updateResults;
+//    console.log(updateInfo);
+//    Result.findByIdAndUpdate(req.params.id)
+//        SET results
+//
+//});
 
 /////////////////////////////
 //Authorized GET Endpoints //
