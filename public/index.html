@@ -263,12 +263,35 @@
                         <form role="form">
                             <fieldset>
                                 <legend>Update Results Form</legend>
-                                <label for="first-draw-update">1st Draw</label>
-                                <input type="text" name="first-draw-update" id="first-draw-update" placeholder=".99" required>
-                                <label for="three-minute-update">3 Minute</label>
-                                <input type="text" name="three-minute-update" id="three-minute-update" placeholder=".99" required>
-                                <label for="five-minute-update">5 Minute</label>
-                                <input type="text" name="five-minute-update" id="five-minute-update" placeholder=".99" required>
+                                <div class="left">
+                                    <label for="street">Street</label>
+                                    <input type="text" name="street" id="street-update" placeholder="street" required>
+                                </div>
+                                <div class="left">
+                                    <label for="city">City</label>
+                                    <input type="text" name="city" id="city-update" placeholder="city" required>
+                                </div>
+                                <div class="left">
+                                    <label for="state">State</label>
+                                    <input type="text" name="state" id="state-update" placeholder="state" required>
+                                </div>
+                                <div class="left">
+                                    <label for="zip">Zip</label>
+                                    <input type="text" name="zip" id="zip-update" placeholder="zip" required>
+                                </div>
+                                <div class="left draw">
+                                    <label for="first-draw-update">1st Draw</label>
+                                    <input type="text" name="first-draw-update" id="first-draw-update" placeholder=".99" required>
+                                </div>
+                                <div class="left draw">
+                                    <label for="three-minute-update">3 Minute</label>
+                                    <input type="text" name="three-minute-update" id="three-minute-update" placeholder=".99" required>
+                                </div>
+                                <div class="left draw">
+                                    <label for="five-minute-update">5 Minute</label>
+                                    <input type="text" name="five-minute-update" id="five-minute-update" placeholder=".99" required>
+                                </div>
+                                <div class="clear">&nbsp;</div>
                                 <button type="submit" id="update-button">Submit</button>
                             </fieldset>
                         </form>

@@ -321,7 +321,6 @@ $('.update-results').on('click', function (e) {
     populateUpdateResultsForm(loggedInUserName);
 });
 
-
 function populateUpdateResultsForm(username) {
     const token = ("bearer " + TOKEN);
     const userObject = {
@@ -347,10 +346,19 @@ function populateUpdateResultsForm(username) {
                 resultEntries[resultEntries.length - 1].testResults.threeMinute,
                 resultEntries[resultEntries.length - 1].testResults.fiveMinute
             ];
-                console.log(totalEntries);
+
+                let street = resultEntries[resultEntries.length - 1].address.street;
+                let city = resultEntries[resultEntries.length - 1].address.city;
+                let state = resultEntries[resultEntries.length - 1].address.state;
+                let zip = resultEntries[resultEntries.length - 1].address.zip;
+
                 $('#first-draw-update').val(totalEntries[0]);
                 $('#three-minute-update').val(totalEntries[1]);
                 $('#five-minute-update').val(totalEntries[2]);
+                $('#street-update').val(street);
+                $('#city-update').val(city);
+                $('#state-update').val(state);
+                $('#zip-update').val(zip);
             }
         })
         .fail(function (jqXHR, error, errorThrown) {
