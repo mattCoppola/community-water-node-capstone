@@ -254,8 +254,7 @@ $('.update-form form').submit(function (e) {
                 data: JSON.stringify(updateResults),
                 contentType: 'application/json'
             })
-            .done(function (updated) {
-                console.log(updated);
+            .done(function () {
                 // hide enter-results form
                 $('#update-results').hide();
                 populateUserDashboard(loggedInUserName);
@@ -350,8 +349,10 @@ function resultsReview(resultsOutput) {
         let resultsAvg = userResultsAverage(resultsOutput)
         if (resultsAvg >= 1) {
             $('.red-results').show();
+            $('.green-results').hide();
         } else {
             $('.green-results').show();
+            $('.red-results').hide();
         }
         $('.user-landing').hide();
     } else {

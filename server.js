@@ -94,21 +94,37 @@ app.post('/api/results', jwtAuth, (req, res) => {
 //Authorized PUT Endpoints//
 /////////////////////////////
 app.put('/api/update-results/:id', jwtAuth, (req, res) => {
-    let updateInfo = {};
-    console.log(req.params.id);
+    //    let updateInfo = {
+    //        $set: {}
+    //    };
+    //    for (var param in req.body) {
+    //        if (['street', 'city', 'state', 'zip'].includes(param)) {
+    //            updateInfo.$set['address.$.' + param] = req.body[param];
+    //        } else if (['firstDraw', 'threeMinute', 'fiveMinute'].includes(param)) {
+    //            updateInfo.$set['testResults.$.' + param] = req.body[param];
+    //        }
+    //    }
+    console.log(req.body);
 
-    let updateFields = ['street', 'city', 'state', 'zip', 'firstDraw', 'threeMinute', 'fiveMinute'];
-    updateFields.forEach(function (field) {
-        if (field in req.body) {
-            updateInfo[field] = req.body[field];
-        };
-    });
-
-    console.log(updateInfo);
+    //    console.log(req.params.id);
+    //
+    //    let updateFields = ['street', 'city', 'state', 'zip', 'firstDraw', 'threeMinute', 'fiveMinute'];
+    //    updateFields.forEach(function (field) {
+    //        if (field in req.body) {
+    //            updateInfo[field] = req.body[field];
+    //        };
+    //    });
+    //
 
     Result.findByIdAndUpdate(req.params.id, {
         $set: {
-            "address.street": "helloWorld"
+            "address.street": req.body.street,
+            "address.city": req.body.city,
+            "address.state": req.body.state,
+            "address.zip": req.body.zip,
+            "testResults.firstDraw": req.body.firstDraw,
+            "testResults.threeMinute": req.body.threeMinute,
+            "testResults.fiveMinute": req.body.fiveMinute
         }
     }).then(function (result) {
         return res.status(204).end();
@@ -117,7 +133,6 @@ app.put('/api/update-results/:id', jwtAuth, (req, res) => {
             message: 'Internal Server Error'
         });
     });
-
 });
 
 /////////////////////////////
