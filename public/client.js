@@ -282,12 +282,12 @@ $('.delete-form button').on('click', function (e) {
                 xhr.setRequestHeader('Authorization', token)
             },
             url: `/api/delete-results/${deleteId}`,
-            dataType: 'json',
+            //            dataType: 'json',
             //            data: JSON.stringify(deleteId),
             contentType: 'application/json'
         })
         .done(function () {
-            $('.delete-form').hide();
+            $('#delete-results').hide();
             populateUserDashboard(loggedInUserName);
         })
         .fail(function (jqXHR, error, errorThrown) {
