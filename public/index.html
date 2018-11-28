@@ -151,7 +151,7 @@
                     <h1 class="logo">User Dashboard</h1>
                     <ul class="main-nav">
                         <li class="back-home"><a href="#">Home</a></li>
-                        <li class="logout"><a href="#">Log Out</a></li>
+                        <li class="logout"><a href="#">Log Out <span class="display-user"></span></a></li>
                         <li class="hamburger"><a href="#"><i class="fas fa-bars"></i></a></li>
                     </ul>
                 </div>
@@ -291,6 +291,7 @@
                                     <label for="five-minute-update">5 Minute</label>
                                     <input type="text" name="five-minute-update" id="five-minute-update" placeholder=".99" required>
                                 </div>
+                                <input type="hidden" class="inputEntryId" value="">
                                 <div class="clear">&nbsp;</div>
                                 <button type="submit" id="update-button">Submit</button>
                             </fieldset>

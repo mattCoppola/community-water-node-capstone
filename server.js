@@ -93,13 +93,32 @@ app.post('/api/results', jwtAuth, (req, res) => {
 /////////////////////////////
 //Authorized PUT Endpoints//
 /////////////////////////////
-//app.put('/api/update/:id', jwtAuth, (req, res) => {
-//    let updateInfo = updateResults;
-//    console.log(updateInfo);
-//    Result.findByIdAndUpdate(req.params.id)
-//        SET results
-//
-//});
+app.put('/api/update-results/:id', jwtAuth, (req, res) => {
+    let updateInfo = {};
+    console.log(req.params.id);
+
+    let updateFields = ['street', 'city', 'state', 'zip', 'firstDraw', 'threeMinute', 'fiveMinute'];
+    updateFields.forEach(function (field) {
+        if (field in req.body) {
+            updateInfo[field] = req.body[field];
+        };
+    });
+
+    console.log(updateInfo);
+
+    Result.findByIdAndUpdate(req.params.id, {
+        $set: {
+            "address.street": "helloWorld"
+        }
+    }).then(function (result) {
+        return res.status(204).end();
+    }).catch(function (err) {
+        return res.status(500).json({
+            message: 'Internal Server Error'
+        });
+    });
+
+});
 
 /////////////////////////////
 //Authorized GET Endpoints //

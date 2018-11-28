@@ -205,12 +205,13 @@ $('.results-form form').submit(function (e) {
 //////////////////////////////////////////////
 //Capture user input on Update Results Form //
 //////////////////////////////////////////////
-$('.update-form').submit(function (e) {
+$('.update-form form').submit(function (e) {
     e.preventDefault();
     const street = $('#street-update').val();
     const city = $('#city-update').val();
     const state = $('#state-update').val();
     const zip = $('#zip-update').val();
+    const entryID = $('.inputEntryId').val();
 
     const firstDraw = $('#first-draw-update').val();
     const threeMinute = $('#three-minute-update').val();
@@ -235,15 +236,35 @@ $('.update-form').submit(function (e) {
             zip: zip,
             firstDraw: firstDraw,
             threeMinute: threeMinute,
-            fiveMinute: fiveMinute
+            fiveMinute: fiveMinute,
+            entryID: entryID
         };
 
         console.log('updateResults:', updateResults);
         const token = ("bearer " + TOKEN);
 
         // ADD AJAX CALL FOR PUT TO SERVER.JS
-
-
+        $.ajax({
+                type: 'PUT',
+                beforeSend: function (xhr) {
+                    xhr.setRequestHeader('Authorization', token)
+                },
+                url: `/api/update-results/${entryID}`,
+                dataType: 'json',
+                data: JSON.stringify(updateResults),
+                contentType: 'application/json'
+            })
+            .done(function (updated) {
+                console.log(updated);
+                // hide enter-results form
+                $('#update-results').hide();
+                populateUserDashboard(loggedInUserName);
+            })
+            .fail(function (jqXHR, error, errorThrown) {
+                console.log(jqXHR);
+                console.log(error);
+                console.log(errorThrown);
+            });
     };
 });
 
@@ -276,6 +297,7 @@ function populateUserDashboard(username) {
             $('.address').text(userInfo.address);
             $('.resultAverage').text(userInfo.resultsAvg);
             $('.lastUpdated').text(userInfo.lastUpdated);
+            $('.display-user').text(username);
 
         })
         .fail(function (jqXHR, error, errorThrown) {
@@ -375,6 +397,7 @@ function populateUpdateResultsForm(username) {
                 let city = resultEntries[resultEntries.length - 1].address.city;
                 let state = resultEntries[resultEntries.length - 1].address.state;
                 let zip = resultEntries[resultEntries.length - 1].address.zip;
+                let entryId = resultEntries[resultEntries.length - 1]._id;
 
                 $('#first-draw-update').val(totalEntries[0]);
                 $('#three-minute-update').val(totalEntries[1]);
@@ -383,6 +406,7 @@ function populateUpdateResultsForm(username) {
                 $('#city-update').val(city);
                 $('#state-update').val(state);
                 $('#zip-update').val(zip);
+                $('.inputEntryId').val(entryId);
             }
         })
         .fail(function (jqXHR, error, errorThrown) {
