@@ -141,7 +141,7 @@ $('.signup-form').submit(function (e) {
 ///////////////////////////////////////////
 //Capture user input on Add Results Form //
 ///////////////////////////////////////////
-$('.results-form').submit(function (e) {
+$('.results-form form').submit(function (e) {
     e.preventDefault();
     const street = $('#street').val();
     const city = $('#city').val();
@@ -268,15 +268,15 @@ function populateUserDashboard(username) {
             contentType: 'application/json'
         })
         .done(function (resultsOutput) {
-            console.log(resultsOutput.resultsOutput.length);
-            if (resultsOutput.resultsOutput.length > 0) {
-                let userInfo = userInfoCard(resultsOutput);
-                resultsReview(resultsOutput);
-                $('.username').text(userObject.user);
-                $('.address').text(userInfo.address);
-                $('.resultAverage').text(userInfo.resultsAvg);
-                $('.lastUpdated').text(userInfo.lastUpdated);
-            }
+            console.log(resultsOutput);
+
+            let userInfo = userInfoCard(resultsOutput);
+            resultsReview(resultsOutput);
+            $('.username').text(username);
+            $('.address').text(userInfo.address);
+            $('.resultAverage').text(userInfo.resultsAvg);
+            $('.lastUpdated').text(userInfo.lastUpdated);
+
         })
         .fail(function (jqXHR, error, errorThrown) {
             console.log(jqXHR);
@@ -286,19 +286,24 @@ function populateUserDashboard(username) {
 }
 
 function userInfoCard(resultsOutput) {
+    console.log(resultsOutput);
+    let userInfo = {
+        address: '-',
+        resultsAvg: '-',
+        lastUpdated: '-'
+    };
     if (resultsOutput.resultsOutput.length > 0) {
         let info = resultsOutput.resultsOutput;
 
-        const userInfo = {
+        userInfo = {
             address: info[info.length - 1].address.street,
             // this is currently hardcoded in - need to make average function
             resultsAvg: userResultsAverage(resultsOutput),
             lastUpdated: info[info.length - 1].testResults.created
         }
-        return userInfo;
-    } else {
-        return;
-    }
+
+    };
+    return userInfo;
 };
 
 function userResultsAverage(resultsOutput) {
