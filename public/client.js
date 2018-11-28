@@ -243,7 +243,6 @@ $('.update-form form').submit(function (e) {
         console.log('updateResults:', updateResults);
         const token = ("bearer " + TOKEN);
 
-        // ADD AJAX CALL FOR PUT TO SERVER.JS
         $.ajax({
                 type: 'PUT',
                 beforeSend: function (xhr) {
@@ -266,6 +265,39 @@ $('.update-form form').submit(function (e) {
             });
     };
 });
+
+//////////////////////////////////////
+//Delete user's most recent results //
+//////////////////////////////////////
+
+$('.delete-form button').on('click', function (e) {
+    e.preventDefault();
+    const token = ("bearer " + TOKEN);
+    const deleteId = $('.recent-id').val();
+    console.log(deleteId);
+
+    $.ajax({
+            type: 'DELETE',
+            beforeSend: function (xhr) {
+                xhr.setRequestHeader('Authorization', token)
+            },
+            url: `/api/delete-results/${deleteId}`,
+            dataType: 'json',
+            //            data: JSON.stringify(deleteId),
+            contentType: 'application/json'
+        })
+        .done(function () {
+            $('.delete-form').hide();
+            populateUserDashboard(loggedInUserName);
+        })
+        .fail(function (jqXHR, error, errorThrown) {
+            console.log(jqXHR);
+            console.log(error);
+            console.log(errorThrown);
+        });
+});
+
+
 
 ////////////////////////////
 //Populate User Dashboard //
@@ -335,8 +367,8 @@ function userResultsAverage(resultsOutput) {
             resultEntries[resultEntries.length - 1].testResults.threeMinute,
             resultEntries[resultEntries.length - 1].testResults.fiveMinute
     ];
-
         const resultsAvg = totalEntries.reduce((a, b) => a + b, 0) / totalEntries.length;
+        $('.recent-id').val(resultEntries[resultEntries.length - 1]._id);
         return resultsAvg.toFixed(2);
     } else {
         return;
@@ -385,7 +417,6 @@ function populateUpdateResultsForm(username) {
             contentType: 'application/json'
         })
         .done(function (resultsOutput) {
-            console.log(resultsOutput.resultsOutput.length);
             if (resultsOutput.resultsOutput.length > 0) {
                 let resultEntries = resultsOutput.resultsOutput;
                 let totalEntries = [

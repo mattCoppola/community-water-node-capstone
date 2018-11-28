@@ -91,30 +91,9 @@ app.post('/api/results', jwtAuth, (req, res) => {
 
 
 /////////////////////////////
-//Authorized PUT Endpoints//
+//Authorized PUT Endpoints //
 /////////////////////////////
 app.put('/api/update-results/:id', jwtAuth, (req, res) => {
-    //    let updateInfo = {
-    //        $set: {}
-    //    };
-    //    for (var param in req.body) {
-    //        if (['street', 'city', 'state', 'zip'].includes(param)) {
-    //            updateInfo.$set['address.$.' + param] = req.body[param];
-    //        } else if (['firstDraw', 'threeMinute', 'fiveMinute'].includes(param)) {
-    //            updateInfo.$set['testResults.$.' + param] = req.body[param];
-    //        }
-    //    }
-    console.log(req.body);
-
-    //    console.log(req.params.id);
-    //
-    //    let updateFields = ['street', 'city', 'state', 'zip', 'firstDraw', 'threeMinute', 'fiveMinute'];
-    //    updateFields.forEach(function (field) {
-    //        if (field in req.body) {
-    //            updateInfo[field] = req.body[field];
-    //        };
-    //    });
-    //
 
     Result.findByIdAndUpdate(req.params.id, {
         $set: {
@@ -134,6 +113,24 @@ app.put('/api/update-results/:id', jwtAuth, (req, res) => {
         });
     });
 });
+
+////////////////////////////////
+//Authorized DELETE Endpoints //
+////////////////////////////////
+
+app.delete('/api/delete-results/:id', jwtAuth, (req, res) => {
+    console.log('Deleting ID: ', req.params.id);
+
+    Result.findByIdAndRemove(req.params.id)
+        .then(function (result) {
+            return res.status(200).end();
+        }).catch(function (err) {
+            return res.status(500).json({
+                message: 'Internal Server Error'
+            });
+        });
+});
+
 
 /////////////////////////////
 //Authorized GET Endpoints //
