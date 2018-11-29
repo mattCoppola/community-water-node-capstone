@@ -51,7 +51,8 @@ $('.login-form').submit(function (e) {
                 $('#user-dashboard').show();
                 $('.main-nav li').removeClass('responsive');
                 populateUserDashboard(loggedInUserName);
-                getGeoData(displayResultsOnMap);
+                addressGeo(ADDRESSES)
+                //                getGeoData(displayResultsOnMap);
             })
             .fail(function (jqXHR, error, errorThrown) {
                 console.log(jqXHR);
@@ -639,27 +640,99 @@ function showResults() {
 };
 
 ///////////////////////////////////////
-//Mapbox                             //
+//Mapbox & MapQuest                  //
 ///////////////////////////////////////
 
-mapboxgl.accessToken = 'pk.eyJ1IjoibWF0dGNvcHBvbGEiLCJhIjoiY2ptb3ZsdmFuMTh1YTNrbWowa3gzZm82ZiJ9.S7EhnqCwmFeZmy-obXH41g';
-var map = new mapboxgl.Map({
-    container: 'map',
-    style: 'mapbox://styles/mapbox/streets-v9',
-    center: [-87.6298, 41.8781],
+//mapboxgl.accessToken = 'pk.eyJ1IjoibWF0dGNvcHBvbGEiLCJhIjoiY2ptb3ZsdmFuMTh1YTNrbWowa3gzZm82ZiJ9.S7EhnqCwmFeZmy-obXH41g';
+//var map = new mapboxgl.Map({
+//    container: 'map',
+//    style: 'mapbox://styles/mapbox/streets-v9',
+//    center: [-87.6298, 41.8781],
+//    zoom: 10
+//});
+
+///// MAPQUEST /////
+
+
+
+const KEY = 'GiYuJwNn1HxU23kCdvgJwbmsIg75N3gW';
+L.mapquest.key = KEY;
+
+// 'map' refers to a <div> element with the ID map
+let map = L.mapquest.map('map', {
+    center: [41.8781, -87.6298],
+    layers: L.mapquest.tileLayer('map'),
     zoom: 10
 });
 
+function addMarker(lat, lng) {
+    L.marker([lat, lng]).addTo(map);
+}
 
 ///////////////////////////////////
 // Call to Mapquest for Geocodes //
 ///////////////////////////////////
 
-function getGeoData(callback) {
+const ADDRESSES = {
+
+    "Street": "00 E Elm St",
+    "City": "Chicago",
+    "State": "IL",
+    "Zip": 60611
+    //    },
+    //    {
+    //        "Street": "00 E. 101st St.",
+    //        "City": "Chicago",
+    //        "State": "IL",
+    //        "Zip": 60628
+    //    },
+    //    {
+    //        "Street": "00 E. 121st St.",
+    //        "City": "Chicago",
+    //        "State": "IL",
+    //        "Zip": 60628
+    //    }
+}
+
+function addressGeo(ADDRESSES) {
+    const token = ("bearer " + TOKEN);
+    const userObject = {
+        user: username
+    };
+
+    $.ajax({
+            type: 'GET',
+            beforeSend: function (xhr) {
+                xhr.setRequestHeader('Authorization', token)
+            },
+            url: `/api/seed-data/${username}`,
+            dataType: 'json',
+            data: JSON.stringify(userObject),
+            contentType: 'application/json'
+        })
+        .done(function (resultsOutput) {
+            console.log(resultsOutput);
+
+
+        })
+        .fail(function (jqXHR, error, errorThrown) {
+            console.log(jqXHR);
+            console.log(error);
+            console.log(errorThrown);
+        });
+
+
+
+    let = address = Object.values(ADDRESSES).toString();
+    getGeoData(displayResultsOnMap, address);
+
+}
+
+function getGeoData(callback, address) {
     let URL = 'http://www.mapquestapi.com/geocoding/v1/address?key=GiYuJwNn1HxU23kCdvgJwbmsIg75N3gW'
 
     let query = {
-        location: 'Chicago,IL',
+        location: address,
         maxResults: '5'
     }
 
@@ -679,6 +752,12 @@ function displayResultsOnMap(data) {
     let latLng = data.results[0].locations[0].latLng;
     let lat = latLng.lat;
     let lng = latLng.lng;
-//    let lngLat = [lng, lat];
-//    console.log(lngLat);
+
+    console.log(latLng);
+    addMarker(lat, lng);
+    //    let lngLat = [lng, lat];
+    //    console.log(lngLat);
+    //
+    //    let layer = L.Marker([lat, lng]).addTo(map);
+    //    layer.addTo(map);
 };
