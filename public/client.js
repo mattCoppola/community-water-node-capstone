@@ -51,6 +51,7 @@ $('.login-form').submit(function (e) {
                 $('#user-dashboard').show();
                 $('.main-nav li').removeClass('responsive');
                 populateUserDashboard(loggedInUserName);
+                getGeoData(displayResultsOnMap);
             })
             .fail(function (jqXHR, error, errorThrown) {
                 console.log(jqXHR);
@@ -276,25 +277,30 @@ $('.delete-form button').on('click', function (e) {
     const deleteId = $('.recent-id').val();
     console.log(deleteId);
 
-    $.ajax({
-            type: 'DELETE',
-            beforeSend: function (xhr) {
-                xhr.setRequestHeader('Authorization', token)
-            },
-            url: `/api/delete-results/${deleteId}`,
-            //            dataType: 'json',
-            //            data: JSON.stringify(deleteId),
-            contentType: 'application/json'
-        })
-        .done(function () {
-            $('#delete-results').hide();
-            populateUserDashboard(loggedInUserName);
-        })
-        .fail(function (jqXHR, error, errorThrown) {
-            console.log(jqXHR);
-            console.log(error);
-            console.log(errorThrown);
-        });
+    if (deleteId) {
+        $.ajax({
+                type: 'DELETE',
+                beforeSend: function (xhr) {
+                    xhr.setRequestHeader('Authorization', token)
+                },
+                url: `/api/delete-results/${deleteId}`,
+                //            dataType: 'json',
+                //            data: JSON.stringify(deleteId),
+                contentType: 'application/json'
+            })
+            .done(function () {
+                $('#delete-results').hide();
+                populateUserDashboard(loggedInUserName);
+            })
+            .fail(function (jqXHR, error, errorThrown) {
+                console.log(jqXHR);
+                console.log(error);
+                console.log(errorThrown);
+            });
+    } else {
+        $('#delete-results').hide();
+        alert("There are no Results to Delete!  Add some results.");
+    }
 });
 
 
@@ -398,6 +404,7 @@ function resultsReview(resultsOutput) {
 $('.update-results').on('click', function (e) {
     e.preventDefault();
     populateUpdateResultsForm(loggedInUserName);
+    const entryIdCheck = $('.inputEntryId').val();
 });
 
 function populateUpdateResultsForm(username) {
@@ -642,3 +649,36 @@ var map = new mapboxgl.Map({
     center: [-87.6298, 41.8781],
     zoom: 10
 });
+
+
+///////////////////////////////////
+// Call to Mapquest for Geocodes //
+///////////////////////////////////
+
+function getGeoData(callback) {
+    let URL = 'http://www.mapquestapi.com/geocoding/v1/address?key=GiYuJwNn1HxU23kCdvgJwbmsIg75N3gW'
+
+    let query = {
+        location: 'Chicago,IL',
+        maxResults: '5'
+    }
+
+    $.getJSON(URL, query, function () {
+            console.log('geocode testing...');
+        })
+        .done(callback)
+        .fail(function () {
+            console.log('error');
+        })
+        .always(function () {
+            console.log('geocode testing complete.')
+        });
+};
+
+function displayResultsOnMap(data) {
+    let latLng = data.results[0].locations[0].latLng;
+    let lat = latLng.lat;
+    let lng = latLng.lng;
+//    let lngLat = [lng, lat];
+//    console.log(lngLat);
+};
