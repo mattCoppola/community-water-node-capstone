@@ -51,7 +51,7 @@ $('.login-form').submit(function (e) {
                 $('#user-dashboard').show();
                 $('.main-nav li').removeClass('responsive');
                 populateUserDashboard(loggedInUserName);
-                addressGeo(ADDRESSES, username);
+                addressGeo(username);
                 //                getGeoData(displayResultsOnMap);
             })
             .fail(function (jqXHR, error, errorThrown) {
@@ -96,15 +96,6 @@ $('.signup-form').submit(function (e) {
                 contentType: 'application/json'
             })
             .done(function (result) {
-                //                TOKEN = result.authToken;
-                //                console.log(result);
-                //                console.log(TOKEN);
-                //                // hide home, landing pages, close signup form, display user dashboard
-                //                $('#signup').hide();
-                //                $('#home').hide();
-                //                $('#landing-page').hide();
-                //                $('#user-dashboard').show();
-                //                $('.main-nav li').removeClass('responsive');
                 $('#signup').hide();
                 $.ajax({
                         type: 'POST',
@@ -629,8 +620,6 @@ $('.logout').on('click', function (e) {
 ///////////////////////////////////////
 
 function showResults() {
-    // for development - resultsAverage is hardcoded for development
-    //    const resultsAverage = 2;
     if (resultsAverage < .99) {
         $('.green-results').show();
     } else {
@@ -639,21 +628,9 @@ function showResults() {
     $('.user-landing').hide();
 };
 
-///////////////////////////////////////
-//Mapbox & MapQuest                  //
-///////////////////////////////////////
-
-//mapboxgl.accessToken = 'pk.eyJ1IjoibWF0dGNvcHBvbGEiLCJhIjoiY2ptb3ZsdmFuMTh1YTNrbWowa3gzZm82ZiJ9.S7EhnqCwmFeZmy-obXH41g';
-//var map = new mapboxgl.Map({
-//    container: 'map',
-//    style: 'mapbox://styles/mapbox/streets-v9',
-//    center: [-87.6298, 41.8781],
-//    zoom: 10
-//});
-
-///// MAPQUEST /////
-
-
+////////////////////////////
+//MapQuest                //
+////////////////////////////
 
 const KEY = 'GiYuJwNn1HxU23kCdvgJwbmsIg75N3gW';
 L.mapquest.key = KEY;
@@ -673,28 +650,7 @@ function addMarker(lat, lng) {
 // Call to Mapquest for Geocodes //
 ///////////////////////////////////
 
-const ADDRESSES = {
-
-    "Street": "00 E Elm St",
-    "City": "Chicago",
-    "State": "IL",
-    "Zip": 60611
-    //    },
-    //    {
-    //        "Street": "00 E. 101st St.",
-    //        "City": "Chicago",
-    //        "State": "IL",
-    //        "Zip": 60628
-    //    },
-    //    {
-    //        "Street": "00 E. 121st St.",
-    //        "City": "Chicago",
-    //        "State": "IL",
-    //        "Zip": 60628
-    //    }
-}
-
-function addressGeo(ADDRESSES, username) {
+function addressGeo(username) {
     const token = ("bearer " + TOKEN);
     const userObject = {
         user: username
@@ -715,9 +671,7 @@ function addressGeo(ADDRESSES, username) {
             let address = addresses.map(address => address.address);
 
             for (let key of address) {
-                console.log(key);
                 let addr = Object.values(key).toString();
-                console.log(addr);
                 getGeoData(displayResultsOnMap, addr);
             }
 
@@ -727,12 +681,10 @@ function addressGeo(ADDRESSES, username) {
             console.log(error);
             console.log(errorThrown);
         });
-
 }
 
 function getGeoData(callback, address) {
     let URL = 'http://www.mapquestapi.com/geocoding/v1/address?key=GiYuJwNn1HxU23kCdvgJwbmsIg75N3gW'
-    console.log('address: ', address)
     let query = {
         location: address,
         maxResults: '5'
@@ -757,9 +709,4 @@ function displayResultsOnMap(data) {
 
     console.log(latLng);
     addMarker(lat, lng);
-    //    let lngLat = [lng, lat];
-    //    console.log(lngLat);
-    //
-    //    let layer = L.Marker([lat, lng]).addTo(map);
-    //    layer.addTo(map);
 };
