@@ -161,6 +161,29 @@ app.get('/api/results/:username', jwtAuth, (req, res) => {
         });
 });
 
+// Get seed data for mapping results
+app.get('/api/seed-data/:username', jwtAuth, (req, res) => {
+    Result.find()
+        .sort(
+            "testResults.created"
+        )
+        .then(function (results) {
+            let resultsOutput = [];
+            results.map(function (result) {
+                resultsOutput.push(result);
+            });
+            res.json({
+                resultsOutput
+            });
+        })
+        .catch(function (err) {
+            console.error(err);
+            res.status(500).json({
+                message: 'Internal server error'
+            });
+        });
+});
+
 
 //// creating a new user
 //app.post('/users/create', (req, res) => {

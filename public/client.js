@@ -51,7 +51,7 @@ $('.login-form').submit(function (e) {
                 $('#user-dashboard').show();
                 $('.main-nav li').removeClass('responsive');
                 populateUserDashboard(loggedInUserName);
-                addressGeo(ADDRESSES)
+                addressGeo(ADDRESSES, username);
                 //                getGeoData(displayResultsOnMap);
             })
             .fail(function (jqXHR, error, errorThrown) {
@@ -694,7 +694,7 @@ const ADDRESSES = {
     //    }
 }
 
-function addressGeo(ADDRESSES) {
+function addressGeo(ADDRESSES, username) {
     const token = ("bearer " + TOKEN);
     const userObject = {
         user: username
@@ -711,8 +711,15 @@ function addressGeo(ADDRESSES) {
             contentType: 'application/json'
         })
         .done(function (resultsOutput) {
-            console.log(resultsOutput);
+            let addresses = resultsOutput.resultsOutput;
+            let address = addresses.map(address => address.address);
 
+            for (let key of address) {
+                console.log(key);
+                let addr = Object.values(key).toString();
+                console.log(addr);
+                getGeoData(displayResultsOnMap, addr);
+            }
 
         })
         .fail(function (jqXHR, error, errorThrown) {
@@ -721,16 +728,11 @@ function addressGeo(ADDRESSES) {
             console.log(errorThrown);
         });
 
-
-
-    let = address = Object.values(ADDRESSES).toString();
-    getGeoData(displayResultsOnMap, address);
-
 }
 
 function getGeoData(callback, address) {
     let URL = 'http://www.mapquestapi.com/geocoding/v1/address?key=GiYuJwNn1HxU23kCdvgJwbmsIg75N3gW'
-
+    console.log('address: ', address)
     let query = {
         location: address,
         maxResults: '5'
