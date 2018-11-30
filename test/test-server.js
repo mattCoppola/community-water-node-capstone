@@ -30,9 +30,11 @@ chai.use(chaiHttp);
 
 
 //TESTS
+// create mlab community-water-test, create dbs.
+// build one at a time, test and comment after complete
 
 //Create a new result
-
+// status-200
 //Read/Get users results after login
 
 //Update an existing result

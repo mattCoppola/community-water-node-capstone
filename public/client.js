@@ -49,10 +49,10 @@ $('.login-form').submit(function (e) {
                 $('#home').hide();
                 $('#landing-page').hide();
                 $('#user-dashboard').show();
+                $('.no-map').hide();
                 $('.main-nav li').removeClass('responsive');
                 populateUserDashboard(loggedInUserName);
                 addressGeo(username);
-                //                getGeoData(displayResultsOnMap);
             })
             .fail(function (jqXHR, error, errorThrown) {
                 console.log(jqXHR);
@@ -111,6 +111,8 @@ $('.signup-form').submit(function (e) {
                         $('#login').hide();
                         $('#home').hide();
                         $('#landing-page').hide();
+                        $('#map').hide();
+                        $('.no-map').show();
                         $('#user-dashboard').show();
                         $('.main-nav li').removeClass('responsive');
                         populateUserDashboard(loggedInUserName);
@@ -185,7 +187,11 @@ $('.results-form form').submit(function (e) {
                 console.log(created);
                 // hide enter-results form
                 $('#enter-results').hide();
+                $('#map').show();
+                $('.no-map').hide();
                 populateUserDashboard(loggedInUserName);
+                addressGeo(loggedInUserName);
+
             })
             .fail(function (jqXHR, error, errorThrown) {
                 console.log(jqXHR);

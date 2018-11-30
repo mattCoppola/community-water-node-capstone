@@ -554,7 +554,8 @@ footer .btn-full:visited {
     background-color: #f4f4f4;
 }
 
-.map h3 {
+.map h3,
+.map p {
     text-align: center;
 }
 
