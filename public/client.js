@@ -345,12 +345,13 @@ function userInfoCard(resultsOutput) {
     };
     if (resultsOutput.resultsOutput.length > 0) {
         let info = resultsOutput.resultsOutput;
-
+        let date = new Date(info[info.length - 1].testResults.created)
         userInfo = {
             address: info[info.length - 1].address.street,
             // this is currently hardcoded in - need to make average function
             resultsAvg: userResultsAverage(resultsOutput),
-            lastUpdated: info[info.length - 1].testResults.created
+            //            lastUpdated: info[info.length - 1].testResults.created
+            lastUpdated: date.toDateString()
         }
 
     };
