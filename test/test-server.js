@@ -35,6 +35,36 @@ function tearDownDb() {
     return mongoose.connection.dropDatabase();
 }
 
+// Generate results data
+function generateResults() {
+    return {
+        user: '5bdb1a4ec1f6120138497cd5',
+        address: {
+            street: '1234 Chicago Way',
+            city: 'Chicago',
+            state: 'IL',
+            zip: 60606
+        },
+        testResults: {
+            firstDraw: 1,
+            threeMinute: 3,
+            fiveMinute: 2
+        }
+    };
+};
+
+// Seed Results DB
+function seedResultsDb() {
+    console.info('seeding results data');
+    const seedData = [];
+
+    for (let i = 1; i <= 10; i++) {
+        seedData.push(generateResults());
+    }
+
+    return Result.insertMany(seedData);
+}
+
 //TESTS
 // build one at a time, test and comment after complete
 
@@ -46,7 +76,44 @@ function tearDownDb() {
 
 //Delete an existing result
 
-describe('/api/users', function () {
+
+// CREATE A NEW USER
+//describe('/api/users', function () {
+//    const username = 'testUser';
+//    const password = 'testPass';
+//
+//    before(function () {
+//        return runServer(TEST_DATABASE_URL);
+//    });
+//
+//    after(function () {
+//        return closeServer();
+//    });
+//
+//    beforeEach(function () {});
+//
+//    afterEach(function () {
+//        return User.remove({});
+//    });
+//
+//    describe('POST: Create a new user', function () {
+//        it('Should create a new user', function () {
+//            return chai
+//                .request(app)
+//                .post('/api/users')
+//                .send({
+//                    username,
+//                    password
+//                })
+//                .then(res => {
+//                    expect(res).to.have.status(200);
+//                });
+//        });
+//    });
+//});
+
+// GET ALL RESULTS
+describe('Results API resource', function () {
     const username = 'testUser';
     const password = 'testPass';
 
@@ -58,22 +125,41 @@ describe('/api/users', function () {
         return closeServer();
     });
 
-    beforeEach(function () {});
-
-    afterEach(function () {
-        return User.remove({});
+    beforeEach(function () {
+        return User.hashPassword(password).then(password => {
+            User.create({
+                username,
+                password
+            });
+        });
     });
 
-    describe('POST', function () {
-        it('Should create a new user', function () {
-            return chai
-                .request(app)
-                .post('/api/users')
-                .send({
-                    username,
-                    password
-                })
-                .then(res => {
+    beforeEach(function () {
+        return seedResultsDb();
+    });
+
+    afterEach(function () {
+        return tearDownDb();
+    });
+
+    describe('GET endpoint', function () {
+        it('should return all results', function () {
+            let res;
+            const token = jwt.sign({
+                    user: {
+                        username
+                    }
+                },
+                JWT_SECRET, {
+                    algorithm: 'HS256',
+                    subject: username,
+                    expiresIn: '7d'
+                });
+            return chai.request(app)
+                .get(`/api/results/${username}`)
+                .set('Authorization', `Bearer ${token}`)
+                .then(function (_res) {
+                    res = _res;
                     expect(res).to.have.status(200);
                 });
         });
