@@ -68,9 +68,6 @@ function seedResultsDb() {
 //TESTS
 // build one at a time, test and comment after complete
 
-//Create a new result
-// status-200
-//Read/Get users results after login
 
 //Update an existing result
 
@@ -112,7 +109,7 @@ function seedResultsDb() {
 //    });
 //});
 
-// GET ALL RESULTS
+//GET ALL RESULTS
 describe('Results API resource', function () {
     const username = 'testUser';
     const password = 'testPass';
@@ -141,9 +138,43 @@ describe('Results API resource', function () {
     afterEach(function () {
         return tearDownDb();
     });
+    //
+    //    describe('GET endpoint', function () {
+    //        it('should return all results', function () {
+    //            let res;
+    //            const token = jwt.sign({
+    //                    user: {
+    //                        username
+    //                    }
+    //                },
+    //                JWT_SECRET, {
+    //                    algorithm: 'HS256',
+    //                    subject: username,
+    //                    expiresIn: '7d'
+    //                });
+    //            return chai.request(app)
+    //                .get(`/api/results/${username}`)
+    //                .set('Authorization', `Bearer ${token}`)
+    //                .then(function (_res) {
+    //                    res = _res;
+    //                    expect(res).to.have.status(200);
+    //                });
+    //        });
+    //    });
 
-    describe('GET endpoint', function () {
-        it('should return all results', function () {
+
+    // UPDATE EXISTING RESULTS
+    describe('PUT endpoint', function () {
+        it('should update results data', function () {
+            const updateData = {
+                street: '5555 Chicago Ave',
+                city: 'Chicago',
+                state: 'IL',
+                zip: '60678',
+                firstDraw: 5,
+                threeMinute: 7,
+                fiveMinute: 2
+            }
             let res;
             const token = jwt.sign({
                     user: {
@@ -155,12 +186,19 @@ describe('Results API resource', function () {
                     subject: username,
                     expiresIn: '7d'
                 });
-            return chai.request(app)
-                .get(`/api/results/${username}`)
-                .set('Authorization', `Bearer ${token}`)
+            return Result
+                .findOne()
+                .then(function (result) {
+                    updateData.entryID = result.id;
+                    console.log(updateData);
+                    return chai.request(app)
+                        .put(`/api/update-results/${result.id}`)
+                        .set('Authorization', `Bearer ${token}`)
+                        .send(updateData);
+                })
                 .then(function (_res) {
                     res = _res;
-                    expect(res).to.have.status(200);
+                    expect(res).to.have.status(204);
                 });
         });
     });
