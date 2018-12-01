@@ -68,9 +68,6 @@ function seedResultsDb() {
 //TESTS
 // build one at a time, test and comment after complete
 
-
-//Update an existing result
-
 //Delete an existing result
 
 
@@ -164,18 +161,48 @@ describe('Results API resource', function () {
 
 
     // UPDATE EXISTING RESULTS
-    describe('PUT endpoint', function () {
-        it('should update results data', function () {
-            const updateData = {
-                street: '5555 Chicago Ave',
-                city: 'Chicago',
-                state: 'IL',
-                zip: '60678',
-                firstDraw: 5,
-                threeMinute: 7,
-                fiveMinute: 2
-            }
-            let res;
+    //    describe('PUT endpoint', function () {
+    //        it('should update results data', function () {
+    //            const updateData = {
+    //                street: '5555 Chicago Ave',
+    //                city: 'Chicago',
+    //                state: 'IL',
+    //                zip: '60678',
+    //                firstDraw: 5,
+    //                threeMinute: 7,
+    //                fiveMinute: 2
+    //            }
+    //            let res;
+    //            const token = jwt.sign({
+    //                    user: {
+    //                        username
+    //                    }
+    //                },
+    //                JWT_SECRET, {
+    //                    algorithm: 'HS256',
+    //                    subject: username,
+    //                    expiresIn: '7d'
+    //                });
+    //            return Result
+    //                .findOne()
+    //                .then(function (result) {
+    //                    updateData.entryID = result.id;
+    //                    console.log(updateData);
+    //                    return chai.request(app)
+    //                        .put(`/api/update-results/${result.id}`)
+    //                        .set('Authorization', `Bearer ${token}`)
+    //                        .send(updateData);
+    //                })
+    //                .then(function (_res) {
+    //                    res = _res;
+    //                    expect(res).to.have.status(204);
+    //                });
+    //        });
+    //    });
+
+    // DELETE EXISTING RESULTS
+    describe('DELETE endpoint', function () {
+        it('delete an existing record', function () {
             const token = jwt.sign({
                     user: {
                         username
@@ -186,19 +213,19 @@ describe('Results API resource', function () {
                     subject: username,
                     expiresIn: '7d'
                 });
+
+            let result;
+
             return Result
                 .findOne()
-                .then(function (result) {
-                    updateData.entryID = result.id;
-                    console.log(updateData);
+                .then(function (resResult) {
+                    result = resResult;
                     return chai.request(app)
-                        .put(`/api/update-results/${result.id}`)
+                        .delete(`/api/delete-results/${result.id}`)
                         .set('Authorization', `Bearer ${token}`)
-                        .send(updateData);
                 })
-                .then(function (_res) {
-                    res = _res;
-                    expect(res).to.have.status(204);
+                .then(function (res) {
+                    expect(res).to.have.status(200);
                 });
         });
     });
