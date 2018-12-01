@@ -390,6 +390,32 @@ nav#user {
     text-align: center;
 }
 
+/*-------------------------*/
+/*Password Strength Styling*/
+/*-------------------------*/
+
+#password-strength {
+    display: inline-block;
+    float: right;
+    font-size: 80%;
+    font-weight: bold;
+}
+
+.short {
+    color: #FF0000;
+}
+
+.weak {
+    color: #ffa500;
+}
+
+.good {
+    color: #2D98F3;
+}
+
+.strong {
+    color: #27dd27;
+}
 
 /*---------------------*/
 /* Learn More */

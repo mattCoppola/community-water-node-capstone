@@ -155,6 +155,10 @@
         margin-left: 0;
     }
 
+    .next-steps h2 {
+        font-size: 195%
+    }
+
     .next-steps img {
         padding: 20px;
         height: 100%;
