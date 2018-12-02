@@ -1,7 +1,6 @@
 // Set Global Variables
 let TOKEN;
 let loggedInUserName;
-
 //////////////////
 // On Page Load //
 //////////////////
@@ -325,7 +324,6 @@ function populateUserDashboard(username) {
         })
         .done(function (resultsOutput) {
             console.log(resultsOutput);
-
             let userInfo = userInfoCard(resultsOutput);
             resultsReview(resultsOutput);
             $('.username').text(username);
@@ -386,14 +384,21 @@ function resultsReview(resultsOutput) {
         let resultsAvg = userResultsAverage(resultsOutput)
         if (resultsAvg >= 1) {
             $('.red-results').show();
+            $('.update-results').show();
             $('.green-results').hide();
+            $('.no-results').hide();
         } else {
             $('.green-results').show();
+            $('.update-results').show();
             $('.red-results').hide();
+            $('.no-results').hide();
         }
         $('.user-landing').hide();
     } else {
-        return;
+        $('.no-results').show();
+        $('.update-results').hide();
+        $('.green-results').hide();
+        $('.red-results').hide();
     }
 };
 
@@ -692,8 +697,21 @@ let map = L.mapquest.map('map', {
 });
 
 function addMarker(lat, lng) {
-    L.marker([lat, lng]).addTo(map);
-}
+    let redIcon = L.icon({
+        iconUrl: 'https://assets.mapquestapi.com/icon/v2/circle-e61212-sm.png',
+        iconSize: [12, 12]
+    });
+
+    let greenIcon = L.icon({
+        iconUrl: 'https://assets.mapquestapi.com/icon/v2/circle-15cf54-sm.png',
+        iconSize: [12, 12]
+    })
+
+    L.marker([lat, lng], {
+        icon: greenIcon
+    }).addTo(map);
+};
+
 
 ///////////////////////////////////
 // Call to Mapquest for Geocodes //
@@ -730,7 +748,7 @@ function addressGeo(username) {
             console.log(error);
             console.log(errorThrown);
         });
-}
+};
 
 function getGeoData(callback, address) {
     let URL = 'http://www.mapquestapi.com/geocoding/v1/address?key=GiYuJwNn1HxU23kCdvgJwbmsIg75N3gW'

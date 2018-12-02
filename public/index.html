@@ -76,7 +76,7 @@
                         <label for="signup-username">Username</label>
                         <input type="text" name="username" id="signup-username" placeholder="Enter Username" value="demo" required>
                         <label for="signup-password">Password<span id="password-strength"></span></label>
-                        <input type="password" name="password" id="signup-password" placeholder="Enter Password" value="demo123" required>
+                        <input type="password" name="password" id="signup-password" placeholder="Enter Password" value="demo123" minlength="6" required>
                         <label for="confirm-password">Confirm Password</label>
                         <input type="password" name="confirm-password" id="confirm-password" placeholder="Confirm Password" value="demo123" required>
                         <button type="submit" id="signup-button">Sign Up</button>
@@ -166,7 +166,7 @@
                         </div>
                         <div>
                             <ul>
-                                <li>Name: <span class="username"></span> </li>
+                                <li>User Name: <span class="username"></span> </li>
                                 <li>Address: <span class="address"></span></li>
                                 <li>Results Average: <span class="resultAverage"></span></li>
                                 <li>Last Updated: <span class="lastUpdated"></span></li>
@@ -189,7 +189,11 @@
                         <div>
                             <h3>Results Review</h3>
                         </div>
-                        <!--                        Show green-results if average is below 1.0-->
+                        <!-- Show no-results if new user and no results entered-->
+                        <div class="no-results hide-everything">
+                            <h4>Add Results to view your next Steps</h4>
+                        </div>
+                        <!-- Show green-results if average is below 1.0-->
                         <div class="green-results hide-everything">
                             <h4>Your results are below threshold</h4>
                             <ul>
@@ -198,7 +202,7 @@
                                 <li><a href="">Link Three</a></li>
                             </ul>
                         </div>
-                        <!--                        Show red-results if average is above 1.0-->
+                        <!-- Show red-results if average is above 1.0-->
                         <div class="red-results hide-everything">
                             <h4>Your results are above threshold</h4>
                             <ul>
