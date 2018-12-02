@@ -751,7 +751,7 @@ function addressGeo(username) {
 };
 
 function getGeoData(callback, address) {
-    let URL = 'http://www.mapquestapi.com/geocoding/v1/address?key=GiYuJwNn1HxU23kCdvgJwbmsIg75N3gW'
+    let URL = 'https://www.mapquestapi.com/geocoding/v1/address?key=GiYuJwNn1HxU23kCdvgJwbmsIg75N3gW'
     let query = {
         location: address,
         maxResults: '5'

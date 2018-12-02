@@ -169,9 +169,12 @@ app.get('/api/seed-data/:username', jwtAuth, (req, res) => {
         )
         .then(function (results) {
             let resultsOutput = [];
+            let testAverages = [];
             results.map(function (result) {
                 resultsOutput.push(result);
+                testAverages.push(result.average());
             });
+            console.log(testAverages);
             res.json({
                 resultsOutput
             });

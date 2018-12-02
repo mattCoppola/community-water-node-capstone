@@ -50,6 +50,13 @@ const resultsSchema = new mongoose.Schema({
 });
 
 
+// Obtain average from testResults
+resultsSchema.methods.average = function () {
+    return {
+        average: ((this.testResults.firstDraw + this.testResults.threeMinute + this.testResults.fiveMinute) / 3).toFixed(2)
+    }
+}
+
 // Returns user information without password info
 userSchema.methods.serialize = function () {
     return {

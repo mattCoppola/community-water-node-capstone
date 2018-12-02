@@ -3,7 +3,7 @@
 ## Project Description
 This website provides the user with resources to learn about the health impacts of lead in water.  Additionally, it's a website for a user to access their local government's website to order a water testing kit.  After testing water they are able to create a login and enter their results.  The results will become part of a community database that shares resident information with the local government providing them with relevant data to take action in areas of concern.
 
-### [*** Live Preview ***](https://community-water.herokuapp.com/)
+### [*** Live Preview - Community Water***](https://community-water.herokuapp.com/)
 
 ## User Stories
 * As a user I want to visit the website so that I can learn about the impact of lead in drinking water
