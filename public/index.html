@@ -45,7 +45,7 @@
                 <button>&times;</button>
             </div>
             <div class="login-form">
-                <form role="form">
+                <form role="form" aria-live="assertive">
                     <fieldset>
                         <legend>Login Form</legend>
                         <label for="login-username">Username</label>
@@ -70,7 +70,7 @@
                 <button>&times;</button>
             </div>
             <div class="signup-form">
-                <form role="form">
+                <form role="form" aria-live="assertive">
                     <fieldset>
                         <legend>Signup Form</legend>
                         <label for="signup-username">Username</label>
@@ -190,11 +190,11 @@
                             <h3>Results Review</h3>
                         </div>
                         <!-- Show no-results if new user and no results entered-->
-                        <div class="no-results hide-everything">
+                        <div class="no-results hide-everything" aria-live="assertive">
                             <h4>Add Results to view your next Steps</h4>
                         </div>
                         <!-- Show green-results if average is below 1.0-->
-                        <div class="green-results hide-everything">
+                        <div class="green-results hide-everything" aria-live="assertive">
                             <h4>Your results are below threshold</h4>
                             <ul>
                                 <li><a href="">Link One</a></li>
@@ -203,7 +203,7 @@
                             </ul>
                         </div>
                         <!-- Show red-results if average is above 1.0-->
-                        <div class="red-results hide-everything">
+                        <div class="red-results hide-everything" aria-live="assertive">
                             <h4>Your results are above threshold</h4>
                             <ul>
                                 <li><a href="">Link One</a></li>
@@ -211,17 +211,6 @@
                                 <li><a href="">Link Three</a></li>
                             </ul>
                         </div>
-
-                        <!--
-                        <div class="crud-results">
-                            <h4 class="user-landing">Add your data to see your results</h4>
-                            <div class="col span-2-of-2 edit-results">
-                                <a class="btn btn-full add-results" href="#add-results">Add</a>
-                                <a class="btn btn-full update-results" href="#update-results">Update</a>
-                                <a class="btn btn-full delete-results" href="#delete-results">Delete</a>
-                            </div>
-                        </div>
--->
                     </div>
                 </div>
             </div>
@@ -232,7 +221,7 @@
                         <button>&times;</button>
                     </div>
                     <div class="results-form">
-                        <form role="form">
+                        <form role="form" aria-live="assertive">
                             <fieldset>
                                 <legend>Enter Results Form</legend>
                                 <div class="left">
@@ -277,7 +266,7 @@
                         <button>&times;</button>
                     </div>
                     <div class="update-form">
-                        <form role="form">
+                        <form role="form" aria-live="assertive">
                             <fieldset>
                                 <legend>Update Results Form</legend>
                                 <div class="left">
@@ -317,7 +306,7 @@
                 </div>
             </section>
 
-            <section id="delete-results">
+            <section id="delete-results" aria-live="assertive">
                 <div class="delete-wrapper">
                     <h3>Delete Results?</h3>
                     <div class="delete-close">
@@ -335,7 +324,7 @@
             <h3>Compare your results with your neighbors</h3>
             <p class="no-map">Add your results to see our map.</p>
             <div class="map-container">
-                <div id='map' class="map"></div>
+                <div id='map' class="map" aria-live="assertive"></div>
             </div>
         </section>
 
