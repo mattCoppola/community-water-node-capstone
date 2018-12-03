@@ -696,7 +696,8 @@ let map = L.mapquest.map('map', {
     zoom: 10
 });
 
-function addMarker(lat, lng) {
+function addMarker(lat, lng, average) {
+    let markerAverage = average.average;
     let redIcon = L.icon({
         iconUrl: 'https://assets.mapquestapi.com/icon/v2/circle-e61212-sm.png',
         iconSize: [12, 12]
@@ -707,9 +708,16 @@ function addMarker(lat, lng) {
         iconSize: [12, 12]
     })
 
-    L.marker([lat, lng], {
-        icon: greenIcon
-    }).addTo(map);
+    if (markerAverage >= 1) {
+        L.marker([lat, lng], {
+            icon: redIcon
+        }).addTo(map);
+    } else {
+        L.marker([lat, lng], {
+            icon: greenIcon
+        }).addTo(map);
+
+    }
 };
 
 
@@ -735,11 +743,14 @@ function addressGeo(username) {
         })
         .done(function (resultsOutput) {
             let addresses = resultsOutput.resultsOutput;
+            let averages = resultsOutput.resultsOutput.pop();
             let address = addresses.map(address => address.address);
-
+            console.log(averages);
+            let i = 0;
             for (let key of address) {
                 let addr = Object.values(key).toString();
-                getGeoData(displayResultsOnMap, addr);
+                getGeoData(displayResultsOnMap, addr, averages[0 + i]);
+                i++;
             }
 
         })
@@ -750,7 +761,8 @@ function addressGeo(username) {
         });
 };
 
-function getGeoData(callback, address) {
+function getGeoData(callback, address, average) {
+    console.log(average);
     let URL = 'https://www.mapquestapi.com/geocoding/v1/address?key=GiYuJwNn1HxU23kCdvgJwbmsIg75N3gW'
     let query = {
         location: address,
@@ -760,7 +772,7 @@ function getGeoData(callback, address) {
     $.getJSON(URL, query, function () {
             console.log('geocode testing...');
         })
-        .done(callback)
+        .done(data => callback(data, average))
         .fail(function () {
             console.log('error');
         })
@@ -769,11 +781,12 @@ function getGeoData(callback, address) {
         });
 };
 
-function displayResultsOnMap(data) {
+function displayResultsOnMap(data, average) {
     let latLng = data.results[0].locations[0].latLng;
     let lat = latLng.lat;
     let lng = latLng.lng;
 
     console.log(latLng);
-    addMarker(lat, lng);
+    console.log(average);
+    addMarker(lat, lng, average);
 };
