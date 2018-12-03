@@ -711,12 +711,11 @@ function addMarker(lat, lng, average) {
     if (markerAverage >= 1) {
         L.marker([lat, lng], {
             icon: redIcon
-        }).addTo(map);
+        }).addTo(map).bindPopup(`<p>Average</p>${markerAverage}`).openPopup();
     } else {
         L.marker([lat, lng], {
             icon: greenIcon
-        }).addTo(map);
-
+        }).addTo(map).bindPopup(`<p>Average</p>${markerAverage}`).openPopup();
     }
 };
 
@@ -745,7 +744,6 @@ function addressGeo(username) {
             let addresses = resultsOutput.resultsOutput;
             let averages = resultsOutput.resultsOutput.pop();
             let address = addresses.map(address => address.address);
-            console.log(averages);
             let i = 0;
             for (let key of address) {
                 let addr = Object.values(key).toString();
@@ -762,7 +760,6 @@ function addressGeo(username) {
 };
 
 function getGeoData(callback, address, average) {
-    console.log(average);
     let URL = 'https://www.mapquestapi.com/geocoding/v1/address?key=GiYuJwNn1HxU23kCdvgJwbmsIg75N3gW'
     let query = {
         location: address,
