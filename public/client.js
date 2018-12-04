@@ -85,7 +85,6 @@ $('.signup-form').submit(function (e) {
             username: username,
             password: password
         };
-        console.log(newUserObject);
 
         $.ajax({
                 type: 'POST',
@@ -169,7 +168,7 @@ $('.results-form form').submit(function (e) {
         };
 
 
-        console.log('results', results);
+        //        console.log('results', results);
         const token = ("bearer " + TOKEN);
 
         $.ajax({
@@ -183,7 +182,6 @@ $('.results-form form').submit(function (e) {
                 contentType: 'application/json'
             })
             .done(function (created) {
-                console.log(created);
                 // hide enter-results form
                 $('#enter-results').hide();
                 $('#map').show();
@@ -323,7 +321,7 @@ function populateUserDashboard(username) {
             contentType: 'application/json'
         })
         .done(function (resultsOutput) {
-            console.log(resultsOutput);
+            //            console.log(resultsOutput);
             let userInfo = userInfoCard(resultsOutput);
             resultsReview(resultsOutput);
             $('.username').text(username);
@@ -341,7 +339,7 @@ function populateUserDashboard(username) {
 }
 
 function userInfoCard(resultsOutput) {
-    console.log(resultsOutput);
+    //    console.log(resultsOutput);
     let userInfo = {
         address: '-',
         resultsAvg: '-',
