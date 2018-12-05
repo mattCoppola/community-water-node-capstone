@@ -709,11 +709,11 @@ function addMarker(lat, lng, average) {
     if (markerAverage >= 1) {
         L.marker([lat, lng], {
             icon: redIcon
-        }).addTo(map).bindPopup(`<p>Average</p>${markerAverage}`).openPopup();
+        }).addTo(map).bindPopup(`<p>Average</p>${markerAverage}`);
     } else {
         L.marker([lat, lng], {
             icon: greenIcon
-        }).addTo(map).bindPopup(`<p>Average</p>${markerAverage}`).openPopup();
+        }).addTo(map).bindPopup(`<p>Average</p>${markerAverage}`);
     }
 };
 
@@ -765,14 +765,14 @@ function getGeoData(callback, address, average) {
     }
 
     $.getJSON(URL, query, function () {
-            console.log('geocode testing...');
+            //            console.log('geocode testing...');
         })
         .done(data => callback(data, average))
         .fail(function () {
             console.log('error');
         })
         .always(function () {
-            console.log('geocode testing complete.')
+            //            console.log('geocode testing complete.')
         });
 };
 
@@ -781,7 +781,7 @@ function displayResultsOnMap(data, average) {
     let lat = latLng.lat;
     let lng = latLng.lng;
 
-    console.log(latLng);
-    console.log(average);
+    //    console.log(latLng);
+    //    console.log(average);
     addMarker(lat, lng, average);
 };
