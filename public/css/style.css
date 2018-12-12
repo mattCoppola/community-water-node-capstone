@@ -157,9 +157,18 @@ nav#user {
     transform: translate(-50%, -50%);
 }
 
+.hero-blur {
+    width: 61%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
 .hero-text-box h1 {
     font-size: 120%;
-    font-weight: 400;
 }
 
 .hero-text-box .btn {
@@ -185,6 +194,7 @@ nav#user {
 .main-nav li {
     display: inline-block;
     margin: 20px;
+    font-weight: 400;
 }
 
 .main-nav li a:link,
@@ -192,7 +202,6 @@ nav#user {
     padding: 8px 0;
     color: #fff;
     text-decoration: none;
-    /*    text-transform: uppercase;*/
     font-size: 90%;
     border-bottom: 2px solid transparent;
     transition: border-bottom 0.2s;
