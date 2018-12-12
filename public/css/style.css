@@ -133,7 +133,7 @@ input[type="submit"]:active {
 /*---------------------*/
 
 header#home {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(images/water-background.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(images/water-background2.png);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -152,9 +152,13 @@ nav#user {
     position: absolute;
     text-align: center;
     width: 1140px;
-    top: 50%;
+    top: 65%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.hero-text-box h1 {
+    font-size: 120%;
 }
 
 .hero-text-box .btn {
@@ -210,7 +214,8 @@ nav#user {
 #signup,
 #enter-results,
 #update-results,
-#delete-results {
+#delete-results,
+#about-us {
     display: none;
     position: fixed;
     z-index: 2;
@@ -224,7 +229,8 @@ nav#user {
 .signup-wrapper,
 .results-wrapper,
 .update-wrapper,
-.delete-wrapper {
+.delete-wrapper,
+.about-wrapper {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -272,7 +278,8 @@ nav#user {
 .signup-close,
 .results-close,
 .update-close,
-.delete-close {
+.delete-close,
+.about-close {
     text-align: right;
     padding-bottom: 2rem;
 }
@@ -281,7 +288,8 @@ nav#user {
 .signup-close button,
 .results-close button,
 .update-close button,
-.delete-close button {
+.delete-close button,
+.about-close button {
     font-size: 150%;
     border: none;
     width: 3rem;
@@ -295,7 +303,8 @@ nav#user {
 .signup-close button:hover,
 .results-close button:hover,
 .update-close button:hover,
-.delete-close button:hover {
+.delete-close button:hover,
+.about-close button:hover {
     background-color: #ff4c4c;
     color: #ffffff;
     cursor: pointer;
@@ -598,4 +607,56 @@ footer .btn-full:visited {
     top: 0;
     bottom: 0;
     width: 100%;
+}
+
+/*---------------------*/
+/* About Us Section    */
+/*---------------------*/
+.bio-summary {
+    font-size: 80%;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: justify;
+    line-height: 1.4em;
+    padding-bottom: 2em;
+}
+
+.about-wrapper {
+    width: 80%;
+    max-width: 50rem;
+    overflow: auto;
+}
+
+.about-close {
+    position: absolute;
+    left: 94%;
+}
+
+.about-title {
+    margin-top: 1em;
+}
+
+.about-us {
+    text-align: center;
+}
+
+.about-us h2 {
+    margin-bottom: 20px;
+}
+
+h2.person-name {
+    margin-bottom: 10px;
+    /*    font-weight: bold;*/
+}
+
+.about-us p {
+    text-align: justify;
+    padding: 10px;
+    font-size: 85%;
+}
+
+.about-us img {
+    border-radius: 50%;
+    width: 125px;
+    height: 125px;
 }

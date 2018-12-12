@@ -568,6 +568,19 @@ $('.delete-close').on('click', function (e) {
     closeDeleteModal();
 });
 
+$('.aboutUs').on('click', function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+    showAboutUsModal();
+});
+
+$('.about-close').on('click', function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+    closeAboutUsModal();
+});
+
+
 function showLoginModal() {
     $('#login').css('display', 'block');
 }
@@ -606,6 +619,14 @@ function showDeleteModal() {
 
 function closeDeleteModal() {
     $('#delete-results').css('display', 'none');
+}
+
+function showAboutUsModal() {
+    $('.about-us').css('display', 'block');
+}
+
+function closeAboutUsModal() {
+    $('.about-us').css('display', 'none');
 }
 
 ///////////////////////////////////////
